@@ -81,6 +81,18 @@ h2.sous_titre {
     padding: 25px;
 }
 
+.photo_equipe {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.photo_equipe img {
+    height: 150px;
+    border-radius: 75px;
+    padding: 10px;
+}
+
 legend{
     margin-left: 330px;
     font-weight: bold;
