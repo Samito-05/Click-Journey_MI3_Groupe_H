@@ -91,6 +91,15 @@ h2.sous_titre {
     height: 150px;
     border-radius: 75px;
     padding: 10px;
+    padding-bottom: none;
+}
+
+.co-fondateur {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    padding: 25px;
+    padding-top: none;
 }
 
 legend{
