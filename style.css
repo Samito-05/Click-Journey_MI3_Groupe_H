@@ -16,7 +16,10 @@
 ul.Haut_Page {
     list-style-type: none;
     display: flex;
-    font-size: 48px;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    width: 100%;
 }
 
 li.active a {
@@ -40,21 +43,41 @@ li.inactive a:hover {
 }
 
 .logo_petit img{
-
-    margin: auto;
-    display: block;
-    height: 80px;
+    height: 50px;
     border-radius: 40px;
-    
+    padding-left: 0;
+    margin-left: 10px;
 }
 
-.img_acceuil img{
-
-    margin: auto;
-    display: block;
-
+.profile img{
+    height: 50px;
+    border-radius: 40px;
+    padding-right: 0;
+    margin-right: 10px;
 }
 
+h1.Titre {
+    color :black;
+    font-size: 5vw;
+    text-align: center;
+    padding: 25px;
+}
+
+body {
+    background: #4b98b8;
+}
+
+p.a_propos {
+    font-size: 2vw;
+    text-align: justify;
+    padding: 25px;
+}
+
+h2.sous_titre {
+    font-size: 3vw;
+    text-align: justify;
+    padding: 25px;
+}
 
 
 
