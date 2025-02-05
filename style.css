@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Entete {
+    width: 100%;
+    background: #0772A1;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+ul.Haut_Page {
+    list-style-type: none;
+    display: flex;
+    font-size: 48px;
+}
+
+li.active a {
+    background: #05587C;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+li.inactive a {
+    background: #0772A1;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;                                  
+}
+
+li.inactive a:hover {
+    background: #4b98b8;
+}
+
+.logo_petit img{
+
+    margin: auto;
+    display: block;
+    height: 80px;
+    border-radius: 40px;
+    
+}
+
+.img_acceuil img{
+
+    margin: auto;
+    display: block;
+
+}
