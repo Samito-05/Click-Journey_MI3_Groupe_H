@@ -9,8 +9,8 @@
     background: #0772A1;
     display: flex;
     justify-content: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 ul.Haut_Page {
@@ -18,7 +18,7 @@ ul.Haut_Page {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 3vw;
     width: 100%;
 }
 
@@ -47,6 +47,7 @@ li.inactive a:hover {
     border-radius: 40px;
     padding-left: 0;
     margin-left: 10px;
+    vertical-align: middle;
 }
 
 .profile img{
@@ -54,6 +55,7 @@ li.inactive a:hover {
     border-radius: 40px;
     padding-right: 0;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 h1.Titre {
@@ -78,16 +80,6 @@ h2.sous_titre {
     text-align: justify;
     padding: 25px;
 }
-
-
-
-
-
-
-
-
-
-
 
 legend{
     margin-left: 330px;
@@ -131,8 +123,3 @@ legend{
 button:hover{
     background-color: #05587C;
 }
-
-
-
-
-
