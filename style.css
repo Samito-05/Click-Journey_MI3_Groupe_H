@@ -58,11 +58,24 @@ li.inactive a:hover {
     vertical-align: middle;
 }
 
+.profile img:hover{
+    background: lightgray;
+}
+
 h1.Titre {
     color :black;
     font-size: 5vw;
     text-align: center;
     padding: 25px;
+    
+}
+
+.img_acceuil{
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
 }
 
 body {
