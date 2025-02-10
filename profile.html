@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PeakExplorer - Randonnées en hautes montages</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+    <body>
+        <header class="Entete">
+            <div class="logo_petit">
+                <a href="Acceuil.html">
+                    <img src="Images/logo.jpg" alt="PeakExplorer logo">
+                </a>
+            </div>
+            <ul class="Haut_Page">
+                <li class="inactive"><a href="Acceuil.html">Acceuil</a></li>
+                <li class="inactive"><a href="Sejours.html">Sejours</a></li>
+                <li class="inactive"><a href="A_Propos.html">A Propos</a></li>
+            </ul>
+            <div class="profile">
+                <a href="Formulaire_Inscription.html">
+                    <img src="Images/profile.png" alt="Profile">
+                </a>
+            </div>
+        </header>
+        <form>
+            <fieldset class="modif_compte">
+                <table  class="modif_compte">
+                    <tr>
+                        <td>
+                            <label for="nom">Nom :</label>
+                        </td>
+                        <td>
+                            <input type="text" name="nom" id="nom" value="Procoppe">
+                        </td>
+                        <td>
+                            <label for="nom"><img class="modif" src="images/modif.jpg.png"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="prenom">Prénom :</label>
+                        </td>
+                        <td>
+                            <input type="text" name="prenom" id="prenom" value="Jean-Patoche">
+                        </td>
+                        <td>
+                            <label for="prenom"><img class="modif" src="images/modif.jpg.png"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email :</label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" id="email" value="...">
+                        </td>
+                        <td>
+                            <label for="email"><img class="modif" src="images/modif.jpg.png"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input type="submit" value="Enregistrer">
+                        </td>            
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

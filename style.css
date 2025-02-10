@@ -237,3 +237,21 @@ button:hover {
     align-items: center;
     gap: 5px;
 }
+
+img.modif {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+fieldset.modif_compte {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;  
+}
+
+table.modif_compte {
+    width: 75%;
+    border-collapse: collapse;
+    margin: auto;
+}
