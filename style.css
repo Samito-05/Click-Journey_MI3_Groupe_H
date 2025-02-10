@@ -111,40 +111,49 @@ h2.sous_titre {
     padding-top: none;
 }
 
+
+
+
+
+
 legend{
-    margin-left: 330px;
+    margin-left: 90px;
     font-weight: bold;
-    text-decoration: underline;
     font-size: 20px;
     text-transform: uppercase;
 }
 
 .inscription{
-    border: 5px solid #4D98B8;
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 2px solid #4D98B8;
     border-radius: 10px;
     padding: 30px;
 }
 
 .div_ins{
-    display: inline-block;
-    width: 150px;
+    color: #05587C;
     font-weight: bold;
     font-size: 15px;
-    text-align: right;
+    margin-left: 15px;
 }
 
 .champ{
-    width: 230px;
-    height: 20px;
-    margin: 10px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 35px;
+    padding: 8px 15px 12px 15px;
+    border-radius: 5px;
 }
 
 .boutton_inscription{
     background-color: #4B98B8;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border: none;
-    margin: 30px 288px;
-    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 380px;
+    font-size: 18px; 
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -153,6 +162,14 @@ legend{
 button:hover{
     background-color: #05587C;
 }
+
+
+
+
+
+
+
+
 
 
 
