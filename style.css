@@ -116,7 +116,6 @@ h2.sous_titre {
 
 
 .form {
-    display: flex;
     font-family: Arial, sans-serif;
 }
 
@@ -135,7 +134,7 @@ h2.sous_titre {
     margin-bottom: 100px;
     border: 2px solid #4D98B8;
     border-radius: 10px;
-    padding: 40px 60px;
+    padding: 40px 100px;
     max-width: 500px;
 }
 
@@ -147,10 +146,10 @@ h2.sous_titre {
 }
 
 .champ{
-    width: 350px;
+    width: 410px;
     height: 40px;
     margin-bottom: 20px;
-    margin-left: -8px;
+    margin-left: -2px;
     padding: 8px 15px 8px 15px;
     border-radius: 5px;
     background-color: #F7F7F7;
@@ -162,7 +161,7 @@ h2.sous_titre {
 
 .saisie_obligatoire{
     font-family: Arial, sans-serif;
-    margin-left: 235px;
+    margin-left: 290px;
     font-size: 14px;
     color: #05587C
 }
@@ -185,7 +184,13 @@ button:hover{
     background-color: #05587C;
 }
 
-
+.hr_inscription{
+    height: 1px;
+    border: none;
+    background-color: #05587C;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+}
 
 
 
