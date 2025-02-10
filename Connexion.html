@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Page de connexion</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header class="Entete">
@@ -24,23 +24,26 @@
             </div>
         </header>
 
-        <h2>Connectez-vous à votre compte</h2>
-        <form action="traitement_connexion.php" method="post"></form>
-            <div class="div_connexion">
-                <label for="email">Mon email * :</label>
-            </div>
-            <div>
-                <input type="text" id="email" name="email" class="champ_connexion" required>
-            </div>
+        <h2 class="h2_connexion">Connectez-vous à votre compte PeakExplorer</h2>
+        <form class="form_connexion">
+            <fieldset class="field_connexion">
+                <div class="div_connexion">
+                    <label for="email">Mon email * :</label>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" class="champ_connexion" required>
+                </div>
 
-            <div class="div_connexion">
-                <label for="mdp">Mot de passe * :</label>
-            </div>
-                <input type="mdp" id="mdp" name="mdp" class="champ_connexion" required>
-            </div>
+                <div class="div_connexion">
+                    <label for="mdp">Mot de passe * :</label>
+                </div>
+                    <input type="password" id="mdp" name="mdp" class="champ_connexion" required>
+                </div>
 
-            <button type="submit">Me connecter</button>
+                <button type="submit" class="boutton_connexion">Me connecter</button>
+
+                <p class="s_inscrire">Vous n'avez pas de compte ?<a href="Inscription.html">S'incrire</a></p>
+            </fieldset>
         </form>
-        <p>Vous n'avez pas de compte ?<a href="Inscription.html">S'incrire</a></p>
     </body>
 </html>
