@@ -144,7 +144,7 @@ h2.sous_titre {
     font-size: 15px;
 }
 
-.champ{
+.champ_inscription{
     width: 410px;
     height: 40px;
     margin-bottom: 20px;
@@ -153,7 +153,7 @@ h2.sous_titre {
     border-radius: 5px;
     background-color: #F7F7F7;
 }
-.champ:focus {
+.champ_inscription:focus {
     border: 2px solid #4B98B8; 
     outline: none; /*enlever le contour par défaut noir*/
 }
