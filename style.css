@@ -141,7 +141,6 @@ h2.sous_titre {
 .div_ins{
     text-align: left;
     color: #05587C;
-    font-weight: bold;
     font-size: 15px;
 }
 
@@ -167,7 +166,7 @@ h2.sous_titre {
 }
 
 .boutton_inscription{
-    width: 350px;
+    width: 410px;
     margin-top: 40px;
     align-items: center;
     text-align: center;
@@ -188,12 +187,31 @@ button:hover{
     height: 1px;
     border: none;
     background-color: #05587C;
-    margin-top: 40px;
-    margin-bottom: 40px; 
+    margin-top: 50px;
+    margin-bottom: 30px; 
 }
 
+.deja_inscrit{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #0772A1;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-
+.deja_inscrit a{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #05587C;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
 
 
 
