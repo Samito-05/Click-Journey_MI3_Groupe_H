@@ -111,11 +111,7 @@ h2.sous_titre {
     padding-top: none;
 }
 
-
-
-
-
-
+/*Connexion.html*/
 .h2_connexion{
     font-family: Arial, sans-serif;
     font-size: 28px;
@@ -131,10 +127,9 @@ h2.sous_titre {
 
 .field_connexion{
     margin: auto;
-    border: 1px solid #686b6c;
+    border: 2px solid #eeeeee;
     border-radius: 10px;
     padding: 40px 100px;
-    max-width: 500px;
 }
 
 .div_connexion {
@@ -194,12 +189,7 @@ h2.sous_titre {
     font-weight: bold;
 }
 
-
-
-
-
-
-
+/*Inscription.html*/
 .form_inscription {
     font-family: Arial, sans-serif;
 }
@@ -220,7 +210,6 @@ h2.sous_titre {
     border: 2px solid #4D98B8;
     border-radius: 10px;
     padding: 40px 100px;
-    max-width: 500px;
 }
 
 .div_ins{
@@ -298,11 +287,7 @@ button:hover{
     font-weight: bold;
 }
 
-
-
-
-
-
+/*Sejours.html*/
 ody {
     font-family: Arial, sans-serif;
     background-color: gray;
