@@ -113,16 +113,20 @@ h2.sous_titre {
 
 
 
+
+
 .form {
     display: flex;
     font-family: Arial, sans-serif;
 }
 
-
-legend{
+.legend_inscription{
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
+    text-decoration: underline;
+    color: #05587C;
+    padding: 10px;
 }
 
 .inscription{
@@ -148,6 +152,10 @@ legend{
     margin-bottom: 40px;
     padding: 8px 15px 8px 15px;
     border-radius: 5px;
+}
+.champ:focus {
+    border: 2px solid #4B98B8; 
+    outline: none; /*enlever le contour par défaut noir*/
 }
 
 .saisie_obligatoire{
@@ -204,14 +212,6 @@ fieldset {
     width: 400px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-/* Titre */
-legend {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
-    padding: 5px 10px;
 }
 
 /* Labels et champs */
