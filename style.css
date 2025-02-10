@@ -113,47 +113,59 @@ h2.sous_titre {
 
 
 
-
+.form {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
 
 
 legend{
-    margin-left: 90px;
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
 }
 
 .inscription{
+    margin: auto;
     margin-top: 100px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-bottom: 100px;
     border: 2px solid #4D98B8;
     border-radius: 10px;
-    padding: 30px;
+    padding: 40px 60px;
+    max-width: 500px;
 }
 
 .div_ins{
+    text-align: left;
     color: #05587C;
     font-weight: bold;
     font-size: 15px;
-    margin-left: 15px;
 }
 
 .champ{
-    width: 100%;
+    width: 350px;
     height: 40px;
-    margin-bottom: 35px;
-    padding: 8px 15px 12px 15px;
+    margin-bottom: 40px;
+    padding: 8px 15px 8px 15px;
     border-radius: 5px;
 }
 
+.saisie_obligatoire{
+    font-family: Arial, sans-serif;
+    margin-left: 235px;
+    font-size: 14px;
+    color: #05587C
+}
+
 .boutton_inscription{
+    width: 370px;
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
     background-color: #4B98B8;
-    padding: 15px 25px;
+    padding: 12px;
     border: none;
-    margin-top: 30px;
-    margin-left: 380px;
-    font-size: 18px; 
+    font-size: 16px; 
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -162,7 +174,6 @@ legend{
 button:hover{
     background-color: #05587C;
 }
-
 
 
 
