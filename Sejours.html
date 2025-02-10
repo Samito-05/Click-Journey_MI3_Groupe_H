@@ -21,58 +21,79 @@
             </a>
         </div>
     </header>
-<form action="" methode="get">
-<fieldset>
-    <legend>recherche de voyages</legend><br/>
-    <div class="div_filtre">
-        Date du départ:<input type="date" name="date" value="2024-12-08"/>
-    </div>
-    
-    <br/>
-    <div>
-            date d'arrivé: <input type="date" name="date" value="2024-12-09"/>
-        <div/><br/>
-    <div>   lieu du voyage:
+<form action="" method="get">
+    <fieldset>
+        <legend>Recherche de voyages</legend><br/>
+
+        <div class="div_filtre">
+            <label>Date du départ :</label>
+            <input type="date" name="date" value="2024-12-08"/>
+        </div>
+
+        <br/>
+        <div>
+            <label>Date d'arrivée :</label>
+            <input type="date" name="date" value="2024-12-09"/>
+        </div>
+
+        <br/>
+        <div>
+            <label>Lieu du voyage :</label>
             <select name="city" id="city">
-                <optgroup label="Fance">
-                <option value="mont blanc">Mont Blanc</option>
-                <option value="pyrénées">Pyrénées</option>
-                <option value="massif central">Massif Central</option>
+                <optgroup label="France">
+                    <option value="mont blanc">Mont Blanc</option>
+                    <option value="pyrénées">Pyrénées</option>
+                    <option value="massif central">Massif Central</option>
                 </optgroup>
-                <optgroup label="nepal">
-                <option value="mont everest">Mont Everest</option>
+                <optgroup label="Népal">
+                    <option value="mont everest">Mont Everest</option>
                 </optgroup>
-                <optgroup label="japon">
+                <optgroup label="Japon">
                     <option value="mont fuji">Mont Fuji</option>
                 </optgroup>
             </select>
-    </div>
-     <br/>
-     <div> 
-            nombre de participants: <input type="number" name="nombre de personne"min="1" max="10" value="2" step="1"/>
-    </div>  
+        </div>
+
         <br/>
-    <div>
-            age moyen des participants: <input type="number" name="age" min="15" max="100" value="25" step="5"
-    </div>   
+        <div>
+            <label>Nombre de participants :</label>
+            <input type="number" name="nombre de personne" min="1" max="10" value="2" step="1"/>
+        </div>
+
         <br/>
-    <div>
-            votre budjet: <input type="" name="budjet" min="500" max="10000" value="2000" step="500">
+        <div>
+            <label>Âge moyen des participants :</label>
+            <input type="number" name="age" min="15" max="100" value="25" step="5"/>
+        </div>
+
+        <br/>
+        <div>
+            <label>Votre budget :</label>
+            <input type="number" name="budjet" min="500" max="10000" value="2000" step="500">
+        </div>
+
+        <br/>
+        <p>Options supplémentaires :</p>
+        <div class="options-container">
+            <label><input type="checkbox" name="option" value="ski"/> Ski</label>
+            <label><input type="checkbox" name="option" value="guide"/> Guide de montagne</label>
+            <label><input type="checkbox" name="option" value="auberge"/> Auberge en haute altitude</label>
         
-    </div>
-    <br/>
-            <p>option supplementaires: <br/>
-            <input type="checkbox" name="option" value="ski"/>ski
-            <input type="checkbox" name="option" value="guide" />guide de montagnes
-            <input type="checkbox" name="option" value="auberge"/>auberge en haute haltitude
-            </p>
-        
-            <p>option alimentaire: <br/>
-            <input type="checkbox" name="pension" value="sans pension"/>sans pension
-            <input type="checkbox" name="pension" value="demi pension" />demi pension
-            <input type="checkbox" name="pension" value="pension complête"/>pension complête
-            </p>
-        
+        </div>
+
+        <br/>
+        <p>Option alimentaire :</p>
+        <div class="options-container">
+            <label><input type="checkbox" name="pension" value="sans pension"/> Sans pension</label>
+            <label><input type="checkbox" name="pension" value="demi pension"/> Demi-pension</label>
+            <label><input type="checkbox" name="pension" value="pension complète"/> Pension complète</label>
+        </div>
+
+        <br/>
+        <button type="submit">Rechercher</button>
+
+    </fieldset>
+</form>
     
 </body>
 </html>
