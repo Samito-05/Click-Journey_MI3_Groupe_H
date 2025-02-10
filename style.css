@@ -149,9 +149,11 @@ h2.sous_titre {
 .champ{
     width: 350px;
     height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-left: -8px;
     padding: 8px 15px 8px 15px;
     border-radius: 5px;
+    background-color: #F7F7F7;
 }
 .champ:focus {
     border: 2px solid #4B98B8; 
@@ -166,7 +168,7 @@ h2.sous_titre {
 }
 
 .boutton_inscription{
-    width: 370px;
+    width: 350px;
     margin-top: 40px;
     align-items: center;
     text-align: center;
