@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <header class="Entete">
+         <header class="Entete">
             <div class="logo_petit">
                 <a href="Acceuil.html">
                     <img src="Images/logo.jpg" alt="PeakExplorer logo">
@@ -24,43 +24,49 @@
         </header>
         <form>
             <fieldset class="inscription">
-                <legend>Inscription</legend>
+                <legend>Création de mon compte</legend>
                 <div class="div_ins">
-                    <label for="nom">Nom</label>
+                    <label for="nom">Nom * :</label>
                 </div>
-                <input type="text" id="nom" name="nom" class="champ" placeholder="Entrer votre nom" required>
-                <br/>
+                <div class="champ">
+                    <input type="text" id="nom" name="nom" class="champ" placeholder="Entrer votre nom" required>
+                </div>
                 
                 <div class="div_ins">
-                    <label for="prenom">Prénom</label>
+                    <label for="prenom">Prénom * :</label>
                 </div>
-                <input type="text" id="prenom" name="prenom" class="champ" placeholder="Entrer votre prénom"required>
-                <br/>
+                <div class="champ">
+                    <input type="text" id="prenom" name="prenom" class="champ" placeholder="Entrer votre prénom"required>
+                </div>
                 
                 <div class="div_ins">
-                    <label for="numero">Téléphone</label>
+                    <label for="numero">Téléphone * :</label>
                 </div>
-                <input type="tel" id="numero" name="numero" class="champ" placeholder="Entrer votre numéro"required>
-                <br/>
+                <div class="champ">
+                    <input type="tel" id="numero" name="numero" class="champ" placeholder="Entrer votre numéro"required>
+                </div>
             
                 <div class="div_ins">
-                    <label for="email">Email</label>
+                    <label for="email">Email * :</label>
                 </div>
-                <input type="email" id="email" name="email" class="champ" placeholder="Entrer votre email"required>
-                <br/>
+                <div class="champ">
+                    <input type="email" id="email" name="email" class="champ" placeholder="Entrer votre email"required>
+                </div>
                 
                 <div class="div_ins">
-                    <label for="mdp">Mot de passe</label>
+                    <label for="mdp">Mot de passe * :</label>
                 </div>
-                <input type="password" id="mdp" name="mdp" class="champ" placeholder="Entrer votre mot de passe"required>
-                <br/>
+                <div class="champ">
+                    <input type="password" id="mdp" name="mdp" class="champ" placeholder="Entrer votre mot de passe"required>
+                </div>
                 
                 <div class="div_ins">
-                    <label for="mdp_verif">Mot de passe</label>
+                    <label for="mdp_verif">Confirmation du mot de passe * :</label>
                 </div>
-                <input type="password" id="mdp_verif" name="mdp_verif" class="champ" placeholder="Confirmer le mot de passe"required>
-                <br/>
-    
+                <div class="champ">
+                    <input type="password" id="mdp_verif" name="mdp_verif" class="champ" placeholder="Confirmation du mot de passe"required>
+                </div>
+                <p clas="saisie"><i>*Saisie obligatoire</i></p>
                 <button type="submit" class="boutton_inscription">S'inscrire</button>
             </fieldset>
         </form>
