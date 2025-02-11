@@ -24,6 +24,7 @@ ul.Haut_Page {
 
 li.active a {
     background: #05587C;
+    border-radius: 15px;
     color: white;
     padding-left: 25px;
     padding-right: 25px;
@@ -40,6 +41,7 @@ li.inactive a {
 
 li.inactive a:hover {
     background: #4b98b8;
+    border-radius: 15px;
 }
 
 .logo_petit img{
@@ -176,7 +178,7 @@ h2.sous_titre {
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #05587C;
-    text-align: right;
+    text-align: center;
     margin-top: 20px;
 }
 
