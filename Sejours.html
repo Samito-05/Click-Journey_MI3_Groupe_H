@@ -39,21 +39,21 @@
         </div>
     </header>
 <form action="" method="get">
-    <fieldset>
+    <fieldset class="sejours">
 
-        <div class="div_filtre">
+        <div class="filtre">
             <label>Date du départ :</label>
             <input type="date" name="date" value="2024-12-08"/>
         </div>
 
         <br/>
-        <div>
+        <div class="filtre">
             <label>Date d'arrivée :</label>
             <input type="date" name="date" value="2024-12-09"/>
         </div>
 
         <br/>
-        <div>
+        <div class="filtre">
             <label>Lieu du voyage :</label>
             <select name="city" id="city">
                 <optgroup label="France">
@@ -71,26 +71,26 @@
         </div>
 
         <br/>
-        <div>
+        <div class="filtre">
             <label>Nombre de participants :</label>
             <input type="number" name="nombre de personne" min="1" max="10" value="2" step="1"/>
         </div>
 
         <br/>
-        <div>
+        <div class="filtre">
             <label>Âge moyen des participants :</label>
             <input type="number" name="age" min="15" max="100" value="25" step="5"/>
         </div>
 
         <br/>
-        <div>
+        <div class="filtre">
             <label>Votre budget :</label>
             <input type="number" name="budjet" min="500" max="10000" value="2000" step="500">
         </div>
 
         <br/>
-        <p>Options supplémentaires :</p>
-        <div class="options-container">
+        <p class="filtre">Options supplémentaires :</p>
+        <div class="options-container filtre">
             <label><input type="checkbox" name="option" value="ski"/> Ski</label>
             <label><input type="checkbox" name="option" value="guide"/> Guide de montagne</label>
             <label><input type="checkbox" name="option" value="auberge"/> Auberge en haute altitude</label>
@@ -98,8 +98,8 @@
         </div>
 
         <br/>
-        <p>Option alimentaire :</p>
-        <div class="options-container">
+        <p class="filtre">Option alimentaire :</p>
+        <div class="options-container filtre">
             <label><input type="checkbox" name="pension" value="sans pension"/> Sans pension</label>
             <label><input type="checkbox" name="pension" value="demi pension"/> Demi-pension</label>
             <label><input type="checkbox" name="pension" value="pension complète"/> Pension complète</label>
