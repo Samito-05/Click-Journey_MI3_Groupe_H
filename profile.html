@@ -39,80 +39,53 @@
                 </abbr>
             </div>
         </header>
-        <fieldset class="modif_compte">
-            <legend class="legend_modif">Modification de mon compte</legend>
-            <form action="..." method="post">
-                <table  class="modif_compte">
-                    <tr>
-                        <td>
-                            <label for="nom">Nom :</label>
-                        </td>
-                        <td>
-                            <input type="text" name="nom" id="nom" value="Procoppe">
-                        </td>
-                        <td>
-                            <label for="nom"><img class="modif" src="Images/modif.png"></label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="prenom">Prénom :</label>
-                        </td>
-                        <td>
-                            <input type="text" name="prenom" id="prenom" value="Jean-Patoche">
-                        </td>
-                        <td>
-                            <label for="prenom"><img class="modif" src="Images/modif.png"></label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="email">Email :</label>
-                        </td>
-                        <td>
-                            <input type="email" name="email" id="email" value="...">
-                        </td>
-                        <td>
-                            <label for="email"><img class="modif" src="Images/modif.png"></label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="mdp1">Mot de passe :</label>
-                        </td>
-                        <td>
-                            <input type="password" name="mdp1" id="mdp1" placeholder="Mot de passe">
-                        </td>
-                        <td>
-                            <label for="mdp1"><img class="modif" src="Images/modif.png"></label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="mdp2"> Nouveau mot de passe :</label>
-                        </td>
-                        <td>
-                            <input type="password" name="mdp2" id="mdp2" placeholder="Nouveau mot de passe">
-                        </td>
-                        <td>
-                            <label for="mdp2"><img class="modif" src="Images/modif.png"></label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="mdp3">Confirmer mot de passe :</label>
-                        </td>
-                        <td>
-                            <input type="password" name="mdp3" id="mdp3" placeholder="Confirmer mot de passe">
-                        </td>
-                        <td>
-                            <label for="mdp3"><img class="modif" src="Images/modif.png"></label>
-                        </td>
-                    <tr>
-                        <td colspan="3">
-                            <input type="submit" value="Enregistrer">
-                        </td>            
-                </table>
+        <fieldset class="field_inscription">
+            <legend class="legend_inscription">Modification profile</legend>
+            <form class="form_inscription">
+                <div class="div_ins">
+                    <label for="nom">Nom :</label>
+                </div>
+                <div class="div_modif">
+                    <input type="text" id="nom" name="nom" class="champ_inscription" placeholder="Dupont">
+                    <label for="nom"><img class="modif" src="Images/modif.png"></label>
+                </div>
+                
+                <div class="div_ins">
+                    <label for="prenom">Prenom :</label>
+                </div>
+                <div class="div_modif">
+                    <input type="text" id="prenom" name="prenom" class="champ_inscription" placeholder="Jean-Patoche">
+                    <label for="prenom"><img class="modif" src="Images/modif.png"></label>
+                </div>
+                <div class="div_ins">
+                    <label for="mail">Adresse Mail :</label>
+                </div>
+                <div class="div_modif">
+                    <input type="email" id="mail" name="mail" class="champ_inscription" placeholder="email@mail.com">
+                    <label for="mail"><img class="modif" src="Images/modif.png"></label>
+                </div>
+                <div class="div_ins">
+                    <label for="mdp1">Mot de passe :</label>
+                </div>
+                <div class="div_modif">
+                    <input type="password" id="mdp1" name="mdp1" class="champ_inscription" placeholder="........">
+                    <label for="mdp1"><img class="modif" src="Images/modif.png"></label>
+                </div>
+                <div class="div_ins">
+                    <label for="mdp2">Nouveau mot de passe :</label>
+                </div>
+                <div class="div_modif">
+                    <input type="password" id="mdp2" name="mdp2" class="champ_inscription" placeholder="........">
+                    <label for="mdp2"><img class="modif" src="Images/modif.png"></label>
+                </div>
+                <div class="div_ins">
+                    <label for="mdp3">Verification nouveau mot de passe :</label>
+                </div>
+                <div class="div_modif">
+                    <input type="password" id="mdp3" name="mdp1" class="champ_inscription" placeholder="........">
+                    <label for="mdp3"><img class="modif" src="Images/modif.png"></label>
+                </div>
+                <button type="submit" class="boutton_connexion">Valider Changements</button>
             </form>
         </fieldset>
     </body>

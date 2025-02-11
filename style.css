@@ -410,3 +410,7 @@ table.modif_compte {
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
+
+.div_modif{
+    display: flex;
+}
