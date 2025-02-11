@@ -38,9 +38,8 @@
             </abbr>
         </div>
     </header>
-<form action="" method="get">
     <fieldset class="sejours">
-
+        <form action="" method="get">
         <div class="filtre">
             <label>Date du départ :</label>
             <input type="date" name="date" value="2024-12-08"/>
@@ -67,6 +66,13 @@
                 <optgroup label="Japon">
                     <option value="mont fuji">Mont Fuji</option>
                 </optgroup>
+                <optgroup label="USA">
+                    <option value="Dolomites">Dolomites</option>
+                    <option value="Rocky Mountains">Rocky Mountains</option>
+                </optgroup>
+                <optgroup label="Tanzania">
+                    <option value="Mount Kilimanjaro">Mont Kilimanjaro</option>
+                </optgroup>
             </select>
         </div>
 
@@ -90,26 +96,25 @@
 
         <br/>
         <p class="filtre">Options supplémentaires :</p>
-        <div class="options-container filtre">
-            <label><input type="checkbox" name="option" value="ski"/> Ski</label>
-            <label><input type="checkbox" name="option" value="guide"/> Guide de montagne</label>
-            <label><input type="checkbox" name="option" value="auberge"/> Auberge en haute altitude</label>
+        <div class="checkbox_options">
+            <label><input type="checkbox" name="option" value="guide"/>Guide de montagne</label>
+            <label><input type="checkbox" name="option" value="auberge"/>Auberge en haute altitude</label>
         
         </div>
 
         <br/>
         <p class="filtre">Option alimentaire :</p>
-        <div class="options-container filtre">
-            <label><input type="checkbox" name="pension" value="sans pension"/> Sans pension</label>
-            <label><input type="checkbox" name="pension" value="demi pension"/> Demi-pension</label>
-            <label><input type="checkbox" name="pension" value="pension complète"/> Pension complète</label>
+        <div class="checkbox_options">
+            <label><input type="checkbox" name="pension" value="sans pension"/>Sans pension</label>
+            <label><input type="checkbox" name="pension" value="demi pension"/>Demi-pension</label>
+            <label><input type="checkbox" name="pension" value="pension complète"/>Pension complète</label>
         </div>
 
         <br/>
         <button type="submit">Rechercher</button>
 
+    </form>
     </fieldset>
-</form>
     
 </body>
 </html>

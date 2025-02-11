@@ -39,8 +39,9 @@
                 </abbr>
             </div>
         </header>
-        <form action="..." method="post">
-            <fieldset class="modif_compte">
+        <fieldset class="modif_compte">
+            <legend class="legend_modif">Modification de mon compte</legend>
+            <form action="..." method="post">
                 <table  class="modif_compte">
                     <tr>
                         <td>
@@ -76,11 +77,43 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>
+                            <label for="mdp1">Mot de passe :</label>
+                        </td>
+                        <td>
+                            <input type="password" name="mdp1" id="mdp1" placeholder="Mot de passe">
+                        </td>
+                        <td>
+                            <label for="mdp1"><img class="modif" src="Images/modif.png"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mdp2"> Nouveau mot de passe :</label>
+                        </td>
+                        <td>
+                            <input type="password" name="mdp2" id="mdp2" placeholder="Nouveau mot de passe">
+                        </td>
+                        <td>
+                            <label for="mdp2"><img class="modif" src="Images/modif.png"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mdp3">Confirmer mot de passe :</label>
+                        </td>
+                        <td>
+                            <input type="password" name="mdp3" id="mdp3" placeholder="Confirmer mot de passe">
+                        </td>
+                        <td>
+                            <label for="mdp3"><img class="modif" src="Images/modif.png"></label>
+                        </td>
+                    <tr>
                         <td colspan="3">
                             <input type="submit" value="Enregistrer">
                         </td>            
                 </table>
-            </fieldset>
-        </form>
+            </form>
+        </fieldset>
     </body>
 </html>

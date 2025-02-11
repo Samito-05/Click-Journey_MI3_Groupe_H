@@ -58,6 +58,15 @@ li.inactive a:hover {
     vertical-align: middle;
 }
 
+.legend_modif{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;
+    color: #0772A1;
+    padding: 10px;
+}
+
 .profile img{
     height: 3vw;
     border-radius: 40px;
@@ -313,14 +322,16 @@ button:hover{
 }
 
 
-.sejours {
-    width: 33%;
+.sejours{
+    width: fit-content;
     margin: auto;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    border: solid 2px #4B98B8;
-    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px solid #4D98B8;
+    border-radius: 10px;
+    padding: 40px 100px;
 }
+
 
 .filtre{
     margin-top: 10px; 
@@ -366,17 +377,10 @@ button:hover {
     margin-top: 10px;
 }
 
-.options-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.options-container label {
+.checkbox_options {
     display: flex;
     align-items: center;
-    gap: 5px;
+    text-align: center;
 }
 
 img.modif {
@@ -392,13 +396,17 @@ img.modif:hover {
 }
 
 fieldset.modif_compte {
-    width: 50%;
+    width: 33%;
     margin: auto;
-    margin-top: 20px;  
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px solid #4D98B8;
+    border-radius: 10px;  
 }
 
-table.modif_compte {
-    width: 75%;
+table.modif_compte {    
     border-collapse: collapse;
     margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
