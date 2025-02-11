@@ -230,7 +230,7 @@ h2.sous_titre {
 }
 .champ_inscription:focus {
     border: 2px solid #4B98B8; 
-    outline: none; /*enlever le contour par défaut noir*/
+    outline: none;
 }
 
 .saisie_obligatoire{
