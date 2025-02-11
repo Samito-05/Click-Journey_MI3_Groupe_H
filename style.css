@@ -9,8 +9,8 @@
     background: #0772A1;
     display: flex;
     justify-content: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 1vw;
+    padding-top: 1vW;
 }
 
 ul.Haut_Page {
@@ -18,7 +18,7 @@ ul.Haut_Page {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 2vw;
     width: 100%;
 }
 
@@ -45,7 +45,7 @@ li.inactive a:hover {
 }
 
 .logo_petit img{
-    height: 50px;
+    height: 3vw;
     border-radius: 40px;
     padding-left: 0;
     margin-left: 10px;
@@ -53,11 +53,10 @@ li.inactive a:hover {
 }
 
 .profile img{
-    height: 50px;
+    height: 3vw;
     border-radius: 40px;
     padding-right: 0;
     margin-right: 10px;
-    vertical-align: middle;
 }
 
 .profile img:hover{
@@ -368,6 +367,12 @@ img.modif {
     width: 20px;
     height: 20px;
     cursor: pointer;
+}
+
+img.modif:hover {
+    background: lightgray;
+    border-radius: 1vw;
+    
 }
 
 fieldset.modif_compte {
