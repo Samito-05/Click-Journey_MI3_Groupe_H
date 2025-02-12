@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-color: #0772A1;
+    --second-color: #4D98B8;
+}
+
+
 /* Entete de toute nos pages */
 .Entete {
     width: 100%;
-    background: #0772A1;
+    background: var(--main-color);
     display: flex;
     justify-content: center;
     padding: 1vw 0;
@@ -43,11 +49,11 @@ li.active a {
 }
 
 li.inactive a {
-    background: #0772A1;
+    background: var(--main-color);
 }
 
 li.inactive a:hover {
-    background: #4b98b8;
+    background: var(--second-color);
     border-radius: 15px;
 }
 
@@ -92,19 +98,28 @@ div.destination {
 
 .recherche {
     display: flex;
-    align-items: center;
-    width: 33%;
-    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.recherche_txt {
+    width: 30%;
+    margin: auto 1vw;
+}
+
+
+.boutton_recherche {
+    margin: 1vw auto;
+    text-align: center;
+    border: none;
+    border-radius: 1vw;
+    background: var(--second-color);
 }
 
 .recherche_img img {
-    margin: 0 1vw;
+    vertical-align: middle;
+    margin: .5vw;
     width: 2.35vw;
-}
-
-.recherche_img img:hover {
-    background: lightgray;
-    border-radius: .25vw;
 }
 
 /* Fin Index.html */
@@ -146,7 +161,7 @@ h2.sous_titre {
 .sejours {
     width: fit-content;
     margin: 100px auto;
-    border: 2px solid #4D98B8;
+    border: 2px solid var(--second-color);
     border-radius: 10px;
     padding: 40px 100px;
 }
@@ -167,7 +182,7 @@ h2.sous_titre {
     font-weight: bold;
     font-size: 28px;
     text-decoration: underline;
-    color: #0772A1;
+    color: var(--main-color);
     padding: 10px;
 }
 
@@ -176,7 +191,7 @@ h2.sous_titre {
 .h2_verification {
     font-family: Arial, sans-serif;
     font-size: 28px;
-    color: #0772A1;
+    color: var(--main-color);
     text-align: center;
     margin: 100px 0 50px;
 }
@@ -184,7 +199,7 @@ h2.sous_titre {
 .field_connexion {
     width: 33%;
     margin: 100px auto;
-    border: 2px solid #4D98B8;
+    border: 2px solid var(--second-color);
     border-radius: 10px;
     padding: 40px 100px;
 }
@@ -194,7 +209,7 @@ h2.sous_titre {
     font-weight: bold;
     font-size: 28px;
     text-decoration: underline;
-    color: #0772A1;
+    color: var(--main-color);
     padding: 10px;
 }
 
@@ -208,7 +223,7 @@ h2.sous_titre {
 .div_connexion,
 .div_verification {
     text-align: center;
-    color: #05587C;
+    color: var(--main-color);
     font-size: 15px;
 }
 
@@ -223,7 +238,7 @@ h2.sous_titre {
 }
 
 .champ_connexion:focus {
-    border: 2px solid #4B98B8;
+    border: 2px solid var(--second-color);
     outline: none;
 }
 
@@ -232,7 +247,7 @@ h2.sous_titre {
     height: 45px;
     margin-top: 40px;
     text-align: center;
-    background-color: #4B98B8;
+    background-color: var(--second-color);
     padding: 12px;
     border: none;
     font-size: 16px;
@@ -277,7 +292,7 @@ h2.sous_titre {
     font-weight: bold;
     font-size: 28px;
     text-decoration: underline;
-    color: #0772A1;
+    color: var(--main-color);
     padding: 10px;
 }
 
@@ -307,7 +322,7 @@ h2.sous_titre {
 }
 
 .champ_inscription:focus {
-    border: 2px solid #4B98B8;
+    border: 2px solid var(--second-color);
     outline: none;
 }
 
@@ -318,17 +333,21 @@ h2.sous_titre {
     color: #05587C;
 }
 
-.boutton_inscription {
+.boutton_inscription,
+.boutton_connexion,
+.boutton_modif,
+.boutton_verif {
     width: 410px;
     margin-top: 40px;
     text-align: center;
-    background-color: #4B98B8;
+    background-color: var(--second-color);
     padding: 12px;
     border: none;
     font-size: 16px;
     font-weight: bold;
     color: white;
     cursor: pointer;
+    border-radius: 1vw;
 }
 
 button:hover {
@@ -345,7 +364,7 @@ button:hover {
 .deja_inscrit {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
-    color: #0772A1;
+    color: var(--main-color);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -375,22 +394,6 @@ select {
     font-size: 14px;
     margin-top: .5vw;
     margin-bottom: .5vw;
-}
-
-button {
-    background-color: gray;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 15px;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #377a8c;
 }
 
 .div_filtre {
