@@ -90,6 +90,19 @@ h1.Titre {
     padding: 25px;   
 }
 
+.destination img{
+    width: 45%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+}
+
+div.destination {
+    display: inline;
+    width: 100%;
+    margin: 2vw;
+}
+
 /* Fin Index.html */
 
 /* A_propos.html */
@@ -428,19 +441,6 @@ table.modif_compte {
 
 .div_modif{
     display: flex;
-}
-
-.destination img {
-    width: 45%;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    border-radius: 2vw;
-}
-
-div.destination {
-    display: inline;
-    width: 100%;
-    margin: 2vw;
 }
 
 .carte{
