@@ -412,8 +412,10 @@ button:hover {
 }
 
 img.modif {
-    width: 20px;
-    height: 20px;
+    margin-top: .25vw;
+    margin-left: 1vw;
+    width: 2vw;
+    height: 2vw;
     cursor: pointer;
 }
 
