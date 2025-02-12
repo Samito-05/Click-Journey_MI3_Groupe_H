@@ -5,14 +5,12 @@
 }
 
 /* Entete de toute nos pages */
-
 .Entete {
     width: 100%;
     background: #0772A1;
     display: flex;
     justify-content: center;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
+    padding: 1vw 0;
 }
 
 ul.Haut_Page {
@@ -20,31 +18,32 @@ ul.Haut_Page {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2vw;.field_connexion {
+    font-size: 2vw;
+    width: 100%;
+}
+
+.field_connexion,
+.feild_verification {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    }
-    
-    width: 100%;
+}
+
+li.active a,
+li.inactive a {
+    color: white;
+    padding: 0 25px;
+    text-decoration: none;
 }
 
 li.active a {
     background: #05587C;
     border-radius: 15px;
-    color: white;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-decoration: none;
 }
 
 li.inactive a {
     background: #0772A1;
-    color: white;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-decoration: none;                                  
 }
 
 li.inactive a:hover {
@@ -52,48 +51,36 @@ li.inactive a:hover {
     border-radius: 15px;
 }
 
-.logo_petit img{
+.logo_petit img,
+.profile img {
     height: 3vw;
     border-radius: 40px;
-    padding-left: 0;
-    margin-left: 10px;
+    margin: 0 10px;
     vertical-align: middle;
 }
 
-.profile img{
-    height: 3vw;
-    border-radius: 40px;
-    padding-right: 0;
-    margin-right: 10px;
-}
-
-.profile img:hover{
+.profile img:hover {
     background: lightgray;
 }
 
-/* Fin entete pour nos pages*/
+/* Fin entete pour nos pages */
 
 /* Index.html */
-
-.img_acceuil{
+.img_acceuil {
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-
+    padding: 0 25px 25px;
 }
 
 h1.Titre {
-    color :black;
+    color: black;
     font-size: 5vw;
     text-align: center;
-    padding: 25px;   
+    padding: 25px;
 }
 
-.destination img{
+.destination img {
     width: 45%;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin: 2vw 0;
     border-radius: 2vw;
 }
 
@@ -103,11 +90,28 @@ div.destination {
     margin: 2vw;
 }
 
+.recherche {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    margin: auto;
+}
+
+.recherche_img img {
+    margin: 0 1vw;
+    width: 2.35vw;
+}
+
+.recherche_img img:hover {
+    background: lightgray;
+    border-radius: .25vw;
+}
+
 /* Fin Index.html */
 
 /* A_propos.html */
-
-p.a_propos {
+p.a_propos,
+h2.sous_titre {
     font-size: 2vw;
     text-align: justify;
     padding: 25px;
@@ -115,8 +119,6 @@ p.a_propos {
 
 h2.sous_titre {
     font-size: 3vw;
-    text-align: justify;
-    padding: 25px;
 }
 
 .photo_equipe {
@@ -129,7 +131,6 @@ h2.sous_titre {
     height: 150px;
     border-radius: 75px;
     padding: 10px;
-    padding-bottom: none;
 }
 
 .co-fondateur {
@@ -137,26 +138,21 @@ h2.sous_titre {
     font-style: italic;
     text-align: center;
     padding: 25px;
-    padding-top: none;
 }
 
 /* Fin A_propos.html */
 
 /* Sejours.html */
-
-.sejours{
+.sejours {
     width: fit-content;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
     border: 2px solid #4D98B8;
     border-radius: 10px;
     padding: 40px 100px;
 }
 
-
-.filtre{
-    margin-top: 10px; 
+.filtre {
+    margin-top: 10px;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -166,7 +162,7 @@ h2.sous_titre {
 
 /* Fin Sejours.html */
 
-.legend_modif{
+.legend_modif {
     text-align: center;
     font-weight: bold;
     font-size: 28px;
@@ -175,29 +171,25 @@ h2.sous_titre {
     padding: 10px;
 }
 
-
 /* Connexion.html */
-
-.h2_connexion{
+.h2_connexion,
+.h2_verification {
     font-family: Arial, sans-serif;
     font-size: 28px;
     color: #0772A1;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 100px 0 50px;
 }
 
-.field_connexion{
+.field_connexion {
     width: 33%;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
     border: 2px solid #4D98B8;
     border-radius: 10px;
     padding: 40px 100px;
 }
 
-.legend_connexion{
+.legend_connexion {
     text-align: center;
     font-weight: bold;
     font-size: 28px;
@@ -206,26 +198,26 @@ h2.sous_titre {
     padding: 10px;
 }
 
-.form_connexion {
+.form_connexion,
+.form_verification {
     text-align: center;
-    margin: auto;
+    margin: 2vw auto;
     font-family: Arial, sans-serif;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    }
+}
 
-.div_connexion {
+.div_connexion,
+.div_verification {
     text-align: center;
     color: #05587C;
     font-size: 15px;
 }
 
-.champ_connexion {
+.champ_connexion,
+.champ_verification {
     width: 410px;
     height: 40px;
     margin-bottom: 20px;
-    margin-left: -2px;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     background-color: #F7F7F7;
 }
@@ -239,7 +231,6 @@ h2.sous_titre {
     width: 410px;
     height: 45px;
     margin-top: 40px;
-    align-items: center;
     text-align: center;
     background-color: #4B98B8;
     padding: 12px;
@@ -262,7 +253,7 @@ h2.sous_titre {
     margin-top: 20px;
 }
 
-.s_inscrire a{
+.s_inscrire a {
     width: 150px;
     margin-left: 5px;
     text-decoration: none;
@@ -275,12 +266,13 @@ h2.sous_titre {
 /* Fin Connexion.html */
 
 /* Inscription.html */
-
-.form_inscription {
+.form_inscription,
+.form_profile {
     font-family: Arial, sans-serif;
 }
 
-.legend_inscription{
+.legend_inscription,
+.legend_profile {
     text-align: center;
     font-weight: bold;
     font-size: 28px;
@@ -289,78 +281,76 @@ h2.sous_titre {
     padding: 10px;
 }
 
-.field_inscription{
+.field_inscription,
+.field_profile {
     width: 33%;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
     border: 2px solid #4D98B8;
     border-radius: 10px;
     padding: 40px 100px;
 }
 
-.div_ins{
+.div_ins,
+.div_profile {
     text-align: left;
     color: #05587C;
     font-size: 15px;
 }
 
-.champ_inscription{
+.champ_inscription {
     width: 410px;
     height: 40px;
     margin-bottom: 20px;
-    margin-left: -2px;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     background-color: #F7F7F7;
 }
+
 .champ_inscription:focus {
-    border: 2px solid #4B98B8; 
+    border: 2px solid #4B98B8;
     outline: none;
 }
 
-.saisie_obligatoire{
+.saisie_obligatoire {
     font-family: Arial, sans-serif;
     margin-left: 290px;
     font-size: 14px;
-    color: #05587C
+    color: #05587C;
 }
 
-.boutton_inscription{
+.boutton_inscription {
     width: 410px;
     margin-top: 40px;
-    align-items: center;
     text-align: center;
     background-color: #4B98B8;
     padding: 12px;
     border: none;
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: bold;
     color: white;
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #05587C;
 }
 
-.hr_inscription{
+.hr_inscription {
     height: 1px;
     border: none;
     background-color: #05587C;
-    margin-top: 50px;
-    margin-bottom: 30px; 
+    margin: 50px 0 30px;
 }
 
-.deja_inscrit{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.deja_inscrit {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
     color: #0772A1;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.deja_inscrit a{
+.deja_inscrit a {
     display: block;
     width: 150px;
     padding: 10px;
@@ -376,13 +366,15 @@ button:hover{
 
 /* Fin Inscription.html */
 
-input, select {
+input,
+select {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: .75vw;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    margin-top: .5vw;
+    margin-bottom: .5vw;
 }
 
 button {
@@ -412,8 +404,7 @@ button:hover {
 }
 
 img.modif {
-    margin-top: .25vw;
-    margin-left: 1vw;
+    margin: .25vw 0 0 1vw;
     width: 2vw;
     height: 2vw;
     cursor: pointer;
@@ -422,46 +413,38 @@ img.modif {
 img.modif:hover {
     background: lightgray;
     border-radius: 1vw;
-    
 }
 
 fieldset.modif_compte {
     width: 33%;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
     border: 2px solid #4D98B8;
-    border-radius: 10px;  
+    border-radius: 10px;
 }
 
-table.modif_compte {    
+table.modif_compte {
     border-collapse: collapse;
-    margin: auto;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin: 2vw auto;
 }
 
-.div_modif{
+.div_modif {
     display: flex;
 }
 
-.carte{
+.carte {
     width: 66%;
     height: 30vw;
     border: none;
     border-radius: 10px;
 }
 
-iframe.carte{
+iframe.carte {
     display: flex;
     margin: auto;
 }
 
-p.txt_destinations{
+p.txt_destinations {
     font-size: 2vw;
     text-align: justify;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding: 5vw 10vw;
 }
