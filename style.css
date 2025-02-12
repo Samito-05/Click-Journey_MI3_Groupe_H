@@ -18,7 +18,7 @@
     background: var(--main-color);
     display: flex;
     justify-content: center;
-    padding: 1vw 0;
+    padding: 1vmin 0;
 }
 
 ul.Haut_Page {
@@ -26,7 +26,7 @@ ul.Haut_Page {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2vw;
+    font-size: 2vmin;
     width: 100%;
 }
 
@@ -41,13 +41,13 @@ ul.Haut_Page {
 li.active a,
 li.inactive a {
     color: white;
-    padding: 0 3vw;
+    padding: 0 3vmin;
     text-decoration: none;
 }
 
 li.active a {
     background: var(--third-color);
-    border-radius: 2vw;
+    border-radius: 2vmin;
 }
 
 li.inactive a {
@@ -56,14 +56,14 @@ li.inactive a {
 
 li.inactive a:hover {
     background: var(--second-color);
-    border-radius: 2vw;
+    border-radius: 2vmin;
 }
 
 .logo_petit img,
 .profile img {
-    height: 3vw;
-    border-radius: 2vw;
-    margin: 0 1vw;
+    height: 3vmin;
+    border-radius: 2vmin;
+    margin: 0 1vmin;
     vertical-align: middle;
 }
 
@@ -76,21 +76,21 @@ li.inactive a:hover {
 /* Index.html */
 h1.Titre {
     color: black;
-    font-size: 5vw;
+    font-size: 5vmin;
     text-align: center;
-    padding: 2.5vw;
+    padding: 2.5vmin;
 }
 
 .destination img {
     width: 45%;
-    margin: 2vw 0;
-    border-radius: 2vw;
+    margin: 2vmin 0;
+    border-radius: 2vmin;
 }
 
 div.destination {
     display: inline;
     width: 100%;
-    margin: 2vw;
+    margin: 2vmin;
 }
 
 .recherche {
@@ -101,22 +101,22 @@ div.destination {
 
 .recherche_txt {
     width: 30%;
-    margin: auto 1vw;
+    margin: auto 1vmin;
 }
 
 
 .boutton_recherche {
-    margin: 1vw auto;
+    margin: 1vmin auto;
     text-align: center;
     border: none;
-    border-radius: 1vw;
+    border-radius: 1vmin;
     background: var(--second-color);
 }
 
 .recherche_img img {
     vertical-align: middle;
-    margin: .5vw;
-    width: 2.35vw;
+    margin: .5vmin;
+    width: 2.35vmin;
 }
 
 /* Fin Index.html */
@@ -124,32 +124,32 @@ div.destination {
 /* A_propos.html */
 p.a_propos,
 h2.sous_titre {
-    font-size: 1.5vw;
+    font-size: 1.5vmin;
     text-align: justify;
-    padding: 2vw 5vw;
+    padding: 2vmin 5vmin;
 }
 
 h2.sous_titre {
-    font-size: 3vw;
+    font-size: 3vmin;
 }
 
 .photo_equipe {
     display: flex;
     justify-content: center;
-    padding: 2vw;
+    padding: 2vmin;
 }
 
 .photo_equipe img {
-    height: 15vw;
-    border-radius: 7.5vw;
-    padding: 2vw;
+    height: 15vmin;
+    border-radius: 7.5vmin;
+    padding: 2vmin;
 }
 
 .co-fondateur {
-    font-size: 2vw;
+    font-size: 2vmin;
     font-style: italic;
     text-align: center;
-    padding: 2.5vw;
+    padding: 2.5vmin;
 }
 
 /* Fin A_propos.html */
@@ -157,18 +157,18 @@ h2.sous_titre {
 /* Sejours.html */
 .sejours {
     width: fit-content;
-    margin: 10vw auto;
+    margin: 10vmin auto;
     border: 2px solid var(--second-color);
-    border-radius: 2vw;
-    padding: 4vw 10vw;
+    border-radius: 2vmin;
+    padding: 4vmin 10vmin;
 }
 
 .filtre {
-    margin-top: 2vw;
+    margin-top: 2vmin;
     width: 90%;
     margin: auto;
     text-align: center;
-    font-size: 1vw;
+    font-size: 2vmin;
     font-weight: bold;
 }
 
@@ -178,33 +178,33 @@ h2.sous_titre {
 .h2_connexion,
 .h2_verification {
     font-family: Arial, sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.5vmin;
     color: var(--main-color);
     text-align: center;
-    margin: 10vw 0 5vw;
+    margin: 8vmin 0 3.5vmin;
 }
 
 .field_connexion {
-    width: 33%;
-    margin: 10vw auto;
+    width: 25%;
+    margin: 8vmin auto;
     border: 2px solid var(--second-color);
-    border-radius: 2vw;
-    padding: 4vw 10vw;
+    border-radius: 2vmin;
+    padding: 3.5vmin 8vmin;
 }
 
 .legend_connexion {
     text-align: center;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 3vmin;
     text-decoration: underline;
     color: var(--main-color);
-    padding: 2vw;
+    padding: 2vmin;
 }
 
 .form_connexion,
 .form_verification {
     text-align: center;
-    margin: 2vw auto;
+    margin: 2vmin auto;
     font-family: Arial, sans-serif;
 }
 
@@ -212,16 +212,16 @@ h2.sous_titre {
 .div_verification {
     text-align: center;
     color: var(--main-color);
-    font-size: 1.5vw;
+    font-size: 1.5vmin;
 }
 
 .champ_connexion,
 .champ_verification {
-    width: 42vw;
-    height: 3vw;
-    margin-bottom: 2vw;
-    padding: 1vw 1.5vw;
-    border-radius: 1vw;
+    width: 38vmin;
+    height: 3vmin;
+    margin-bottom: 2vmin;
+    padding: 1vmin 1.5vmin;
+    border-radius: 1vmin;
     background-color: var(--field-color);
 }
 
@@ -231,14 +231,14 @@ h2.sous_titre {
 }
 
 .boutton_connexion {
-    width: 42vw;
-    height: 4vw;
-    margin-top: 4vw;
+    width: 38vmin;
+    height: 4vmin;
+    margin-top: 4vmin;
     text-align: center;
     background-color: var(--second-color);
-    padding: 1.2vw;
+    padding: 1.2vmin;
     border: none;
-    font-size: 1.5vw;
+    font-size: 1.5vmin;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -250,17 +250,17 @@ h2.sous_titre {
 
 .s_inscrire {
     font-family: Arial, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.5vmin;
     color: var(--third-color);
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 2vmin;
 }
 
 .s_inscrire a {
-    width: 15vw;
-    margin-left: .5vw;
+    width: 15vmin;
+    margin-left: .5vmin;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.5vmin;
     color: var(--third-color);
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -278,34 +278,34 @@ h2.sous_titre {
 .legend_profile {
     text-align: center;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 3vmin;
     text-decoration: underline;
     color: var(--main-color);
-    padding: 2vw;
+    padding: 2vmin;
 }
 
 .field_inscription,
 .field_profile {
-    width: 33%;
-    margin: 10vw auto;
+    width: 25%;
+    margin: 8vmin auto;
     border: 2px solid #4D98B8;
-    border-radius: 2vw;
-    padding: 4vw 12vw;
+    border-radius: 2vmin;
+    padding: 4vmin 10vmin;
 }
 
 .div_ins,
 .div_profile {
     text-align: left;
     color: var(--third-color);
-    font-size: 1.5vw;
+    font-size: 1.5vmin;
 }
 
 .champ_inscription {
-    width: 42vw;
-    height: 4vw;
-    margin-bottom: 2vw;
-    padding: 1vw 1.5vw;
-    border-radius: .5 vw;
+    width: 38vmin;
+    height: 4vmin;
+    margin-bottom: 2vmin;
+    padding: 1vmin 1.5vmin;
+    border-radius: .5vmin;
     background-color: var(--field-color);
 }
 
@@ -316,8 +316,8 @@ h2.sous_titre {
 
 .saisie_obligatoire {
     font-family: Arial, sans-serif;
-    margin-left: 29vw;
-    font-size: 1.4vw;
+    margin-left: 25vmin;
+    font-size: 1.4vmin;
     color: var(--third-color);
 }
 
@@ -325,17 +325,17 @@ h2.sous_titre {
 .boutton_connexion,
 .boutton_modif,
 .boutton_verif {
-    width: 42vw;
-    margin-top: 4vw;
+    width: 38vmin;
+    margin-top: 4vmin;
     text-align: center;
     background-color: var(--second-color);
-    padding: 1.2vw;
+    padding: 1.2vmin;
     border: none;
-    font-size: 1.6vw;
+    font-size: 1.6vmin;
     font-weight: bold;
     color: white;
     cursor: pointer;
-    border-radius: 1vw;
+    border-radius: 1vmin;
 }
 
 button:hover {
@@ -346,26 +346,26 @@ button:hover {
     height: 1px;
     border: none;
     background-color: var(--third-color);
-    margin: 5vw 0 3vw;
+    margin: 5vmin 0 3vmin;
 }
 
 .deja_inscrit {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2vw;
+    font-size: 2vmin;
     color: var(--main-color);
     text-align: center;
-    margin-bottom: 2vw;
+    margin-bottom: 2vmin;
 }
 
 .deja_inscrit a {
     display: block;
-    width: 15vw;
-    padding: 2vw;
-    margin: 2vw auto;
+    width: 12vmin;
+    padding: 2vmin;
+    margin: 2vmin auto;
     background-color: var(--third-color);
-    border-radius: 1vw;
+    border-radius: 1vmin;
     text-decoration: none;
-    font-size: 1.4vw;
+    font-size: 1.4vmin;
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -377,16 +377,16 @@ input,
 select {
     background: var(--field-color);
     width: 100%;
-    padding: .75vw;
+    padding: .75vmin;
     border: 1px solid var(--third-color);
-    border-radius: .5vw;
-    font-size: 1.5vw;
-    margin-top: .5vw;
-    margin-bottom: .5vw;
+    border-radius: .5vmin;
+    font-size: 1.5vmin;
+    margin-top: .5vmin;
+    margin-bottom: .5vmin;
 }
 
 .div_filtre {
-    margin-top: 2vw;
+    margin-top: 2vmin;
 }
 
 .checkbox_options {
@@ -396,27 +396,27 @@ select {
 }
 
 img.modif {
-    margin: .25vw 0 0 1vw;
-    width: 2vw;
-    height: 2vw;
+    margin: .25vmin 0 0 1vmin;
+    width: 2vmin;
+    height: 2vmin;
     cursor: pointer;
 }
 
 img.modif:hover {
     background: lightgray;
-    border-radius: 1vw;
+    border-radius: 1vmin;
 }
 
 fieldset.modif_compte {
-    width: 33%;
-    margin: 10vw auto;
+    width: 25%;
+    margin: 10vmin auto;
     border: 2px solid var(--second-color);
-    border-radius: 2vw;
+    border-radius: 2vmin;
 }
 
 table.modif_compte {
     border-collapse: collapse;
-    margin: 2vw auto;
+    margin: 2vmin auto;
 }
 
 .div_modif {
@@ -425,9 +425,9 @@ table.modif_compte {
 
 .carte {
     width: 66%;
-    height: 30vw;
+    height: 30vmin;
     border: none;
-    border-radius: 2vw;
+    border-radius: 2vmin;
 }
 
 iframe.carte {
@@ -436,7 +436,7 @@ iframe.carte {
 }
 
 p.txt_destinations {
-    font-size: 2vw;
+    font-size: 2vmin;
     text-align: justify;
-    padding: 5vw 10vw;
+    padding: 5vmin 10vmin;
 }
