@@ -31,7 +31,7 @@ ul.Haut_Page {
 }
 
 .field_connexion,
-.feild_verification {
+.field_verification {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,13 +41,13 @@ ul.Haut_Page {
 li.active a,
 li.inactive a {
     color: white;
-    padding: 0 25px;
+    padding: 0 3vw;
     text-decoration: none;
 }
 
 li.active a {
     background: var(--third-color);
-    border-radius: 15px;
+    border-radius: 2vw;
 }
 
 li.inactive a {
@@ -56,14 +56,14 @@ li.inactive a {
 
 li.inactive a:hover {
     background: var(--second-color);
-    border-radius: 15px;
+    border-radius: 2vw;
 }
 
 .logo_petit img,
 .profile img {
     height: 3vw;
-    border-radius: 40px;
-    margin: 0 10px;
+    border-radius: 2vw;
+    margin: 0 1vw;
     vertical-align: middle;
 }
 
@@ -74,16 +74,11 @@ li.inactive a:hover {
 /* Fin entete pour nos pages */
 
 /* Index.html */
-.img_acceuil {
-    width: 100%;
-    padding: 0 25px 25px;
-}
-
 h1.Titre {
     color: black;
     font-size: 5vw;
     text-align: center;
-    padding: 25px;
+    padding: 2.5vw;
 }
 
 .destination img {
@@ -129,9 +124,9 @@ div.destination {
 /* A_propos.html */
 p.a_propos,
 h2.sous_titre {
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: justify;
-    padding: 25px;
+    padding: 2vw 5vw;
 }
 
 h2.sous_titre {
@@ -141,20 +136,20 @@ h2.sous_titre {
 .photo_equipe {
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding: 2vw;
 }
 
 .photo_equipe img {
-    height: 150px;
-    border-radius: 75px;
-    padding: 10px;
+    height: 15vw;
+    border-radius: 7.5vw;
+    padding: 2vw;
 }
 
 .co-fondateur {
-    font-size: 18px;
+    font-size: 2vw;
     font-style: italic;
     text-align: center;
-    padding: 25px;
+    padding: 2.5vw;
 }
 
 /* Fin A_propos.html */
@@ -162,14 +157,14 @@ h2.sous_titre {
 /* Sejours.html */
 .sejours {
     width: fit-content;
-    margin: 100px auto;
+    margin: 10vw auto;
     border: 2px solid var(--second-color);
-    border-radius: 10px;
-    padding: 40px 100px;
+    border-radius: 2vw;
+    padding: 4vw 10vw;
 }
 
 .filtre {
-    margin-top: 10px;
+    margin-top: 2vw;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -179,40 +174,31 @@ h2.sous_titre {
 
 /* Fin Sejours.html */
 
-.legend_modif {
-    text-align: center;
-    font-weight: bold;
-    font-size: 28px;
-    text-decoration: underline;
-    color: var(--main-color);
-    padding: 10px;
-}
-
 /* Connexion.html */
 .h2_connexion,
 .h2_verification {
     font-family: Arial, sans-serif;
-    font-size: 28px;
+    font-size: 2.5vw;
     color: var(--main-color);
     text-align: center;
-    margin: 100px 0 50px;
+    margin: 10vw 0 5vw;
 }
 
 .field_connexion {
     width: 33%;
-    margin: 100px auto;
+    margin: 10vw auto;
     border: 2px solid var(--second-color);
-    border-radius: 10px;
-    padding: 40px 100px;
+    border-radius: 2vw;
+    padding: 4vw 10vw;
 }
 
 .legend_connexion {
     text-align: center;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 3vw;
     text-decoration: underline;
     color: var(--main-color);
-    padding: 10px;
+    padding: 2vw;
 }
 
 .form_connexion,
@@ -226,16 +212,16 @@ h2.sous_titre {
 .div_verification {
     text-align: center;
     color: var(--main-color);
-    font-size: 15px;
+    font-size: 1.5vw;
 }
 
 .champ_connexion,
 .champ_verification {
-    width: 410px;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 8px 15px;
-    border-radius: 5px;
+    width: 42vw;
+    height: 3vw;
+    margin-bottom: 2vw;
+    padding: 1vw 1.5vw;
+    border-radius: 1vw;
     background-color: var(--field-color);
 }
 
@@ -245,14 +231,14 @@ h2.sous_titre {
 }
 
 .boutton_connexion {
-    width: 410px;
-    height: 45px;
-    margin-top: 40px;
+    width: 42vw;
+    height: 4vw;
+    margin-top: 4vw;
     text-align: center;
     background-color: var(--second-color);
-    padding: 12px;
+    padding: 1.2vw;
     border: none;
-    font-size: 16px;
+    font-size: 1.5vw;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -264,17 +250,17 @@ h2.sous_titre {
 
 .s_inscrire {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1.5vw;
     color: var(--third-color);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2vw;
 }
 
 .s_inscrire a {
-    width: 150px;
-    margin-left: 5px;
+    width: 15vw;
+    margin-left: .5vw;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.5vw;
     color: var(--third-color);
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -292,34 +278,34 @@ h2.sous_titre {
 .legend_profile {
     text-align: center;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 3vw;
     text-decoration: underline;
     color: var(--main-color);
-    padding: 10px;
+    padding: 2vw;
 }
 
 .field_inscription,
 .field_profile {
     width: 33%;
-    margin: 100px auto;
+    margin: 10vw auto;
     border: 2px solid #4D98B8;
-    border-radius: 10px;
-    padding: 40px 120px;
+    border-radius: 2vw;
+    padding: 4vw 12vw;
 }
 
 .div_ins,
 .div_profile {
     text-align: left;
     color: var(--third-color);
-    font-size: 15px;
+    font-size: 1.5vw;
 }
 
 .champ_inscription {
-    width: 410px;
-    height: 40px;
-    margin-bottom: 20px;
-    padding: 8px 15px;
-    border-radius: 5px;
+    width: 42vw;
+    height: 4vw;
+    margin-bottom: 2vw;
+    padding: 1vw 1.5vw;
+    border-radius: .5 vw;
     background-color: var(--field-color);
 }
 
@@ -330,8 +316,8 @@ h2.sous_titre {
 
 .saisie_obligatoire {
     font-family: Arial, sans-serif;
-    margin-left: 290px;
-    font-size: 14px;
+    margin-left: 29vw;
+    font-size: 1.4vw;
     color: var(--third-color);
 }
 
@@ -339,13 +325,13 @@ h2.sous_titre {
 .boutton_connexion,
 .boutton_modif,
 .boutton_verif {
-    width: 410px;
-    margin-top: 40px;
+    width: 42vw;
+    margin-top: 4vw;
     text-align: center;
     background-color: var(--second-color);
-    padding: 12px;
+    padding: 1.2vw;
     border: none;
-    font-size: 16px;
+    font-size: 1.6vw;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -360,26 +346,26 @@ button:hover {
     height: 1px;
     border: none;
     background-color: var(--third-color);
-    margin: 50px 0 30px;
+    margin: 5vw 0 3vw;
 }
 
 .deja_inscrit {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
+    font-size: 2vw;
     color: var(--main-color);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 
 .deja_inscrit a {
     display: block;
-    width: 150px;
-    padding: 10px;
-    margin: 20px auto;
+    width: 15vw;
+    padding: 2vw;
+    margin: 2vw auto;
     background-color: var(--third-color);
-    border-radius: 8px;
+    border-radius: 1vw;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.4vw;
     color: white;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -393,14 +379,14 @@ select {
     width: 100%;
     padding: .75vw;
     border: 1px solid var(--third-color);
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: .5vw;
+    font-size: 1.5vw;
     margin-top: .5vw;
     margin-bottom: .5vw;
 }
 
 .div_filtre {
-    margin-top: 10px;
+    margin-top: 2vw;
 }
 
 .checkbox_options {
@@ -423,9 +409,9 @@ img.modif:hover {
 
 fieldset.modif_compte {
     width: 33%;
-    margin: 100px auto;
+    margin: 10vw auto;
     border: 2px solid var(--second-color);
-    border-radius: 10px;
+    border-radius: 2vw;
 }
 
 table.modif_compte {
@@ -441,7 +427,7 @@ table.modif_compte {
     width: 66%;
     height: 30vw;
     border: none;
-    border-radius: 10px;
+    border-radius: 2vw;
 }
 
 iframe.carte {
