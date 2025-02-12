@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
+/* Entete de toute nos pages */
+
 .Entete {
     width: 100%;
     background: #0772A1;
     display: flex;
     justify-content: center;
     padding-bottom: 1vw;
-    padding-top: 1vW;
+    padding-top: 1vw;
 }
 
 ul.Haut_Page {
@@ -19,10 +21,10 @@ ul.Haut_Page {
     align-items: center;
     justify-content: center;
     font-size: 2vw;.field_connexion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     }
     
     width: 100%;
@@ -58,15 +60,6 @@ li.inactive a:hover {
     vertical-align: middle;
 }
 
-.legend_modif{
-    text-align: center;
-    font-weight: bold;
-    font-size: 28px;
-    text-decoration: underline;
-    color: #0772A1;
-    padding: 10px;
-}
-
 .profile img{
     height: 3vw;
     border-radius: 40px;
@@ -78,13 +71,9 @@ li.inactive a:hover {
     background: lightgray;
 }
 
-h1.Titre {
-    color :black;
-    font-size: 5vw;
-    text-align: center;
-    padding: 25px;
-    
-}
+/* Fin entete pour nos pages*/
+
+/* Index.html */
 
 .img_acceuil{
     width: 100%;
@@ -93,6 +82,17 @@ h1.Titre {
     padding-bottom: 25px;
 
 }
+
+h1.Titre {
+    color :black;
+    font-size: 5vw;
+    text-align: center;
+    padding: 25px;   
+}
+
+/* Fin Index.html */
+
+/* A_propos.html */
 
 p.a_propos {
     font-size: 2vw;
@@ -127,7 +127,44 @@ h2.sous_titre {
     padding-top: none;
 }
 
-/*Connexion.html*/
+/* Fin A_propos.html */
+
+/* Sejours.html */
+
+.sejours{
+    width: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px solid #4D98B8;
+    border-radius: 10px;
+    padding: 40px 100px;
+}
+
+
+.filtre{
+    margin-top: 10px; 
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+/* Fin Sejours.html */
+
+.legend_modif{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;
+    color: #0772A1;
+    padding: 10px;
+}
+
+
+/* Connexion.html */
+
 .h2_connexion{
     font-family: Arial, sans-serif;
     font-size: 28px;
@@ -222,7 +259,10 @@ h2.sous_titre {
     font-weight: bold;
 }
 
-/*Inscription.html*/
+/* Fin Connexion.html */
+
+/* Inscription.html */
+
 .form_inscription {
     font-family: Arial, sans-serif;
 }
@@ -321,32 +361,7 @@ button:hover{
     font-weight: bold;
 }
 
-
-.sejours{
-    width: fit-content;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: 2px solid #4D98B8;
-    border-radius: 10px;
-    padding: 40px 100px;
-}
-
-
-.filtre{
-    margin-top: 10px; 
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    font-size: 1vw;
-    font-weight: bold;
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin: 10px 0 5px;
-}
+/* Fin Inscription.html */
 
 input, select {
     width: 100%;
@@ -413,4 +428,27 @@ table.modif_compte {
 
 .div_modif{
     display: flex;
+}
+
+.destination img {
+    width: 45%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+}
+
+div.destination {
+    display: inline;
+    width: 100%;
+    margin: 2vw;
+}
+
+.carte{
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+iframe.carte{
+    margin: auto;
 }
