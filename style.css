@@ -444,11 +444,22 @@ div.destination {
 }
 
 .carte{
-    width: 50%;
-    margin: auto;
+    width: 66%;
+    height: 30vw;
+    border: none;
     border-radius: 10px;
 }
 
 iframe.carte{
+    display: flex;
     margin: auto;
+}
+
+p.txt_destinations{
+    font-size: 2vw;
+    text-align: justify;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
