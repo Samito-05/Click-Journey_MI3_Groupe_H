@@ -81,16 +81,38 @@ h1.Titre {
     padding: 2.5vmin;
 }
 
-.destination img {
-    width: 45%;
-    margin: 2vmin 0;
-    border-radius: 2vmin;
+.toutes_destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vmin, 1fr));
+    gap: 2vmin;
+    padding: 2vmin;
+    text-align: center;
 }
 
-div.destination {
-    display: inline;
+.destination {
+    background: var(--field-color);
+    border-radius: 1vmin;
+    box-shadow: 0 .5vmin 1vmin rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.destination:hover {
+    transform: scale(1.1);
+}
+
+.destination img {
     width: 100%;
-    margin: 2vmin;
+    height: 16vmin;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.destination p {
+    font-size: 1.5vmin;
+    color: var(--third-color);
+    margin: 1vmin 0;
+    font-weight: bold;
 }
 
 .recherche {
@@ -433,10 +455,4 @@ table.modif_compte {
 iframe.carte {
     display: flex;
     margin: auto;
-}
-
-p.txt_destinations {
-    font-size: 2vmin;
-    text-align: justify;
-    padding: 5vmin 10vmin;
 }
