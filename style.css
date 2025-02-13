@@ -84,7 +84,7 @@ li.inactive a:hover {
 }
 
 h1.Titre {
-    color: black;
+    color: var(--third-color);
     font-size: 5vmin;
     text-align: center;
 }
