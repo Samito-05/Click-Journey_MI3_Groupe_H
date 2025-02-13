@@ -76,10 +76,11 @@ h1.Titre {
 
 .toutes_destinations {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20vmin, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
     gap: 2vmin;
     padding: 2vmin;
     text-align: center;
+    overflow: hidden;
 }
 
 .destination {
@@ -96,7 +97,8 @@ h1.Titre {
 
 .destination img {
     width: 100%;
-    height: 16vmin;
+    height: 20vmin;
+    aspect-ratio: 3 / 2;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
@@ -400,7 +402,7 @@ select {
 }
 
 img.modif {
-    margin: .25vmin 0 0 1vmin;
+    margin: 1.5vmin;
     width: 2vmin;
     height: 2vmin;
     cursor: pointer;
@@ -425,6 +427,10 @@ table.modif_compte {
 
 .div_modif {
     display: flex;
+}
+
+.crayon {
+    vertical-align: baseline;
 }
 
 .carte {
