@@ -158,6 +158,10 @@ h1.Titre {
     border-radius: 10px 10px 0 0;
 }
 
+.destination img:hover{
+    opacity: 0.6;
+}
+
 .destination p {
     font-size: 1.5vmin;
     color: var(--third-color);
