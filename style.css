@@ -460,3 +460,8 @@ iframe.carte {
     display: flex;
     margin: auto;
 }
+
+.table_admin{
+    margin: auto;
+    margin-top: 4vmin;
+}
