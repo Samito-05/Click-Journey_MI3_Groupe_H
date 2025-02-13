@@ -464,4 +464,15 @@ iframe.carte {
 .table_admin{
     margin: auto;
     margin-top: 4vmin;
+    border: solid 1px var(--main-color);
+    border-radius: 2vmin;
+}
+.table_admin th, 
+             td {
+    padding: 1vmin;
+    border-top: solid 1px var(--main-color);
+}
+
+.table_admin th {
+    border-top: none;
 }
