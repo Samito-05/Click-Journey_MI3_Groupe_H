@@ -97,6 +97,11 @@ h1.Titre {
     padding: 2vmin;
     text-align: center;
     overflow: hidden;
+    /*arrière-plan de la section*/
+    padding: 10vmin;
+    background-color: var(--second-color);
+    background-image: url("Images/fond_index.png");
+    background-repeat: no-repeat;
 }
 
 .destination {
