@@ -68,23 +68,25 @@ li.inactive a:hover {
 
 /* Index.html */
 .bande {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Bande.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Bande.jpg"); /*ajouter un effet fondu*/
     background-size: cover; 
     background-position: center; 
     padding: 10vmin; 
-    text-align: center;
-    color: white; 
+    text-align: center; 
+    color: var(--field-color);
+}
+
+.h1_index{
+    /*texte sur image de fond*/
+    padding: 2.5vmin;
+    font-size: 5vmin;
+    margin-bottom: 2vmin;
 }
 
 h1.Titre {
     color: #F7F7F7;
     font-size: 5vmin;
     text-align: center;
-    
-    /*image de fond*/
-    padding: 2.5vmin;
-    font-size: 5vmin;
-    margin-bottom: 2vmin;
 }
 
 .toutes_destinations {
