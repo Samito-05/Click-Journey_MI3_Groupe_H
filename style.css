@@ -283,7 +283,7 @@ h2.sous_titre {
 .field_verification {
     width: 25%;
     margin: 8vmin auto;
-    border: 2px solid #4D98B8;
+    border: 2px solid var(--second-color);
     border-radius: 2vmin;
     padding: 4vmin 10vmin;
 }
