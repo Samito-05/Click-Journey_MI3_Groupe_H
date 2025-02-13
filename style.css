@@ -30,14 +30,6 @@ ul.Haut_Page {
     width: 100%;
 }
 
-.field_connexion,
-.field_verification {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 li.active a,
 li.inactive a {
     color: white;
@@ -127,7 +119,7 @@ h1.Titre {
 }
 
 
-.boutton_recherche {
+.boutton_recherche_acceuil {
     margin: 1vmin auto;
     text-align: center;
     border: none;
@@ -214,15 +206,6 @@ h2.sous_titre {
     padding: 3.5vmin 8vmin;
 }
 
-.legend_connexion {
-    text-align: center;
-    font-weight: bold;
-    font-size: 3vmin;
-    text-decoration: underline;
-    color: var(--main-color);
-    padding: 2vmin;
-}
-
 .form_connexion,
 .form_verification {
     text-align: center;
@@ -250,20 +233,6 @@ h2.sous_titre {
 .champ_connexion:focus {
     border: 2px solid var(--second-color);
     outline: none;
-}
-
-.boutton_connexion {
-    width: 38vmin;
-    height: 4vmin;
-    margin-top: 4vmin;
-    text-align: center;
-    background-color: var(--second-color);
-    padding: 1.2vmin;
-    border: none;
-    font-size: 1.5vmin;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
 }
 
 .boutton_connexion:hover {
@@ -297,7 +266,9 @@ h2.sous_titre {
 }
 
 .legend_inscription,
-.legend_profile {
+.legend_profile,
+.legend_connexion,
+.legend_verif_admin {
     text-align: center;
     font-weight: bold;
     font-size: 3vmin;
@@ -307,7 +278,9 @@ h2.sous_titre {
 }
 
 .field_inscription,
-.field_profile {
+.field_profile,
+.field_connexion,
+.field_verification {
     width: 25%;
     margin: 8vmin auto;
     border: 2px solid #4D98B8;
@@ -346,7 +319,8 @@ h2.sous_titre {
 .boutton_inscription,
 .boutton_connexion,
 .boutton_modif,
-.boutton_verif {
+.boutton_verif,
+.boutton_recherche {
     width: 38vmin;
     margin-top: 4vmin;
     text-align: center;
@@ -362,6 +336,7 @@ h2.sous_titre {
 
 button:hover {
     background-color: var(--third-color);
+    scale: 1.05;
 }
 
 .hr_inscription {
