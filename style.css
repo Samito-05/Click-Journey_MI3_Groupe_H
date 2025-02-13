@@ -68,9 +68,9 @@ li.inactive a:hover {
 
 /* Index.html */
 .bande {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Bande.jpg"); /*ajouter un effet fondu*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("Images/Bande.jpg"); /*ajouter un effet fondu*/
     background-size: cover; 
-    background-position: center; 
+    background-position: left, top; 
     padding: 15vmin 10vmin 22vmin; 
     text-align: center; 
     color: var(--field-color);
