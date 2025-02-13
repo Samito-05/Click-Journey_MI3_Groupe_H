@@ -18,7 +18,7 @@
     background: var(--main-color);
     display: flex;
     justify-content: center;
-    padding: 1vmin 0;
+    padding: 1.5vmin 0;
 }
 
 ul.Haut_Page {
@@ -54,12 +54,13 @@ li.inactive a:hover {
 .logo_petit img,
 .profile img {
     height: 3vmin;
-    border-radius: 2vmin;
+    border-radius: 1.5vmin;
     margin: 0 1vmin;
     vertical-align: middle;
 }
 
-.profile img:hover {
+.profile img:hover,
+.logo_petit img:hover {
     background: lightgray;
 }
 
@@ -390,6 +391,12 @@ select {
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 1vmin;
+}
+
+.checkbox_options p {
+    font-size: 2vmin;
+    padding: 1vmin;
 }
 
 img.modif {
