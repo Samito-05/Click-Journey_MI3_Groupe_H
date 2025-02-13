@@ -68,7 +68,7 @@ li.inactive a:hover {
 
 /* Index.html */
 .bande {
-    background-image: url("Images/Bande.jpg"); 
+    background-image: url("Images/Bande.jpg");
     background-size: cover; 
     background-position: center; 
     padding: 10vmin; 
