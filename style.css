@@ -67,11 +67,27 @@ li.inactive a:hover {
 /* Fin entete pour nos pages */
 
 /* Index.html */
+.bande {
+    background-image: url("Images/Bande.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 10vmin; 
+    text-align: center;
+    text-decoration: underline;
+    color: white; 
+}
+
+    
 h1.Titre {
-    color: black;
+    color: #F7F7F7;
     font-size: 5vmin;
     text-align: center;
+    
+    /*image de fond*/
     padding: 2.5vmin;
+    font-size: 5vmin;
+    margin-bottom: 2vmin;
+    text-shadow: 2px 2px 5px #F7F7F7; /*effet d'ombre*/
 }
 
 .toutes_destinations {
