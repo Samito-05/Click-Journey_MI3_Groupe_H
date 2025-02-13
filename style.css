@@ -68,7 +68,7 @@ li.inactive a:hover {
 
 /* Index.html */
 .bande {
-    background-image: url("Images/Bande.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Bande.jpg");
     background-size: cover; 
     background-position: center; 
     padding: 10vmin; 
@@ -77,7 +77,6 @@ li.inactive a:hover {
     color: white; 
 }
 
-    
 h1.Titre {
     color: #F7F7F7;
     font-size: 5vmin;
