@@ -125,7 +125,7 @@ h1.Titre {
 
 .toutes_destinations {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35vmin, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45vmin, 1fr));
     gap: 2vmin;
     padding: 7vmin;
     text-align: center;
