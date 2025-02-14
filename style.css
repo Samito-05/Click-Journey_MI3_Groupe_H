@@ -125,7 +125,7 @@ h1.Titre {
 
 .toutes_destinations {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45vmin, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50vmin, 1fr));
     gap: 2vmin;
     padding: 7vmin;
     text-align: center;
@@ -152,10 +152,10 @@ h1.Titre {
 
 .destination img {
     width: 100%;
-    height: 20vmin;
-    aspect-ratio: 3 / 2;
+    height: 29vmin;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+    
 }
 
 .destination img:hover{
@@ -438,8 +438,8 @@ button:hover {
 input {
     background: var(--field-color);
     width: 100%;
-    height: 6vmin;
-    padding: .75vmin 2.5vmin;
+    height: 3.5vmin;
+    padding: .25vmin 2.5vmin;
     border: 1px solid var(--second-color);
     border-radius: 5vmin;
     font-size: 1.5vmin;
@@ -447,7 +447,7 @@ input {
     margin-bottom: .5vmin;
 }
 
-input::placeholder { /*text in the input (placeholder)*/
+input::placeholder {
     font-size: 1.7vmin;
     font-style: italic;
     color:var(--third-color); 

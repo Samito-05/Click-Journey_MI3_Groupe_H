@@ -40,7 +40,59 @@
             </div>
         </header>
         <h1 class="Titre">Massif Central</h1>
-        <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11263.361620368445!2d2.665045474081541!3d45.109303131079386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f7e583364b40c1%3A0x71a47cc15caa9046!2sMassif%20Central!5e0!3m2!1sfr!2sfr!4v1739349154270!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="txt_destinations">вкנмѕвנѕкℓνвкѕвνѕкנмвνѕƒкנмвкѕ∂נgн∂ѕριнвѕ∂нн∂нƒкѕℓgн  ѕρℓgнѕк ∂ƒιנвηƒ∂ινн ѕƒνιυgνєяιgν νιуσgιуƒу ιяуσgιzσgуєzяισ ιєzσуgтιєzgι яgισzятуgιуzєяσg gιуgιzєяg zєιуgιzєg zяιуg ιzяяуgιg αяуgι αzgуαιρgу яzαgуιяαρg яуgρzяяgу zєяρуg zєяρgу єzgу єzяуєzgуєg єяуzρgу zєя яgуєzιρ gуzєιgу єzι</p>
+        <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22263.659180695653!2d2.941851040749558!3d45.77204403337511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f7113e6544facd%3A0x940431e190d1c42f!2sPuy%20de%20D%C3%B4me!5e0!3m2!1sfr!2sfr!4v1739531409613!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <fieldset class="sejours">
+            <form action="" method="get">
+
+                <div class="filtre">
+                    <label>Nombre de participants :</label>
+                    <input type="number" name="nombre de personne" min="1" max="10" value="2" step="1"/>
+                </div>
+
+                <div class="filtre">
+                    <label>Duree du sejour :</label>
+                    <input type="number" name="duree_sejour" min="1" max="7" value="3" step="1">
+                </div>
+
+                <div class="filtre">
+                    <label>Date de depart :</label>
+                    <input type="date" name="date_depart" value="2025/01/01">
+                </div>
+
+                <div class="filtre">
+                    <label>Logement :</label>
+                    <select name="logement">
+                        <option value="Hotel">Hotel</option>
+                        <option value="Auberge de Jeunnesse">Auberge de Jeunnesse</option>
+                        <option value="Airbnb">Airbnb</option>
+                        <option value="Clients">Aux clients de gerer</option>
+                    </select>
+                </div>
+
+                <p class="filtre">Options supplémentaires :</p>
+                <div class="checkbox_options">
+                    <label><input type="checkbox" name="option" value="guide"/><p>Guide de montagne</p></label>
+                    <label><input type="checkbox" name="option" value="chalet"/><p>Chalet haute montagne</p></label>
+                </div>
+
+                <p class="filtre">Option alimentaire :</p>
+                <div class="checkbox_options">
+                    <label><input type="checkbox" name="pension" value="sans pension"/><p>Sans pension</p></label>
+                    <label><input type="checkbox" name="pension" value="demi pension"/><p>Demi-pension</p></label>
+                    <label><input type="checkbox" name="pension" value="pension complète"/><p>Pension complète</p></label>
+                </div>
+
+                <p class="filtre">Vacances plutot :</p>
+                <div class="checkbox_options">
+                    <label><input type="checkbox" name="energie" value="sportives"/><p>Sportives</p></label>
+                    <label><input type="checkbox" name="energie" value="chill"/><p>Chill</p></label>
+                    <label><input type="checkbox" name="energie" value="aprentissage"/><p>Aprentissage</p></label>
+                    <label><input type="checkbox" name="energie" value="tout"/><p>Un peu de tout</p></label>
+
+                </div>
+
+                <button type="submit" class="boutton_recherche">Rechercher</button>
+            </form>
+        </fieldset>
     </body>
 </html>
