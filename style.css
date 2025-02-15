@@ -163,7 +163,7 @@ h1.Titre {
 }
 
 .destination p {
-    font-size: 1.5vmin;
+    font-size: 2.5vmin;
     color: var(--third-color);
     margin: 1vmin 0;
     font-weight: bold;
@@ -182,8 +182,8 @@ h1.Titre {
 
 
 .boutton_recherche_acceuil {
-    width: 5vmin;
-    height: 5vmin;
+    width: 4vmin;
+    height: 4vmin;
     margin: 1vmin;
     margin-top: 1.3vmin;
     text-align: center;
@@ -195,7 +195,7 @@ h1.Titre {
 .recherche_img img {
     vertical-align: middle;
     margin: .5vmin;
-    width: 2.35vmin;
+    width: 2vmin;
 }
 
 /* Fin Index.html */
@@ -249,6 +249,12 @@ h2.sous_titre {
     text-align: center;
     font-size: 2vmin;
     font-weight: bold;
+}
+
+p.description{
+    padding: 2vmin 5vmin;
+    text-align: justify;
+    font-size: 1.9vmin;
 }
 
 /* Fin Sejours.html */
@@ -522,7 +528,7 @@ table.modif_compte {
 
 iframe.carte {
     display: flex;
-    margin: auto;
+    margin: 4vmin auto;
 }
 
 .table_admin{
