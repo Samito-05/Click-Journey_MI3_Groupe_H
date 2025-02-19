@@ -464,7 +464,7 @@ select.select {
     background: var(--field-color);
     width: 100%;
     padding: .75vmin;
-    border: 1px solid var(--third-color);
+    border: 1px solid var(--second-color);
     border-radius: .5vmin;
     font-size: 1.5vmin;
     margin-top: .5vmin;
@@ -548,7 +548,7 @@ iframe.carte {
 }
 
 body{
-    background-color: var(--second-color);
+    background-color: var(--field-color);
     background-image: url("Images/fond_index.png");
     background-repeat: round;
     background-position: left, center;
