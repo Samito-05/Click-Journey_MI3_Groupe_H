@@ -550,6 +550,5 @@ iframe.carte {
 body{
     background-color: var(--field-color);
     background-image: url("Images/fond_index.png");
-    background-repeat: round;
     background-position: left, center;
 }
