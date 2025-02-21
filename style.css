@@ -22,12 +22,6 @@
     padding: 1.5vmin 0;
 }
 
-.footer{
-    position:fixed;
-    left:0px;
-    bottom:0px;
-}
-
 ul.Haut_Page {
     list-style-type: none;
     display: flex;
