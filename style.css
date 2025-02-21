@@ -93,7 +93,7 @@ li.inactive a:hover {
 }
 
 h1.Titre {
-    margin-top: 6vmin;
+    padding-top: 6vmin;
     color: var(--third-color);
     font-size: 5vmin;
     text-align: center;
@@ -182,6 +182,7 @@ h1.Titre {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 10vmin;
 }
 
 .recherche_txt {
@@ -189,10 +190,17 @@ h1.Titre {
     margin: auto 1vmin;
 }
 
+.recherche_img {
+    margin: auto 1vmin;
+}
+
+.champ_recherche {
+    height: 5vmin
+}
 
 .boutton_recherche_acceuil {
-    width: 4vmin;
-    height: 4vmin;
+    width: 5vmin;
+    height: 5vmin;
     margin: 1vmin;
     margin-top: 1.3vmin;
     text-align: center;
@@ -204,7 +212,7 @@ h1.Titre {
 .recherche_img img {
     vertical-align: middle;
     margin: .5vmin;
-    width: 2vmin;
+    width: 3vmin;
 }
 
 /* Fin Index.html */
@@ -238,6 +246,7 @@ h2.sous_titre {
     font-style: italic;
     text-align: center;
     padding: 2.5vmin;
+    padding-bottom: 10vmin;
 }
 
 /* Fin A_propos.html */
@@ -352,6 +361,7 @@ p.description{
 .field_connexion,
 .field_verification,
 .field_sejours {
+    backdrop-filter: blur(5px);
     width: 25%;
     margin: 8vmin auto;
     border: 2px solid var(--third-color);
@@ -532,6 +542,7 @@ iframe.carte {
 }
 
 .table_admin{
+    backdrop-filter: blur(5px);
     margin: auto;
     margin-top: 4vmin;
     border: solid 1px var(--main-color);
@@ -547,8 +558,13 @@ iframe.carte {
     border-top: none;
 }
 
+.a_propos{
+    backdrop-filter: blur(5px);
+}
+
 body{
     background-color: var(--field-color);
-    background-image: url("Images/fond_index.png");
+    background-image: url("Images/fond_index1.png");
     background-position: left, center;
+    backdrop-filter: blur(5px);
 }
