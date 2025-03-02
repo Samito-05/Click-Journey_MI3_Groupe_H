@@ -58,7 +58,7 @@ session_start();
         </div>
     <?php endif; ?>
 </header>
-        <h1 class="Titre">GR10 Pyrenées</h1>
+        <h1 class="Titre">Le Pic du Midi de Bigorre</h1>
         <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23367.706035143274!2d0.12049273710369594!3d42.93690152193442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a8235749919997%3A0x136b76e1ff9b200!2sPic%20du%20Midi%20de%20Bigorre!5e0!3m2!1sfr!2sfr!4v1739531253504!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
         <div class="description">

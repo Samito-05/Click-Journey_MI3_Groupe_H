@@ -62,13 +62,13 @@ session_start();
         <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14092.752696067731!2d86.91467536475912!3d27.98813871454328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sEverest!5e0!3m2!1sfr!2sfr!4v1739349214566!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
         <div class="description">
-            <p class="description">...</p>
-            <p class="description">...</p>
-            <p class="description">...</p>
-            <p class="description">...</p>
-            <p class="description">...</p>
-            <p class="description">...</p>
-            <p class="description">...</p>
+            <p class="description">Le <b>Mont Everest</b>, toit du monde culminant à <b>8 849 mètres</b>, est une destination mythique pour les passionnés de haute montagne, d’aventure extrême et de panoramas à couper le souffle. Situé à la frontière entre le Népal et le Tibet, il fait partie de l’Himalaya et attire chaque année des alpinistes du monde entier, venus relever le défi ultime de son ascension.</p>
+            <p class="description">Depuis ses flancs et son sommet, l’Everest offre une vue vertigineuse sur les montagnes environnantes, dont le Lhotse, le Makalu et le Cho Oyu. Même les trekkeurs qui ne visent pas le sommet peuvent admirer des paysages grandioses en atteignant le <b>camp de base de l’Everest</b>, à 5 364 mètres d’altitude, un objectif en soi pour de nombreux aventuriers.</p>
+            <p class="description">Gravir l’Everest est une aventure périlleuse nécessitant une préparation physique et mentale exceptionnelle. L’ascension se fait généralement par la voie népalaise, en passant par le <b>camp de base</b>, puis une série de camps d’altitude avant d’atteindre le sommet, où l’oxygène est extrêmement rare. Les alpinistes doivent affronter le froid extrême, les vents violents et la célèbre <b>zone de la mort</b> au-delà de 8 000 mètres, où le manque d’oxygène met leur endurance à rude épreuve.</p>
+            <p class="description">Pour ceux qui ne visent pas l’ascension complète, le <b>trek jusqu’au camp de base</b> depuis Lukla est une alternative populaire. Ce parcours, qui traverse le <b>Parc national de Sagarmatha</b>, permet de découvrir la culture sherpa, les monastères bouddhistes et des panoramas exceptionnels sur l’Himalaya. Le point de vue de <b>Kala Patthar (5 643 m)</b> est notamment réputé pour offrir l’une des plus belles vues sur l’Everest.</p>
+            <p class="description">L’Everest est un site sacré pour les Sherpas et les bouddhistes tibétains, qui le nomment <b>Chomolungma</b>, "Déesse Mère du Monde". Avant toute ascension, il est de tradition d’effectuer une cérémonie de prière appelée <b>puja</b>, demandant la protection des esprits de la montagne.</p>
+            <p class="description">Après une expédition exigeante, une halte à <b>Kathmandu</b> permet de se reposer et de découvrir la richesse culturelle du Népal, avec ses temples hindous et bouddhistes, son ambiance vibrante et sa gastronomie locale, dont le célèbre <b>dal bhat</b> (plat traditionnel à base de riz et de lentilles).</p>
+            <p class="description"><b>Que ce soit pour une expédition vers le sommet ou un trek à travers la vallée du Khumbu, le Mont Everest offre une aventure inoubliable, mêlant dépassement de soi, contemplation et immersion dans l’une des régions les plus spectaculaires du monde.</b></p>
         </div>
         
         
