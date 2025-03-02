@@ -18,15 +18,15 @@ session_start();
     </div>
     <ul class="Haut_Page">
         <li class="inactive"><a href="../index.php">Accueil</a></li>
-        <li class="inactive"><a href="../html/Sejours.php">Séjours</a></li>
-        <li class="inactive"><a href="../html/A_Propos.php">À Propos</a></li>
+        <li class="inactive"><a href="../pages/Sejours.php">Séjours</a></li>
+        <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
     </ul>
 
     <?php if (!isset($_SESSION['email'])): ?>
         <!-- When logged out -->
         <div class="profile">
             <abbr title="Connexion/Inscription">
-                <a href="../html/Inscription.php">
+                <a href="../pages/Inscription.php">
                     <img src="../Images/profile.png" alt="Profil">
                 </a>
             </abbr>
@@ -35,14 +35,14 @@ session_start();
         <!-- When Admin -->
         <div class="profile">
             <abbr title="Mon Profile">
-                <a href="../html/profile.php">
+                <a href="../pages/profile.php">
                     <img src="../Images/profile.png" alt="Profil">
                 </a>
             </abbr>
         </div>
         <div class="profile">
             <abbr title="Gestion admin">
-                <a href="../html/verif_admin.php">
+                <a href="../pages/verif_admin.php">
                     <img src="../Images/admin.png" alt="Admin">
                 </a>
             </abbr>
@@ -51,7 +51,7 @@ session_start();
         <!-- When Logged in as normal user -->
         <div class="profile">
             <abbr title="Mon Profile">
-                <a href="../html/profile.php">
+                <a href="../pages/profile.php">
                     <img src="../Images/profile.png" alt="Profil">
                 </a>
             </abbr>

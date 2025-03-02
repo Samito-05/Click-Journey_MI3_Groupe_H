@@ -18,15 +18,15 @@ session_start();
     </div>
     <ul class="Haut_Page">
         <li class="active"><a href="index.php">Accueil</a></li>
-        <li class="inactive"><a href="html/Sejours.php">Séjours</a></li>
-        <li class="inactive"><a href="html/A_Propos.php">À Propos</a></li>
+        <li class="inactive"><a href="pages/Sejours.php">Séjours</a></li>
+        <li class="inactive"><a href="pages/A_Propos.php">À Propos</a></li>
     </ul>
 
     <?php if (!isset($_SESSION['email'])): ?>
         <!-- When logged out -->
         <div class="profile">
             <abbr title="Connexion/Inscription">
-                <a href="html/Inscription.php">
+                <a href="pages/Inscription.php">
                     <img src="Images/profile.png" alt="Profil">
                 </a>
             </abbr>
@@ -35,14 +35,14 @@ session_start();
         <!-- When Admin -->
         <div class="profile">
             <abbr title="Mon Profile">
-                <a href="html/profile.php">
+                <a href="pages/profile.php">
                     <img src="Images/profile.png" alt="Profil">
                 </a>
             </abbr>
         </div>
         <div class="profile">
             <abbr title="Gestion admin">
-                <a href="html/verif_admin.php">
+                <a href="pages/verif_admin.php">
                     <img src="Images/admin.png" alt="Admin">
                 </a>
             </abbr>
@@ -51,7 +51,7 @@ session_start();
         <!-- When Logged in as normal user -->
         <div class="profile">
             <abbr title="Mon Profile">
-                <a href="html/profile.php">
+                <a href="pages/profile.php">
                     <img src="Images/profile.png" alt="Profil">
                 </a>
             </abbr>
@@ -88,22 +88,22 @@ session_start();
             </div>
             <hr class="hr_index">
             <div class="destination">
-                <a href="html/mont_blanc.php"><img src="Images/Mont_Blanc.jpg" alt="Mont Blanc"><p>Mont Blanc</p></a>
+                <a href="pages/mont_blanc.php"><img src="Images/Mont_Blanc.jpg" alt="Mont Blanc"><p>Mont Blanc</p></a>
             </div>
             <div class="destination">
-                <a href="html/pyrenees.php"><img src="Images/Pyrenees.jpg" alt="Pic du Midi de Bigorre"><p>Pic du Midi de Bigorre</p></a>
+                <a href="pages/pyrenees.php"><img src="Images/Pyrenees.jpg" alt="Pic du Midi de Bigorre"><p>Pic du Midi de Bigorre</p></a>
             </div>
             <div class="destination">
-                <a href="html/mont_everest.php"><img src="Images/Mont_Everest.jpeg" alt="Mont Everest"><p>Mont Everest</p></a>
+                <a href="pages/mont_everest.php"><img src="Images/Mont_Everest.jpeg" alt="Mont Everest"><p>Mont Everest</p></a>
             </div>
             <div class="destination">
-                <a href="html/massif_central.php"><img src="Images/Massif_Central.jpg" alt="Pic du Midi de Bigorre"><p>Puy de Dôme</p></a>
+                <a href="pages/massif_central.php"><img src="Images/Massif_Central.jpg" alt="Pic du Midi de Bigorre"><p>Puy de Dôme</p></a>
             </div>
             <div class="destination">
-                <a href="html/mont_fuji.php"><img src="Images/Mont_Fuji.jpg" alt="Mont Fuji"><p>Mont Fuji</p></a>
+                <a href="pages/mont_fuji.php"><img src="Images/Mont_Fuji.jpg" alt="Mont Fuji"><p>Mont Fuji</p></a>
             </div>
             <div class="destination">
-                <a href="html/mount_kilimandjaro.php"><img src="Images/Kilimanjaro.webp" alt="Mont Kilimandjaro"><p> Mont Kilimandjaro</p></a>
+                <a href="pages/mount_kilimandjaro.php"><img src="Images/Kilimanjaro.webp" alt="Mont Kilimandjaro"><p> Mont Kilimandjaro</p></a>
             </div>
         </div>
         
