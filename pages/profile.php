@@ -1,5 +1,19 @@
 <?php
-session_start();
+    session_start();
+    $email = $_SESSION['email'];
+    $fichier = "../comptes.txt";
+
+    if (file_exists($fichier) && is_readable($fichier)) {
+        $lignes = file($fichier, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        
+        foreach ($lignes as $ligne) {
+            list($nom, $prenom, $num, $utilisateur, $mdp_hash) = explode(" ", $ligne);
+
+            if ($utilisateur === $email) {
+                break;
+            }
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -60,12 +74,12 @@ session_start();
 </header>
         <fieldset class="field_profile">
             <legend class="legend_profile">Modifications du profil</legend>
-            <form class="form_profile">
+            <form class="form_profile" action="../php/modif_profile.php" method="post">
                 <div class="div_profile">
                     <label for="nom">Nom :</label>
                 </div>
                 <div class="div_modif">
-                    <input type="text" id="nom" name="nom" class="champ_inscription" placeholder="Dupont">
+                    <input type="text" id="nom" name="nom" class="champ_inscription" placeholder="<?php echo $nom; ?>">
                     <label for="nom"><img class="modif" src="../Images/modif.png"></label>
                 </div>
                 
@@ -73,22 +87,22 @@ session_start();
                     <label for="prenom">Prénom :</label>
                 </div>
                 <div class="div_modif">
-                    <input type="text" id="prenom" name="prenom" class="champ_inscription" placeholder="Jean-Patoche">
+                    <input type="text" id="prenom" name="prenom" class="champ_inscription" placeholder="<?php echo $prenom; ?>">
                     <label for="prenom"><img class="modif" src="../Images/modif.png"></label>
                 </div>
                 <div class="div_profile">
                     <label for="mail">Adresse Mail :</label>
                 </div>
                 <div class="div_modif">
-                    <input type="email" id="mail" name="mail" class="champ_inscription" placeholder="email@mail.com">
+                    <input type="email" id="mail" name="mail" class="champ_inscription" placeholder="<?php echo $utilisateur; ?>">
                     <label for="mail"><img class="modif" src="../Images/modif.png"></label>
                 </div>
                 <div class="div_profile">
-                    <label for="mdp1">Mot de passe actuel:</label>
+                    <label for="num">Numero :</label>
                 </div>
                 <div class="div_modif">
-                    <input type="password" id="mdp1" name="mdp1" class="champ_inscription" placeholder="........">
-                    <label for="mdp1"><img class="modif" src="../Images/modif.png"></label>
+                    <input type="tel" id="num" name="num" class="champ_inscription" placeholder="<?php echo $num; ?>">
+                    <label for="num"><img class="modif" src="../Images/modif.png"></label>
                 </div>
                 <div class="div_profile">
                     <label for="mdp2">Nouveau mot de passe :</label>
@@ -107,7 +121,11 @@ session_start();
                 <button type="submit" class="boutton_modif">Valider Changements</button>
             </form>
             <form class="form_profile" action="../php/logout.php" method="post">
-                <button type="submit" class="boutton_modif">Se Deconnecter</button>   
+                <button type="submit" class="boutton_modif">Se Deconnecter</button>
+            </form>
+            <form class="form_profile" action="../php/supprimer.php" method="post">
+                <button type="submit" class="boutton_modif">Effacer Compte</button>
+            </form>   
         </fieldset>
         <footer class="footer">
         <div class="logo_petit">

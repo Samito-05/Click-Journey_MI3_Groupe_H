@@ -32,6 +32,6 @@
         fclose($file);
     }
     
-    header("location: ../index.php");
+    header("location: ../pages/Connexion.php");
     exit();
 ?>
