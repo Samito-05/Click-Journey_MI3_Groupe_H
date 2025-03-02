@@ -1,44 +1,63 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>PeakExplorer - A Propos</title>
-        <link rel="stylesheet" type="text/css" href="../style.css"> 
-    </head>
-    <body>
-        <header class="Entete">
-            <div class="logo_petit">
-                <a href="../index.html">
-                    <img src="../Images/logo.jpg" alt="PeakExplorer logo">
+<head>
+    <meta charset="utf-8">
+    <title>PeakExplorer - Randonnées en hautes montages</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"> 
+</head>
+<body>
+<header class="Entete">
+    <div class="logo_petit">
+        <a href="../index.php">
+            <img src="../Images/logo.jpg" alt="PeakExplorer logo">
+        </a>
+    </div>
+    <ul class="Haut_Page">
+        <li class="inactive"><a href="../index.php">Accueil</a></li>
+        <li class="inactive"><a href="../html/Sejours.php">Séjours</a></li>
+        <li class="active"><a href="../html/A_Propos.php">À Propos</a></li>
+    </ul>
+
+    <?php if (!isset($_SESSION['email'])): ?>
+        <!-- When logged out -->
+        <div class="profile">
+            <abbr title="Connexion/Inscription">
+                <a href="../html/Inscription.php">
+                    <img src="../Images/profile.png" alt="Profil">
                 </a>
-            </div>
-            <ul class="Haut_Page">
-                <li class="inactive"><a href="../index.html">Acceuil</a></li>
-                <li class="inactive"><a href="Sejours.html">Séjours</a></li>
-                <li class="active"><a href="A_Propos.html">A Propos</a></li>
-            </ul>
-            <div class="profile">
-                <abbr  title="Connexion/Inscription">
-                    <a href="Inscription.html">
-                        <img src="../Images/profile.png" alt="Profil">
-                    </a>
-                </abbr>
-            </div>
-            <div class="profile">
-                <abbr title="Mon Profile">
-                    <a href="profile.html">
-                        <img src="../Images/profile.png" alt="Profil">
-                    </a>
-                </abbr>
-            </div>
-            <div class="profile">
-                <abbr title="Gestion admin">
-                    <a href="verif_admin.html">
-                        <img src="../Images/admin.png" alt="Profil">
-                    </a>
-                </abbr>
-            </div>
-        </header>
+            </abbr>
+        </div>
+    <?php elseif ($_SESSION['email'] === "admin@peakexplorer.com"): ?>
+        <!-- When Admin -->
+        <div class="profile">
+            <abbr title="Mon Profile">
+                <a href="../html/profile.php">
+                    <img src="../Images/profile.png" alt="Profil">
+                </a>
+            </abbr>
+        </div>
+        <div class="profile">
+            <abbr title="Gestion admin">
+                <a href="../html/verif_admin.php">
+                    <img src="../Images/admin.png" alt="Admin">
+                </a>
+            </abbr>
+        </div>
+    <?php else: ?>
+        <!-- When Logged in as normal user -->
+        <div class="profile">
+            <abbr title="Mon Profile">
+                <a href="../html/profile.php">
+                    <img src="../Images/profile.png" alt="Profil">
+                </a>
+            </abbr>
+        </div>
+    <?php endif; ?>
+</header>
 
         <div class="a_propos">
 
@@ -72,7 +91,7 @@
 
         <footer class="footer">
         <div class="logo_petit">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img src="../Images/logo.jpg" alt="PeakExplorer logo">
             </a>
         </div>

@@ -1,44 +1,63 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>PeakExplorer - Randonnées en hautes montages</title>
-        <link rel="stylesheet" type="text/css" href="../style.css"> 
-    </head>
-    <body>
-        <header class="Entete">
-            <div class="logo_petit">
-                <a href="../index.html">
-                    <img src="../Images/logo.jpg" alt="PeakExplorer logo">
+<head>
+    <meta charset="utf-8">
+    <title>PeakExplorer - Randonnées en hautes montages</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"> 
+</head>
+<body>
+<header class="Entete">
+    <div class="logo_petit">
+        <a href="../index.php">
+            <img src="../Images/logo.jpg" alt="PeakExplorer logo">
+        </a>
+    </div>
+    <ul class="Haut_Page">
+        <li class="inactive"><a href="../index.php">Accueil</a></li>
+        <li class="inactive"><a href="../html/Sejours.php">Séjours</a></li>
+        <li class="inactive"><a href="../html/A_Propos.php">À Propos</a></li>
+    </ul>
+
+    <?php if (!isset($_SESSION['email'])): ?>
+        <!-- When logged out -->
+        <div class="profile">
+            <abbr title="Connexion/Inscription">
+                <a href="../html/Inscription.php">
+                    <img src="../Images/profile.png" alt="Profil">
                 </a>
-            </div>
-            <ul class="Haut_Page">
-                <li class="inactive"><a href="../index.html">Acceuil</a></li>
-                <li class="inactive"><a href="Sejours.html">Séjours</a></li>
-                <li class="inactive"><a href="A_Propos.html">A Propos</a></li>
-            </ul>
-            <div class="profile">
-                <abbr  title="Connexion/Inscription">
-                    <a href="Inscription.html">
-                        <img src="../Images/profile.png" alt="Profil">
-                    </a>
-                </abbr>
-            </div>
-            <div class="profile">
-                <abbr title="Mon Profile">
-                    <a href="profile.html">
-                        <img src="../Images/profile.png" alt="Profil">
-                    </a>
-                </abbr>
-            </div>
-            <div class="profile">
-                <abbr title="Gestion admin">
-                    <a href="verif_admin.html">
-                        <img src="../Images/admin.png" alt="Profil">
-                    </a>
-                </abbr>
-            </div>
-        </header>
+            </abbr>
+        </div>
+    <?php elseif ($_SESSION['email'] === "admin@peakexplorer.com"): ?>
+        <!-- When Admin -->
+        <div class="profile">
+            <abbr title="Mon Profile">
+                <a href="../html/profile.php">
+                    <img src="../Images/profile.png" alt="Profil">
+                </a>
+            </abbr>
+        </div>
+        <div class="profile">
+            <abbr title="Gestion admin">
+                <a href="../html/verif_admin.php">
+                    <img src="../Images/admin.png" alt="Admin">
+                </a>
+            </abbr>
+        </div>
+    <?php else: ?>
+        <!-- When Logged in as normal user -->
+        <div class="profile">
+            <abbr title="Mon Profile">
+                <a href="../html/profile.php">
+                    <img src="../Images/profile.png" alt="Profil">
+                </a>
+            </abbr>
+        </div>
+    <?php endif; ?>
+</header>
         <h1 class="Titre">GR10 Pyrenées</h1>
         <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23367.706035143274!2d0.12049273710369594!3d42.93690152193442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a8235749919997%3A0x136b76e1ff9b200!2sPic%20du%20Midi%20de%20Bigorre!5e0!3m2!1sfr!2sfr!4v1739531253504!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
@@ -54,7 +73,7 @@
         
         <footer class="footer">
         <div class="logo_petit">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img src="../Images/logo.jpg" alt="PeakExplorer logo">
             </a>
         </div>

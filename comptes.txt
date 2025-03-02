@@ -1,0 +1,2 @@
+test test 2222222222 test@gmail.com $2y$10$gA75L0cLP5wrDGRa9htUT.2EEE/wHg1.0kgqa9d8lmOTCXCN5fiG2
+Admin Admin 0000000000 admin@peakexplorer.com $2y$10$NhulTAG5wF3Qgd38D1RFMOhoi7xcex7lDMwjcUgAOXyNuPWGDtlim

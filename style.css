@@ -69,7 +69,7 @@ li.inactive a:hover {
 
 /* Fin entete pour nos pages */
 
-/* Index.html */
+/* Index.php */
 .bande {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("Images/Bande.jpg"); /*ajouter un effet fondu*/
     background-size: cover; 
@@ -209,9 +209,9 @@ h1.Titre {
     width: 3vmin;
 }
 
-/* Fin Index.html */
+/* Fin Index.php */
 
-/* A_propos.html */
+/* A_propos.php */
 p.a_propos,
 h2.sous_titre {
     font-size: 1.5vmin;
@@ -243,9 +243,9 @@ h2.sous_titre {
     padding-bottom: 10vmin;
 }
 
-/* Fin A_propos.html */
+/* Fin A_propos.php */
 
-/* Sejours.html */
+/* Sejours.php */
 .sejours {
     width: fit-content;
     margin: 10vmin auto;
@@ -267,9 +267,9 @@ p.description{
     font-size: 1.9vmin;
 }
 
-/* Fin Sejours.html */
+/* Fin Sejours.php */
 
-/* Connexion.html */
+/* Connexion.php */
 .h2_connexion,
 .h2_verification {
     font-family: Arial, sans-serif;
@@ -330,9 +330,9 @@ p.description{
     font-weight: bold;
 }
 
-/* Fin Connexion.html */
+/* Fin Connexion.php */
 
-/* Inscription.html */
+/* Inscription.php */
 .form_inscription,
 .form_profile {
     font-family: Arial, sans-serif;
@@ -443,7 +443,7 @@ button:hover {
     font-weight: bold;
 }
 
-/* Fin Inscription.html */
+/* Fin Inscription.php */
 
 input {
     background: var(--field-color);
