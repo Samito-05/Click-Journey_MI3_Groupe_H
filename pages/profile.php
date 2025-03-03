@@ -121,10 +121,10 @@
                 <button type="submit" class="boutton_modif">Valider Changements</button>
             </form>
             <form class="form_profile" action="../php/logout.php" method="post">
-                <button type="submit" class="boutton_modif">Se Deconnecter</button>
+                <button type="submit" class="boutton_modif" id="deconnecter">Se Deconnecter</button>
             </form>
             <form class="form_profile" action="../php/supprimer.php" method="post">
-                <button type="submit" class="boutton_modif">Effacer Compte</button>
+                <button type="submit" class="boutton_modif" id="effacer">Effacer Compte</button>
             </form>   
         </fieldset>
         <footer class="footer">

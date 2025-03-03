@@ -21,5 +21,6 @@ if (file_exists($fichier) && is_readable($fichier)) {
 }
 
 echo "Email ou mot de passe incorrect";
+header("location: ../pages/connexion.php");
 exit();
 ?>

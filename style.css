@@ -556,6 +556,16 @@ iframe.carte {
     backdrop-filter: blur(5px);
 }
 
+#effacer:hover{
+    background: red;
+}
+
+#deconnecter:hover{
+    background: orange;
+}
+
+
+
 body{
     background-color: var(--field-color);
     background-image: url("Images/fond_index1.png");
