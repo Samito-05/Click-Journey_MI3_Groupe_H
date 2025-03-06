@@ -40,7 +40,7 @@
         <!-- When logged out -->
         <div class="profile">
             <abbr title="Connexion/Inscription">
-                <a href="../pages/Inscription.php">
+                <a href="../pages/Connexion.php">
                     <img src="../Images/profile.png" alt="Profil">
                 </a>
             </abbr>

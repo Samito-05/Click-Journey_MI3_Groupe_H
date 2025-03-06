@@ -431,10 +431,10 @@ button:hover {
 
 .deja_inscrit a {
     display: block;
-    width: 12vmin;
+    width: 15vmin;
     padding: 2vmin;
     margin: 2vmin auto;
-    background-color: var(--third-color);
+    background-color: var(--main-color);
     border-radius: 1vmin;
     text-decoration: none;
     font-size: 1.4vmin;
