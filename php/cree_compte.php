@@ -1,6 +1,8 @@
 <?php
     $nom = trim($_POST['nom']);
     $prenom = trim($_POST['prenom']);
+    $naissance = $_POST['naissance'];
+    $adresse = trim($_POST['adresse']);
     $numero = trim($_POST['numero']);
     $email = trim($_POST['email']);
     $mdp = trim($_POST['mdp_inscription']);
@@ -12,9 +14,9 @@
             $ligne = trim(fgets($file));
             if (empty($ligne)) continue;
             
-            $infos = explode(" ", $ligne);
+            $infos = explode(" ; ", $ligne);
             
-            if (count($infos) >= 4 && $infos[3] === $email){
+            if (count($infos) >= 6 && $infos[5] === $email){
                 echo "Email déjà utilisé";
                 fclose($file);
                 exit();
@@ -28,7 +30,8 @@
         exit();
     } else {
         $mdp_cache = password_hash($mdp, PASSWORD_DEFAULT);
-        fwrite($file, "$nom $prenom $numero $email $mdp_cache\n");
+        fwrite($file, "$nom ; $prenom ; $naissance ; $adresse ; $numero ; $email ; $mdp_cache\n");
+
         fclose($file);
     }
     

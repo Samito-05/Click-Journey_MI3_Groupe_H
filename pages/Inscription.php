@@ -39,8 +39,6 @@ session_start();
                     <img src="../Images/profile.png" alt="Profil">
                 </a>
             </abbr>
-        </div>
-        <div class="profile">
             <abbr title="Gestion admin">
                 <a href="../pages/verif_admin.php">
                     <img src="../Images/admin.png" alt="Admin">
@@ -58,6 +56,7 @@ session_start();
         </div>
     <?php endif; ?>
 </header>
+<main>
         <fieldset class="field_inscription">
             <legend class="legend_inscription">Création de mon compte</legend>
             <form class="form_inscription" method="post" action="../php/cree_compte.php">                
@@ -74,6 +73,19 @@ session_start();
                 <div>
                     <input type="text" id="prenom" name="prenom" class="champ_inscription" placeholder="Entrer votre prénom"required>
                 </div>
+
+                <div class="div_ins">
+                    <label for="naissance">Date de naissance * :</label>
+                </div>
+                <div>
+                    <input type="date" id="naissance" name="naissance" class="champ_inscription" required>
+                </div>
+
+                <div class="div_ins">
+                    <label for="adresse">Adresse * :</label>
+                </div>
+                <div>
+                    <input type="text" id="adresse" name="adresse" class="champ_inscription" placeholder="Entrer votre adresse" required>
                 
                 <div class="div_ins">
                     <label for="numero">Téléphone * :</label>
@@ -109,28 +121,14 @@ session_start();
                 <p class="deja_inscrit">Vous avez déjà un compte ?<a href="Connexion.php">Me connecter</a></p>
             </form>
         </fieldset>
-        <footer class="footer">
-        <div class="logo_petit">
-            <a href="../index.php">
-                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
-            </a>
-        </div>
-        <div class="instagram">
-            <abbr  title="Instagram">
-                <a href="https://www.instagram.com/ssaamm_05/">
-                    <img src="../Images/instagram.png" alt="Instagram">
-                </a>
-            </abbr>
-        </div>
-        <div class="facebook">
-            <abbr title="Mon Profile">
-                <a href="https://www.facebook.com/hoho.clause.79/about/">
-                    <img src="../Images/facebook.png" alt="Profil">
-                </a>
-            </abbr>
-        </div>
+        
+        </main>
+        
+        <?php
 
-    </footer>
+        require('../php/footer.php')
+
+        ?>
     
-</body>
+    </body>
 </html>

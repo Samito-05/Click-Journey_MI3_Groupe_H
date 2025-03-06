@@ -39,8 +39,6 @@ session_start();
                     <img src="../Images/profile.png" alt="Profil">
                 </a>
             </abbr>
-        </div>
-        <div class="profile">
             <abbr title="Gestion admin">
                 <a href="../pages/verif_admin.php">
                     <img src="../Images/admin.png" alt="Admin">
@@ -58,6 +56,7 @@ session_start();
         </div>
     <?php endif; ?>
 </header>
+<main>
         <h1 class="Titre">Le Pic du Midi de Bigorre</h1>
         <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23367.706035143274!2d0.12049273710369594!3d42.93690152193442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a8235749919997%3A0x136b76e1ff9b200!2sPic%20du%20Midi%20de%20Bigorre!5e0!3m2!1sfr!2sfr!4v1739531253504!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
@@ -71,28 +70,13 @@ session_start();
         </div>
         
         
-        <footer class="footer">
-        <div class="logo_petit">
-            <a href="../index.php">
-                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
-            </a>
-        </div>
-        <div class="instagram">
-            <abbr  title="Instagram">
-                <a href="https://www.instagram.com/ssaamm_05/">
-                    <img src="../Images/instagram.png" alt="Instagram">
-                </a>
-            </abbr>
-        </div>
-        <div class="facebook">
-            <abbr title="Mon Profile">
-                <a href="https://www.facebook.com/hoho.clause.79/about/">
-                    <img src="../Images/facebook.png" alt="Profil">
-                </a>
-            </abbr>
-        </div>
+        </main>
+        
+        <?php
 
-    </footer>
+        require('../php/footer.php')
+
+        ?>
     
-</body>
+    </body>
 </html>

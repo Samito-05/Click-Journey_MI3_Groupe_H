@@ -39,8 +39,6 @@ session_start();
                     <img src="../Images/profile.png" alt="Profil">
                 </a>
             </abbr>
-        </div>
-        <div class="profile">
             <abbr title="Gestion admin">
                 <a href="../pages/verif_admin.php">
                     <img src="../Images/admin.png" alt="Admin">
@@ -58,6 +56,7 @@ session_start();
         </div>
     <?php endif; ?>
 </header>
+<main>
         <fieldset class="field_connexion">
             <legend class="legend_connexion">Connexion</legend>
             <form class="form_connexion" action="../php/connect.php" method="post">
@@ -79,28 +78,14 @@ session_start();
                 <p class="s_inscrire">Vous n'avez pas de compte ?<a href="Inscription.php">S'incrire</a></p>
             </form>
         </fieldset>
-        <footer class="footer">
-        <div class="logo_petit">
-            <a href="../index.php">
-                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
-            </a>
-        </div>
-        <div class="instagram">
-            <abbr  title="Instagram">
-                <a href="https://www.instagram.com/ssaamm_05/">
-                    <img src="../Images/instagram.png" alt="Instagram">
-                </a>
-            </abbr>
-        </div>
-        <div class="facebook">
-            <abbr title="Mon Profile">
-                <a href="https://www.facebook.com/hoho.clause.79/about/">
-                    <img src="../Images/facebook.png" alt="Profil">
-                </a>
-            </abbr>
-        </div>
+ 
+        </main>
+        
+        <?php
 
-    </footer>
+        require('../php/footer.php')
+
+        ?>
     
-</body>
+    </body>
 </html>

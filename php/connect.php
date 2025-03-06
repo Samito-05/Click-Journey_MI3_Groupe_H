@@ -9,13 +9,17 @@ if (file_exists($fichier) && is_readable($fichier)) {
     $lignes = file($fichier, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     
     foreach ($lignes as $ligne) {
-        list($nom, $prenom, $num, $utilisateur, $mdp_hash) = explode(" ", $ligne);
+        $infos = explode(" ; ", $ligne);
+        
+        if (count($infos) >= 7) {
+            list($nom, $prenom, $naissance, $adresse, $num, $utilisateur, $mdp_hash) = $infos;
 
-        if ($utilisateur === $email && password_verify($mdp, $mdp_hash)) {
-            $_SESSION['email'] = $email;
-            echo "Connexion réussie";
-            header("location: ../index.php");
-            exit();
+            if ($utilisateur === $email && password_verify($mdp, $mdp_hash)) {
+                $_SESSION['email'] = $email;
+                echo "Connexion réussie";
+                header("location: ../index.php");
+                exit();
+            }
         }
     }
 }

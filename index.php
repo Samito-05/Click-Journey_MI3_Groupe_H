@@ -39,8 +39,6 @@ session_start();
                     <img src="Images/profile.png" alt="Profil">
                 </a>
             </abbr>
-        </div>
-        <div class="profile">
             <abbr title="Gestion admin">
                 <a href="pages/verif_admin.php">
                     <img src="Images/admin.png" alt="Admin">
@@ -58,12 +56,10 @@ session_start();
         </div>
     <?php endif; ?>
 </header>
-</body>
-</html>
-
+<main>
 
         <div class="bande">
-            <h1 class="h1_index">PeakExplorer</h1>
+            <h1 class="Titre_index">PeakExplorer</h1>
 
             <form method="post" action="">
                 <div class="recherche">
@@ -79,56 +75,49 @@ session_start();
             </form>
         </div>
 
-        <div class="toutes_destinations">
+        <div class="index_bas">
             <div class="p_index">
                 <p>Découvrir</p>
             </div>
             <div class="p1_index">
                 <p>Nos voyages du moment</p>
             </div>
-            <hr class="hr_index">
-            <div class="destination">
-                <a href="pages/mont_blanc.php"><img src="Images/Mont_Blanc.jpg" alt="Mont Blanc"><p>Mont Blanc</p></a>
-            </div>
-            <div class="destination">
-                <a href="pages/pyrenees.php"><img src="Images/Pyrenees.jpg" alt="Pic du Midi de Bigorre"><p>Pic du Midi de Bigorre</p></a>
-            </div>
-            <div class="destination">
-                <a href="pages/mont_everest.php"><img src="Images/Mont_Everest.jpeg" alt="Mont Everest"><p>Mont Everest</p></a>
-            </div>
-            <div class="destination">
-                <a href="pages/massif_central.php"><img src="Images/Massif_Central.jpg" alt="Pic du Midi de Bigorre"><p>Puy de Dôme</p></a>
-            </div>
-            <div class="destination">
-                <a href="pages/mont_fuji.php"><img src="Images/Mont_Fuji.jpg" alt="Mont Fuji"><p>Mont Fuji</p></a>
-            </div>
-            <div class="destination">
-                <a href="pages/mount_kilimandjaro.php"><img src="Images/Kilimanjaro.webp" alt="Mont Kilimandjaro"><p> Mont Kilimandjaro</p></a>
-            </div>
-        </div>
-        
-        <footer class="footer">
-        <div class="logo_petit">
-            <a href="index.php">
-                <img src="Images/logo.jpg" alt="PeakExplorer logo">
-            </a>
-        </div>
-        <div class="instagram">
-            <abbr  title="Instagram">
-                <a href="https://www.instagram.com/ssaamm_05/">
-                    <img src="Images/instagram.png" alt="Instagram">
-                </a>
-            </abbr>
-        </div>
-        <div class="facebook">
-            <abbr title="Mon Profile">
-                <a href="https://www.facebook.com/hoho.clause.79/about/">
-                    <img src="Images/facebook.png" alt="Profil">
-                </a>
-            </abbr>
-        </div>
+            <hr class="hr_index">  
 
-    </footer>
+            <div class="toutes_destinations">
+
+                    <div class="destination">
+                        <a href="pages/mont_blanc.php"><img src="Images/Mont_Blanc.jpg" alt="Mont Blanc"><p>Mont Blanc</p></a>
+                    </div>
+                    <div class="destination">
+                        <a href="pages/pyrenees.php"><img src="Images/Pyrenees.jpg" alt="Pic du Midi de Bigorre"><p>Pic du Midi de Bigorre</p></a>
+                    </div>
+                    <div class="destination">
+                        <a href="pages/mont_everest.php"><img src="Images/Mont_Everest.jpeg" alt="Mont Everest"><p>Mont Everest</p></a>
+                    </div>
+                    <div class="destination">
+                        <a href="pages/massif_central.php"><img src="Images/Massif_Central.jpg" alt="Pic du Midi de Bigorre"><p>Puy de Dôme</p></a>
+                    </div>
+                    <div class="destination">
+                        <a href="pages/mont_fuji.php"><img src="Images/Mont_Fuji.jpg" alt="Mont Fuji"><p>Mont Fuji</p></a>
+                    </div>
+                    <div class="destination">
+                        <a href="pages/mount_kilimandjaro.php"><img src="Images/Kilimanjaro.webp" alt="Mont Kilimandjaro"><p> Mont Kilimandjaro</p></a>
+                    </div>
+            </div>
+        </div>
+        </main>
+        <footer class="footer">
+    
+            <div class="logo_petit">
+                <a href="../index.php"><img src="Images/logo.jpg" alt="PeakExplorer logo"></a>
+            
+                <abbr  title="Instagram"><a href="https://www.instagram.com/ssaamm_05/" target="_blank"><img src="Images/instagram.png" alt="Instagram"></a></abbr>
+            
+                <abbr title="Mon Profile"><a href="https://www.facebook.com/hoho.clause.79/about/" target="_blank"><img src="Images/facebook.png" alt="Profil"></a></abbr>
+            </div>
+
+        </footer>
     
 </body>
 </html>

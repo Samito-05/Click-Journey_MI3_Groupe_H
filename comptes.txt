@@ -1,2 +1,3 @@
-test test 2222222222 test@gmail.com $2y$10$gA75L0cLP5wrDGRa9htUT.2EEE/wHg1.0kgqa9d8lmOTCXCN5fiG2
-Admin Admin 0000000000 admin@peakexplorer.com $2y$10$NhulTAG5wF3Qgd38D1RFMOhoi7xcex7lDMwjcUgAOXyNuPWGDtlim
+WINGERING ; Cyprien ; 2005-05-20 ; En france ; 0765498735 ; cyprien@gmail.com ; $2y$10$YnUSuts/6XP8Huf.7F1r8.hH5gWFesw2yghMuJFugPsy/2tZeVSYm
+PROCOPPE ; Sam ; 2005-05-20 ; En france ; 0756239676 ; sam@gmail.com ; $2y$10$KdFNQLGlKtQet35qtO4FputClS5XLrIJe3Uyy8qsVSUwazJOP6GZC
+ADMIN ; Admin ; 0001-01-01 ; Peak Explorer ; 0000000000 ; admin@peakexplorer.com ; $2y$10$ILnhRx49gLEyl.nuAx0KWuk.xK3xxsdADKrIdo4Uu7h2aDMh3yt8i

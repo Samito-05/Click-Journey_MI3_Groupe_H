@@ -7,10 +7,14 @@
         $lignes = file($fichier, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         
         foreach ($lignes as $ligne) {
-            list($nom, $prenom, $num, $utilisateur, $mdp_hash) = explode(" ", $ligne);
+            $infos = explode(" ; ", $ligne);
 
-            if ($utilisateur === $email) {
-                break;
+            if (count($infos) >= 7) {
+                list($nom, $prenom, $naissance, $adresse, $num, $utilisateur, $mdp_hash) = $infos;
+
+                if ($utilisateur === $email) {
+                    break;
+                }
             }
         }
     }
@@ -53,8 +57,6 @@
                     <img src="../Images/profile.png" alt="Profil">
                 </a>
             </abbr>
-        </div>
-        <div class="profile">
             <abbr title="Gestion admin">
                 <a href="../pages/verif_admin.php">
                     <img src="../Images/admin.png" alt="Admin">
@@ -72,6 +74,7 @@
         </div>
     <?php endif; ?>
 </header>
+<main>
         <fieldset class="field_profile">
             <legend class="legend_profile">Modifications du profil</legend>
             <form class="form_profile" action="../php/modif_profile.php" method="post">
@@ -89,6 +92,20 @@
                 <div class="div_modif">
                     <input type="text" id="prenom" name="prenom" class="champ_inscription" placeholder="<?php echo $prenom; ?>">
                     <label for="prenom"><img class="modif" src="../Images/modif.png"></label>
+                </div>
+                <div class="div_profile">
+                    <label for="naissance">Date de naissance :</label>
+                </div>
+                <div class="div_modif">
+                    <input type="date" id="naissance" name="naissance" class="champ_inscription" value="<?php echo $naissance; ?>">
+                    <label for="naissance"><img class="modif" src="../Images/modif.png"></label>
+                </div>
+                <div class="div_profile">
+                    <label for="adresse">Adresse :</label>
+                </div>
+                <div class="div_modif">
+                    <input type="text" id="adresse" name="adresse" class="champ_inscription" placeholder="<?php echo $adresse; ?>">
+                    <label for="adresse"><img class="modif" src="../Images/modif.png"></label>
                 </div>
                 <div class="div_profile">
                     <label for="mail">Adresse Mail :</label>
@@ -127,28 +144,14 @@
                 <button type="submit" class="boutton_modif" id="effacer">Effacer Compte</button>
             </form>   
         </fieldset>
-        <footer class="footer">
-        <div class="logo_petit">
-            <a href="../index.php">
-                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
-            </a>
-        </div>
-        <div class="instagram">
-            <abbr  title="Instagram">
-                <a href="https://www.instagram.com/ssaamm_05/">
-                    <img src="../Images/instagram.png" alt="Instagram">
-                </a>
-            </abbr>
-        </div>
-        <div class="facebook">
-            <abbr title="Mon Profile">
-                <a href="https://www.facebook.com/hoho.clause.79/about/">
-                    <img src="../Images/facebook.png" alt="Profil">
-                </a>
-            </abbr>
-        </div>
+       
+        </main>
+        
+        <?php
 
-    </footer>
+        require('../php/footer.php')
+
+        ?>
     
-</body>
+    </body>
 </html>
