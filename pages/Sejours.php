@@ -77,43 +77,47 @@ session_start();
 </header>
 <main>
     <fieldset class="field_sejours">
-        <form action="" method="post">
+        <form action="../php/sejours.php" method="post">
 
             <div class="filtre">
                 <label>Lieu du voyage :</label>
                 <select class="select" name="city" id="city" required>
                     <option value="default">Choisir un lieu</option>
                     <optgroup label="France">
-                        <option value="mont blanc">Mont Blanc</option>
-                        <option value="pyrénées">Pyrénées</option>
-                        <option value="massif central">Massif Central</option>
+                        <option value="Mont Blanc">Mont Blanc</option>
+                        <option value="Pyrénées">Pyrénées</option>
+                        <option value="mMssif Central">Massif Central</option>
                     </optgroup>
                     <optgroup label="Italie">
                         <option value="Dolomites">Dolomites</option>
+                        <option value="Monte Rosa">Monte Rosa</option>
+                        <option value="Etna">Sommet de l’Etna</option>
                     </optgroup>
                     <optgroup label="Népal">
-                        <option value="mont everest">Mont Everest</option>
+                        <option value="Mont Everest">Mont Everest</option>
                     </optgroup>
                     <optgroup label="Japon">
-                        <option value="mont fuji">Mont Fuji</option>
+                        <option value="Mont Fuji">Mont Fuji</option>
                     </optgroup>
                     <optgroup label="USA">
                         <option value="Rocky Mountains">Rocky Mountains</option>
+                        <option value="Cadillac Mountain">Cadillac Mountain</option>
+                        <option value="Mont Rushmore">Mont Rushmore</option>
                     </optgroup>
-                    <optgroup label="Tanzania">
-                        <option value="Mount Kilimanjaro">Mont Kilimanjaro</option>
+                    <optgroup label="Tanzanie">
+                        <option value="Mont Kilimanjaro">Mont Kilimanjaro</option>
                     </optgroup>
                 </select>
             </div>
 
             <div class="filtre">
                 <label>Nombre de participants :</label>
-                <input type="number" name="nombre de personne" min="1" max="10" value="2" step="1" required>
+                <input type="number" name="nbr_personnes" min="1" max="10" value="0" step="1" required>
             </div>
 
             <div class="filtre">
                 <label>Duree du sejour :</label>
-                <input type="number" name="duree_sejour" min="2" max="10" value="3" step="1" required>
+                <input type="number" name="duree_sejour" min="2" max="10" value="0" step="1" required>
             </div>
 
             <div class="filtre">
@@ -124,17 +128,12 @@ session_start();
             <div class="filtre">
                 <label>Logement :</label>
                 <select class="select" name="logement" required>
+                    <option value="default">Choisir un Logement</option>
                     <option value="Hotel">Hotel</option>
+                    <option value="Hotel++">Hotel haute gamme</option>
                     <option value="Auberge de Jeunnesse">Auberge de Jeunnesse</option>
                     <option value="Airbnb">Airbnb</option>
-                    <option value="Clients">Aux clients de gerer</option>
                 </select>
-            </div>
-
-            <p class="filtre">Options supplémentaires :</p>
-            <div class="checkbox_options">
-                <label><input type="checkbox" name="option" value="guide"/><p>Guide de montagne</p></label>
-                <label><input type="checkbox" name="option" value="chalet"/><p>Chalet haute montagne</p></label>
             </div>
 
             <p class="filtre">Option alimentaire :</p>
@@ -146,21 +145,14 @@ session_start();
 
             <button type="submit" class="boutton_recherche">Rechercher</button>
         </form>
-    </fieldset>
-
-    <?php
-
-    require('../php/sejours.php')
-
-    ?>
- 
-    </main>
+    </fieldset> 
+</main>
         
-        <?php
+    <?php
 
         require('../php/footer.php')
 
-        ?>
+    ?>
     
-    </body>
+</body>
 </html>
