@@ -11,19 +11,18 @@ session_start();
 </head>
 <body>
 <header class="Entete">
-    <div class="logo_petit">
-        <a href="../index.php">
-            <img src="../Images/logo.jpg" alt="PeakExplorer logo">
-        </a>
-    </div>
-    <ul class="Haut_Page">
-        <li class="inactive"><a href="../index.php">Accueil</a></li>
-        <li class="active"><a href="../pages/Sejours.php">Séjours</a></li>
-        <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
-    </ul>
 
     <?php if (!isset($_SESSION['email'])): ?>
         <!-- When logged out -->
+        <div class="logo_petit">
+            <a href="../index.php">
+                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
+            </a>
+        </div>
+        <ul class="Haut_Page">
+            <li class="inactive"><a href="../index.php">Accueil</a></li>
+            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
+        </ul>
         <div class="profile">
             <abbr title="Connexion/Inscription">
                 <a href="../pages/Connexion.php">
@@ -33,6 +32,16 @@ session_start();
         </div>
     <?php elseif ($_SESSION['email'] === "admin@peakexplorer.com"): ?>
         <!-- When Admin -->
+        <div class="logo_petit">
+            <a href="../index.php">
+                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
+            </a>
+        </div>
+        <ul class="Haut_Page">
+            <li class="inactive"><a href="../index.php">Accueil</a></li>
+            <li class="inactive"><a href="../pages/Sejours.php">Séjours</a></li>
+            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
+        </ul>
         <div class="profile">
             <abbr title="Mon Profile">
                 <a href="../pages/profile.php">
@@ -47,6 +56,16 @@ session_start();
         </div>
     <?php else: ?>
         <!-- When Logged in as normal user -->
+        <div class="logo_petit">
+            <a href="../index.php">
+                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
+            </a>
+        </div>
+        <ul class="Haut_Page">
+            <li class="inactive"><a href="../index.php">Accueil</a></li>
+            <li class="inactive"><a href="../pages/Sejours.php">Séjours</a></li>
+            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
+        </ul>
         <div class="profile">
             <abbr title="Mon Profile">
                 <a href="../pages/profile.php">
@@ -58,11 +77,12 @@ session_start();
 </header>
 <main>
     <fieldset class="field_sejours">
-        <form action="" method="get">
+        <form action="" method="post">
 
             <div class="filtre">
                 <label>Lieu du voyage :</label>
-                <select class="select" name="city" id="city">
+                <select class="select" name="city" id="city" required>
+                    <option value="default">Choisir un lieu</option>
                     <optgroup label="France">
                         <option value="mont blanc">Mont Blanc</option>
                         <option value="pyrénées">Pyrénées</option>
@@ -88,22 +108,22 @@ session_start();
 
             <div class="filtre">
                 <label>Nombre de participants :</label>
-                <input type="number" name="nombre de personne" min="1" max="10" value="2" step="1"/>
+                <input type="number" name="nombre de personne" min="1" max="10" value="2" step="1" required>
             </div>
 
             <div class="filtre">
                 <label>Duree du sejour :</label>
-                <input type="number" name="duree_sejour" min="1" max="7" value="3" step="1">
+                <input type="number" name="duree_sejour" min="2" max="10" value="3" step="1" required>
             </div>
 
             <div class="filtre">
                 <label>Date de depart :</label>
-                <input type="date" name="date_depart" value="2025/01/01">
+                <input type="date" name="date_depart" value="2025/01/01" required>
             </div>
 
             <div class="filtre">
                 <label>Logement :</label>
-                <select class="select" name="logement">
+                <select class="select" name="logement" required>
                     <option value="Hotel">Hotel</option>
                     <option value="Auberge de Jeunnesse">Auberge de Jeunnesse</option>
                     <option value="Airbnb">Airbnb</option>
@@ -124,18 +144,15 @@ session_start();
                 <label><input type="checkbox" name="pension" value="pension complète"/><p>Pension complète</p></label>
             </div>
 
-            <p class="filtre">Vacances plutot :</p>
-            <div class="checkbox_options">
-                <label><input type="checkbox" name="energie" value="sportives"/><p>Sportives</p></label>
-                <label><input type="checkbox" name="energie" value="chill"/><p>Chill</p></label>
-                <label><input type="checkbox" name="energie" value="culturelles"/><p>Culturelles</p></label>
-                <label><input type="checkbox" name="energie" value="tout"/><p>De tout</p></label>
-
-            </div>
-
             <button type="submit" class="boutton_recherche">Rechercher</button>
         </form>
     </fieldset>
+
+    <?php
+
+    require('../php/sejours.php')
+
+    ?>
  
     </main>
         
