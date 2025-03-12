@@ -136,18 +136,6 @@ li.inactive a:hover {
 
 /* Fin Regles Header */
 
-/* Regles Footer */
-
-.instagram img,
-.facebook img {
-    height: 3vmin;
-    border-radius: 1.5vmin;
-    margin: 0 1vmin;
-    vertical-align: middle;
-}
-
-/* Fin Regles Footer
-
 /* Index.php */
 
 .bande {
@@ -357,6 +345,22 @@ select.select {
     padding: 1vmin;
 }
 
+.table_sejours {
+    width: 90%;
+    margin: auto;
+    margin-top: 2vmin;
+    border: var(--main-color) solid 1px;
+    border-radius: 2vmin;
+    border-radius: 2vmin;
+
+}
+
+.table_sejours td select {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
 /* Fin Sejours.php */
 
 
@@ -437,7 +441,8 @@ select.select {
 .legend_inscription,
 .legend_profile,
 .legend_connexion,
-.legend_verif_admin {
+.legend_verif_admin,
+.legend_sejours {
     text-align: center;
     font-weight: bold;
     font-size: 3vmin;
@@ -473,7 +478,8 @@ select.select {
 .boutton_modif,
 .boutton_verif,
 .boutton_recherche,
-.boutton_admin {
+.boutton_admin,
+.boutton_sejours {
     width: 38vmin;
     margin-top: 4vmin;
     text-align: center;
