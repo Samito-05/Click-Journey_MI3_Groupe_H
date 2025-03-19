@@ -496,7 +496,8 @@ select.select {
 .form_connexion,
 .form_verification,
 .form_inscription,
-.form_profile {
+.form_profile 
+.form_paiement{
     text-align: center;
     margin: 2vmin auto;
     font-family: Arial, sans-serif;
@@ -504,7 +505,8 @@ select.select {
 
 .champ_inscription,
 .champ_connexion,
-.champ_verification {
+.champ_verification 
+.champ_paiement {
     width: 38vmin;
     height: 4vmin;
     margin-bottom: 2vmin;
@@ -515,7 +517,8 @@ select.select {
 
 .champ_inscription:focus,
 .champ_connexion:focus,
-.champ_verification:focus {
+.champ_verification:focus 
+.champ_paiement:focus {
     border: 2px solid var(--second-color);
     outline: none;
 }
