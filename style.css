@@ -442,7 +442,7 @@ select.select {
 .legend_profile,
 .legend_connexion,
 .legend_verif_admin,
-.legend_sejours 
+.legend_sejours,
 .legend_paiement{
     text-align: center;
     font-weight: bold;
