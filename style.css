@@ -442,7 +442,8 @@ select.select {
 .legend_profile,
 .legend_connexion,
 .legend_verif_admin,
-.legend_sejours {
+.legend_sejours 
+.legend_paiement{
     text-align: center;
     font-weight: bold;
     font-size: 3vmin;
@@ -455,7 +456,8 @@ select.select {
 .field_profile,
 .field_connexion,
 .field_verification,
-.field_sejours {
+.field_sejours 
+.field_paiement {
     backdrop-filter: blur(5px);
     width: 25%;
     margin: 8vmin auto;
@@ -467,7 +469,8 @@ select.select {
 .div_ins,
 .div_profile,
 .div_connexion,
-.div_verification {
+.div_verification 
+.div_paiement {
     text-align: left;
     color: var(--third-color);
     font-size: 1.5vmin;
