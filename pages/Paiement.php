@@ -78,7 +78,7 @@ session_start();
         <main>
             <fieldset class="field_paiement">
                 <legend class="legend_paiement">Paiement</legend>
-                <form class="formulaire_inscription" method="post" action="../php/paiement.php">
+                <form class="formulaire_paiement" method="post" action="../php/paiement.php">
                     <div class="div_paiement">
                         <label for="prenom">Prénom:</label>
                     </div>
