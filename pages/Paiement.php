@@ -43,7 +43,7 @@ session_start();
                         <label for="date_expiration">Date d'expiration (max. 2100):</label>
                     </div>
                     <div class="div_paiement">
-                        <input type="text" id="date_expiration" name="date_expiration" placeholder="MM/AAAA" class="champ_paiement" maxlength="7" pattern="(0[1-9]|1[0-2])/20(2[5-9]|[3-9][0-9]|100)" required oninput="formatDate(this)">
+                        <input type="text" id="date_expiration" name="date_expiration" placeholder="MM/AAAA" class="champ_paiement" maxlength="7" required oninput="formatDate(this)">
                     </div>
                     <script>
                         function formatDate(input) {
