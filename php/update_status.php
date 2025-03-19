@@ -2,33 +2,38 @@
 
 session_start();
 
-$fichier = "../comptes.txt";
+$fichier = "../comptes.json";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = filter_input(INPUT_POST, 'nom');
     $nv_statut = filter_input(INPUT_POST, 'Statut');
 
     if (file_exists($fichier) && is_readable($fichier)) {
-        $lignes = file($fichier, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        $nouveau_contenu = [];
+        // Lire le contenu du fichier JSON
+        $jsonData = file_get_contents($fichier);
+        $users = json_decode($jsonData, true);
 
-        foreach ($lignes as $ligne) {
-            $infos = explode(" ; ", $ligne);
+        if ($users === null) {
+            die("Erreur : Format JSON invalide.");
+        }
 
-            if (count($infos) >= 8) {
-                list($nom_fichier, $prenom, $naissance, $adresse, $num, $utilisateur, $mdp_hash, $statut) = $infos;
-
-                if ($nom_fichier === $nom) {
-                    $statut = $nv_statut;
-                }
-                $nouveau_contenu[] = "$nom_fichier ; $prenom ; $naissance ; $adresse ; $num ; $utilisateur ; $mdp_hash ; $statut";
+        // Mettre à jour le statut de l'utilisateur
+        foreach ($users as &$user) {
+            if ($user['nom'] === $nom) {
+                $user['statut'] = $nv_statut;
+                break;
             }
         }
-        file_put_contents($fichier, implode("\n", $nouveau_contenu) . "\n");
+
+        // Sauvegarder les modifications dans le fichier JSON
+        file_put_contents($fichier, json_encode($users, JSON_PRETTY_PRINT));
+    } else {
+        die("Erreur : Impossible de lire le fichier JSON.");
     }
 }
 
-header("location: ../pages/admin.php");
+// Rediriger vers la page admin
+header("Location: ../pages/admin.php");
 exit();
 
 ?>

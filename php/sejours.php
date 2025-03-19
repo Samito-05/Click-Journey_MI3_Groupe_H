@@ -18,78 +18,84 @@
     $pension = $_POST['pension'];
     $file = fopen("../sejours.txt", "a+");
 
+    $destinations = json_decode(file_get_contents("../destination.json"), true);
+
+    $destination = array_filter($destinations, function($d) use ($ville) {
+        return $d['lieu'] === $ville;
+    });
+
+    $destination = reset($destination);
+    $randos = $destination['rando'] ?? [];
+    $activites = $destination['activite'] ?? [];
+
+    // Fusionner les randonnées et les activités dans une seule liste
+    $options = array_merge($randos, $activites);
+
 ?>
 <body>
 
-    <?php
-
-        require('../php/header.php')
-
-    ?>
+    <?php require('../php/header.php'); ?>
 
 <main>
 
     <fieldset class="field_sejours">
         <legend class="legend_sejours">Personaliser votre voyage</legend>
-            <form action="../paiement.php" method="post">
+        <form action="../paiement.php" method="post">
 
-                <div class="filtre">
-                    <h2 class="filtre">Lieu du voyage</h2>
-                    <h3 class="filtre"><?php echo $ville; ?></h3>
-                    
-                </div>
+            <div class="filtre">
+                <h2 class="filtre">Lieu du voyage</h2>
+                <h3 class="filtre"><?php echo $ville; ?></h3>
+            </div>
 
-                <div class="filtre">
-                    <h2 class="filtre">Nombre de participants</h2>
-                    <input type="number" name="nombre de personne" min="1" max="10" value="<?php echo $nbr_personnes ?>" step="1" required disabled>
-                </div>
+            <div class="filtre">
+                <h2 class="filtre">Nombre de participants</h2>
+                <input type="number" name="nombre de personne" min="1" max="10" value="<?php echo $nbr_personnes ?>" step="1" required disabled>
+            </div>
 
-                <div class="filtre">
-                    <h2 class="filtre">Duree du sejour</h2>
-                    <input type="number" name="duree_sejour" min="2" max="10" value="<?php echo $nbr_jours ?>" step="1" required disabled>
-                </div>
+            <div class="filtre">
+                <h2 class="filtre">Duree du sejour</h2>
+                <input type="number" name="duree_sejour" min="2" max="10" value="<?php echo $nbr_jours ?>" step="1" required disabled>
+            </div>
 
-                <div class="filtre">
-                    <h2 class="filtre">Date de depart</h2>
-                    <input type="date" name="date_depart" value="<?php echo $date_depart ?>" required disabled>
-                </div>
+            <div class="filtre">
+                <h2 class="filtre">Date de depart</h2>
+                <input type="date" name="date_depart" value="<?php echo $date_depart ?>" required disabled>
+            </div>
 
-                <div class="filtre">
-                    <h2 class="filtre">Logement</h2>
-                    <h3 class="filtre"><?php echo $logement ?></h3>
-                </div>
+            <div class="filtre">
+                <h2 class="filtre">Logement</h2>
+                <h3 class="filtre"><?php echo $logement ?></h3>
+            </div>
 
-                <div class="filtre">
-                    <h2 class="filtre">Option alimentaire</h2>
-                    <h3 class="filtre"><?php echo $pension ?></h3>
-                </div>
+            <div class="filtre">
+                <h2 class="filtre">Option alimentaire</h2>
+                <h3 class="filtre"><?php echo $pension ?></h3>
+            </div>
 
-                <div class="filtre">
-                    <h2 class="filtre">Choisissez une activité par jour</h2>
+            <div class="filtre">
+                <h2 class="filtre">Choisissez une activité par jour</h2>
 
-                    <table class="table_sejours">
+                <table class="table_sejours">
+                    <tr>
+                        <th>Jour</th>
+                        <th>Option</th>
+                    </tr>
+        
+                    <?php for ($i = 1; $i <= $nbr_jours; $i++) : ?>
                         <tr>
-                            <th>Jour</th>
-                            <th>Activité</th>
+                            <td>Jour <?php echo $i; ?></td>
+                            <td>
+                                <select name="option[<?php echo $i; ?>]">
+                                    <?php foreach ($options as $option) : ?>
+                                        <option value="<?php echo $option; ?>"><?php echo $option; ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </td> 
                         </tr>
-            
-                        <?php for ($i=1; $i < $nbr_jours+1; $i++) : ?>
+                    <?php endfor; ?>
 
-                            <tr>
-                                <td>Jour <?php echo $i; ?></td>
-                                <td>
-                                    <select name="options[<?php echo $i; ?>]">
-                                        <option value="Spa Day">Journée de repos</option>
-                                        <option value="Hike">Randonnée</option>
-                                        <option value="Museum Visit">Visite Culturelle</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                        <?php endfor; ?>
-
-                    </table>
-                </div>
+                </table>
+            </div>
 
             <button class="boutton_sejours" type="submit">Aller au paiement</button>
         </form>
@@ -97,11 +103,7 @@
 
 </main>
         
-        <?php
+<?php require('../php/footer.php'); ?>
 
-        require('../php/footer.php')
-
-        ?>
-    
-    </body>
+</body>
 </html>

@@ -1,6 +1,6 @@
 [
     {
-        "lieu": "Mont Blanc (France)",
+        "lieu": "Mont Blanc",
 
         "rando": [
             "Lacs des Chéserys",
@@ -12,16 +12,14 @@
         "activite": [
             "Parapente",
             "Escalade",
-            "Ski de randonnée"
-        ],
-        "relaxation": [
+            "Ski de randonnée",
             "Les Thermes de Saint-Gervais",
-            "bassin chauffé haulte attitude",
+            "Bassin chauffé haulte attitude"
         
         ]
     },
     {
-        "lieu": "Pic du Midi de Bigorre (France)",
+        "lieu": "Pic du Midi de Bigorre",
 
         "rando": [
             "La randonnée du Pic du Midi de Bigorre",
@@ -34,17 +32,12 @@
             "Rafting sur la Noguera Pallaresa",
             "Montgolfière en Garrotxa",
             "VTT dans le Val Aran",
-            "Ornitologie",
-            "Escalade et via ferrata au Congost de Mont-Rebei"
-        ],
-        "relaxation": [
-            "hotel ++",
-            "spa",
-            "piscine"
+            "Escalade et via ferrata au Congost de Mont-Rebei",
+            "Spa"
         ]
-    }
+    },
     {
-        "lieu": "Puy de Dôme (France)",
+        "lieu": "Puy de Dôme",
         "rando": [
             "Le Puy du Pariou",
             "Vallée des Rouets",
@@ -54,18 +47,14 @@
         ],
         "activite": [
             "Parc Animalier d'Auvergne",
-            "Station de Ski Sancy",
             "Auverfun",
             "Lac de Saint-Alyre",
-            "Golf Club des Volcans"
-        ],
-        "relaxation": [
-            "Bains thermaux",
+            "Golf Club des Volcans",
             "Thermes Sancy"
         ]
     },
     {
-        "lieu": "Dolomites (Italie)",
+        "lieu": "Dolomites",
         "rando": [
             "Lago di Dobbiaco",
             "Piz Boè",
@@ -76,17 +65,13 @@
         "activite": [
             "Ski",
             "Escalade et via ferrata",
-            "Vélo de montagne",
-            "Randonnée pédestre",
-            "Parapente"
-        ],
-        "relaxation": [
+            "Parapente",
             "Spas régionaux",
             "Bains de vapeur"
         ]
     },
     {
-        "lieu": "Monte Rosa (Italie)",
+        "lieu": "Monte Rosa",
         "rando": [
             "Tour du Mont Rose",
             "Monte Rosa Randò",
@@ -95,19 +80,15 @@
             "Alagna - Punta Indren"
         ],
         "activite": [
-            "Ski",
             "Escalade et via ferrata",
-            "Vélo de montagne",
             "Randonnée pédestre",
-            "Parapente"
-        ],
-        "relaxation": [
+            "Parapente",
             "Spas de la vallée",
             "Bains thermaux"
         ]
     },
     {
-        "lieu": "Mont Etna (Italie)",
+        "lieu": "Mont Etna",
         "rando": [
             "Sentiero Natura",
             "Grotta di Pitagora - Schiena dell'Asino",
@@ -117,18 +98,14 @@
         ],
         "activite": [
             "Excursions en 4x4",
-            "Randonnées guidées",
             "Spéléologie",
             "Balades à cheval",
-            "Ski et snowboard"
-        ],
-        "relaxation": [
             "Bains thermaux",
             "Thermes en altitude"
         ]
     },
     {
-        "lieu": "Mont Everest (Népal)",
+        "lieu": "Mont Everest",
         "rando": [
             "Camp de Base de l'Everest",
             "Gokyo Lakes",
@@ -137,19 +114,15 @@
             "Trek de l'Annapurna Circuit"
         ],
         "activite": [
-            "Ascension de l'Everest (expédition)",
             "Vol en hélicoptère autour de l'Everest",
             "Trekking",
             "Escalade",
-            "Randonnée autour des villages Sherpas"
-        ],
-        "relaxation": [
-            "Hébergements Sherpa",
+            "Randonnée autour des villages Sherpas",
             "Soins à base de plantes"
         ]
     },
     {
-        "lieu": "Mont Fuji (Japon)",
+        "lieu": "Mont Fuji",
         "rando": [
             "Ascension du Mont Fuji (Route Yoshida)",
             "Randonnée autour du lac Kawaguchi",
@@ -159,18 +132,14 @@
         ],
         "activite": [
             "Observation de la flore et faune locale",
-            "Escalade d'été sur le Mont Fuji",
             "Camping près du Mont Fuji",
             "Visite des Onsens autour du Mont Fuji",
-            "Parapente"
-        ],
-        "relaxation": [
             "Onsens (bains chauds japonais)",
             "Spa traditionnels"
         ]
     },
     {
-        "lieu": "Rocky Mountains (USA)",
+        "lieu": "Rocky Mountains",
         "rando": [
             "Trail Ridge Road",
             "Bear Lake Loop",
@@ -181,17 +150,13 @@
         "activite": [
             "Ski à Aspen",
             "Randonnée dans le parc national des Rocky Mountains",
-            "Observation de la faune",
             "Escalade",
-            "Rafting sur la rivière Arkansas"
-        ],
-        "relaxation": [
-            "Spas de montagne",
+            "Rafting",
             "Bains thermaux"
         ]
     },
     {
-        "lieu": "Cadillac Mountain (USA)",
+        "lieu": "Cadillac Mountain",
         "rando": [
             "Cadillac Summit Loop Trail",
             "South Ridge Trail",
@@ -200,19 +165,15 @@
             "Bowl Trail"
         ],
         "activite": [
-            "Observation des levers et couchers de soleil",
             "Vélo sur Mount Desert Island",
             "Kayak et canoë dans le parc national",
-            "Randonnée dans Acadia",
-            "Pêche et observation de la faune"
-        ],
-        "relaxation": [
+            "Pêche et observation de la faune",
             "Observation tranquille de la nature",
             "Bains thermaux à Bar Harbor"
         ]
     },
     {
-        "lieu": "Mont Rushmore (USA)",
+        "lieu": "Mont Rushmore",
         "rando": [
             "Presidential Trail",
             "Mount Rushmore Trail",
@@ -222,18 +183,14 @@
         ],
         "activite": [
             "Visite du monument",
-            "Randonnée dans le parc de Custer",
             "Observation de la faune",
             "Visite du parc national des Badlands",
-            "Photographie du Mont Rushmore"
-        ],
-        "relaxation": [
-            "Hébergements à proximité",
-            "Observation des paysages"
+            "Photographie du Mont Rushmore",
+            "Bains thermaux"
         ]
     },
     {
-        "lieu": "Mont Kilimanjaro (Tanzanie)",
+        "lieu": "Mont Kilimanjaro",
         "rando": [
             "Ascension par la route Marangu",
             "Ascension par la route Machame",
@@ -244,13 +201,9 @@
         "activite": [
             "Safari dans le parc national du Kilimanjaro",
             "Visite du parc national de Serengeti",
-            "Randonnée dans les plantations de café",
-            "Observation des oiseaux",
-            "Trekking autour du Mont Meru"
-        ],
-        "relaxation": [
-            "Hébergements dans les campements de luxe",
-            "Bains et massages à la fin du trek"
+            "Balade dans les plantations de café",
+            "Spa dans les campements de luxe",
+            "Bains et massages"
         ]
     }
 ]

@@ -1,0 +1,32 @@
+[
+    {
+        "nom": "ADMIN",
+        "prenom": "Admin",
+        "naissance": "0001-01-01",
+        "adresse": "Peak Explorer",
+        "num": "0000000000",
+        "email": "admin@peakexplorer.com",
+        "mdp_hash": "$2y$10$ILnhRx49gLEyl.nuAx0KWuk.xK3xxsdADKrIdo4Uu7h2aDMh3yt8i",
+        "statut": "admin"
+    },
+    {
+        "nom": "PELISSIER",
+        "prenom": "Jules",
+        "naissance": "2006-05-24",
+        "adresse": "Cergy",
+        "num": "0102030405",
+        "email": "jules@gmail.com",
+        "mdp_hash": "$2y$10$5KcAh1mHxwvAmHmO1fE9LukaytvSu8uuM0AP7PUOX8b53lFSeGkQa",
+        "statut": "vip"
+    },
+    {
+        "nom": "PROCOPPE",
+        "prenom": "Sam",
+        "naissance": "2005-05-20",
+        "adresse": "Paris",
+        "num": "0123456789",
+        "email": "sam@gmail.com",
+        "mdp_hash": "$2y$10$XFey.puA2tUV6ihLRce4uuIVGSaG7gH3UoNPM1Qz7IfgckI0E5sIm",
+        "statut": "client"
+    }
+]

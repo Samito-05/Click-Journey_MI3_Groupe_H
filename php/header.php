@@ -1,6 +1,6 @@
 <header class="Entete">
 
-    <?php if (!isset($_SESSION['email'])): ?>
+    <?php if (!isset($_SESSION['statut'])): ?>
         <!-- When logged out -->
         <div class="logo_petit">
             <a href="../index.php">
@@ -18,7 +18,7 @@
                 </a>
             </abbr>
         </div>
-    <?php elseif ($_SESSION['email'] === "admin@peakexplorer.com"): ?>
+    <?php elseif ($_SESSION['statut'] === "admin"): ?>
         <!-- When Admin -->
         <div class="logo_petit">
             <a href="../index.php">

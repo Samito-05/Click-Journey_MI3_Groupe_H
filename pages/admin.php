@@ -78,11 +78,17 @@ session_start();
 <main>
 
 <?php
-$file = "../comptes.txt";
+$file = "../comptes.json";
 if (!file_exists($file) || !is_readable($file)) {
     die("Error: Unable to read the user accounts file.");
 }
-$users = file($file, FILE_IGNORE_NEW_LINES);
+
+$jsonData = file_get_contents($file);
+$users = json_decode($jsonData, true);
+
+if ($users === null) {
+    die("Error: Invalid JSON format.");
+}
 
 echo '<table class="table_admin">
         <tr>
@@ -93,28 +99,20 @@ echo '<table class="table_admin">
             <th> Statut </th>
         </tr>';
 
-foreach ($users as $line) {
-    $data = explode(" ; ", $line);
-    if (count($data) < 8) {
-        error_log("Skipped invalid line: $line");
-        continue;
-    }
-
-    list($nom, $prenom, $dob, $adresse, $tel, $mail, $mdp, $statut) = $data;
-
+foreach ($users as $user) {
     echo "<tr>
-            <td>" . htmlspecialchars($nom) . "</td>
-            <td>" . htmlspecialchars($prenom) . "</td>
-            <td>" . htmlspecialchars($mail) . "</td>
+            <td>" . htmlspecialchars($user['nom']) . "</td>
+            <td>" . htmlspecialchars($user['prenom']) . "</td>
+            <td>" . htmlspecialchars($user['email']) . "</td>
             <td>********</td>
             <td>
                 <form method='post' action='../php/update_status.php'>
-                    <input type='hidden' name='nom' value='" . htmlspecialchars($nom) . "'>
+                    <input type='hidden' name='nom' value='" . htmlspecialchars($user['nom']) . "'>
                     <select name='Statut'>
-                        <option value='client' " . ($statut == "client" ? "selected" : "") . ">Client</option>
-                        <option value='vip' " . ($statut == "vip" ? "selected" : "") . ">VIP</option>
-                        <option value='admin' " . ($statut == "admin" ? "selected" : "") . ">Admin</option>
-                        <option value='BanDef' " . ($statut == "BanDef" ? "selected" : "") . ">BanDef</option>
+                        <option value='client' " . ($user['statut'] == "client" ? "selected" : "") . ">Client</option>
+                        <option value='vip' " . ($user['statut'] == "vip" ? "selected" : "") . ">VIP</option>
+                        <option value='admin' " . ($user['statut'] == "admin" ? "selected" : "") . ">Admin</option>
+                        <option value='BanDef' " . ($user['statut'] == "BanDef" ? "selected" : "") . ">BanDef</option>
                     </select>
                     <button type='submit'>Modifier</button>
                 </form>
@@ -125,14 +123,11 @@ foreach ($users as $line) {
 echo '</table>';
 ?>
 
-
 </main>
         
-        <?php
-
-        require('../php/footer.php')
-
-        ?>
+<?php
+require('../php/footer.php');
+?>
     
-    </body>
+</body>
 </html>

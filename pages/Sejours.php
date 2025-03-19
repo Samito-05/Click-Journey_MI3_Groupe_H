@@ -12,7 +12,7 @@ session_start();
 <body>
 <header class="Entete">
 
-    <?php if (!isset($_SESSION['email'])): ?>
+    <?php if (!isset($_SESSION['statut'])): ?>
         <!-- When logged out -->
         <div class="logo_petit">
             <a href="../index.php">
@@ -21,7 +21,7 @@ session_start();
         </div>
         <ul class="Haut_Page">
             <li class="inactive"><a href="../index.php">Accueil</a></li>
-            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
+            <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
         </ul>
         <div class="profile">
             <abbr title="Connexion/Inscription">
@@ -30,7 +30,7 @@ session_start();
                 </a>
             </abbr>
         </div>
-    <?php elseif ($_SESSION['email'] === "admin@peakexplorer.com"): ?>
+        <?php elseif ($_SESSION['statut'] === "admin"): ?>
         <!-- When Admin -->
         <div class="logo_petit">
             <a href="../index.php">
@@ -39,8 +39,8 @@ session_start();
         </div>
         <ul class="Haut_Page">
             <li class="inactive"><a href="../index.php">Accueil</a></li>
-            <li class="inactive"><a href="../pages/Sejours.php">Séjours</a></li>
-            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
+            <li class="active"><a href="../pages/Sejours.php">Séjours</a></li>
+            <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
         </ul>
         <div class="profile">
             <abbr title="Mon Profile">
@@ -63,8 +63,8 @@ session_start();
         </div>
         <ul class="Haut_Page">
             <li class="inactive"><a href="../index.php">Accueil</a></li>
-            <li class="inactive"><a href="../pages/Sejours.php">Séjours</a></li>
-            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
+            <li class="active"><a href="../pages/Sejours.php">Séjours</a></li>
+            <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
         </ul>
         <div class="profile">
             <abbr title="Mon Profile">

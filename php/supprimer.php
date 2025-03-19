@@ -1,26 +1,20 @@
 <?php
-    session_start();
-    
-    $fichier = "../comptes.txt";
-    $email = $_SESSION['email']; 
+session_start();
 
-    if (file_exists($fichier) && is_readable($fichier)) {
-        $lignes = file($fichier, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        $nouveau_contenu = [];
+$fichier = "../comptes.json";
+$email = $_SESSION['email'];
 
-        foreach ($lignes as $ligne) {
-            list($nom, $prenom, $num, $utilisateur, $mdp_hash) = explode(" ", $ligne);
-            
-            if ($utilisateur !== $email) {
-                $nouveau_contenu[] = $ligne;
-            }
-        }
+if (file_exists($fichier) && is_readable($fichier)) {
+    $utilisateurs = json_decode(file_get_contents($fichier), true);
 
-        file_put_contents($fichier, implode("\n", $nouveau_contenu) . "\n");
-    }
+    $utilisateurs = array_filter($utilisateurs, function ($utilisateur) use ($email) {
+        return $utilisateur['email'] !== $email;
+    });
 
-    session_destroy();
-    
-    header("Location: ../index.php");
-    exit();
+    file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT));
+}
+
+session_destroy();
+header("Location: ../index.php");
+exit();
 ?>

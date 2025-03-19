@@ -482,8 +482,7 @@ select.select {
 .boutton_verif,
 .boutton_recherche,
 .boutton_admin,
-.boutton_sejours,
-.boutton_paiement {
+.boutton_sejours {
     width: 38vmin;
     margin-top: 4vmin;
     text-align: center;
@@ -615,4 +614,4 @@ table.modif_compte {
     border-top: none;
 }
 
-/* Fin Admin */ 
+/* Fin Admin */
