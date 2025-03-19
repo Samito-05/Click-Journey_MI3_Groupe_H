@@ -104,8 +104,17 @@ session_start();
                         <label for="date_expiration">Date d'expiration:</label>
                     </div>
                     <div>
-                        <input type="month" id="date_expiration" name="date_expiration" placeholder="MM/AAAA" class="champ_paiement" required>
+                        <input type="text" id="date_expiration" name="date_expiration" placeholder="MM/AAAA" class="champ_paiement" maxlength="7" pattern="(0[1-9]|1[0-2])/20(2[5-9]|[3-9][0-9]|100)" required oninput="formatDate(this)">
                     </div>
+                    <script>
+                        function formatDate(input) {
+                            let value = input.value.replace(/\D/g, '');
+                            if (value.length > 2) {
+                                value = value.slice(0, 2) + '/' + value.slice(2, 6);
+                            }
+                            input.value = value;
+                        }
+                    </script>
 
                     <div class="div_paiement">
                         <label for="cvv">CVV:</label>
