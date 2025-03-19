@@ -78,7 +78,7 @@ session_start();
         <main>
             <fieldset class="field_paiement">
                 <legend class="legend_paiement">Paiement</legend>
-                <form class="formulaire_paiement" method="post" action="../php/paiement.php">
+                <form class="form_paiement" method="post" action="../php/paiement.php">
                     <div class="div_paiement">
                         <label for="prenom">Prénom:</label>
                     </div>
@@ -122,6 +122,7 @@ session_start();
                     <div>
                         <input type="text" id="cvv" name="cvv" class="champ_paiement" required>
                     </div>
+                    <button type="submit" class="boutton_paiement">Payer</button>
                 </form>
         </main>
         
