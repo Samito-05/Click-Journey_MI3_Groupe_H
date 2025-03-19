@@ -1,3 +1,4 @@
 ADMIN ; Admin ; 0001-01-01 ; Peak Explorer ; 0000000000 ; admin@peakexplorer.com ; $2y$10$ILnhRx49gLEyl.nuAx0KWuk.xK3xxsdADKrIdo4Uu7h2aDMh3yt8i ; admin
 PELISSIER ; Jules ; 2006-05-24 ; Cergy ; 0102030405 ; jules@gmail.com ; $2y$10$5KcAh1mHxwvAmHmO1fE9LukaytvSu8uuM0AP7PUOX8b53lFSeGkQa ; vip
 TRAN PHAT ; Hugo ; 2005-05-25 ; Monsoult ; 0102030405 ; hugo@gmail.com ; $2y$10$eNVgyeohpSSYKaxrTA0uGuWI0ugleuvGy0nNkeNXW16lnNhAVKEAK ; BanDef
+MORILLE ; Paul ; 2005-05-26 ; Issy ; 0102030405 ; paul@gmail.com ; $2y$10$aumiamY7anaSSXJbjt2R1OguPm3Ek2Y1rtxBS9AT0rv.tcpuok3ja ; client 
