@@ -49,7 +49,7 @@ session_start();
                 </a>
             </abbr>
             <abbr title="Gestion admin">
-                <a href="../pages/verif_admin.php">
+                <a href="../pages/admin.php">
                     <img src="../Images/admin.png" alt="Admin">
                 </a>
             </abbr>
@@ -82,11 +82,11 @@ session_start();
             <div class="filtre">
                 <label>Lieu du voyage :</label>
                 <select class="select" name="city" id="city" required>
-                    <option value="default">Choisir un lieu</option>
+                <option value="" disabled selected>Choisir un lieu</option>
                     <optgroup label="France">
                         <option value="Mont Blanc">Mont Blanc</option>
                         <option value="Pyrénées">Pyrénées</option>
-                        <option value="mMssif Central">Massif Central</option>
+                        <option value="Massif Central">Massif Central</option>
                     </optgroup>
                     <optgroup label="Italie">
                         <option value="Dolomites">Dolomites</option>
@@ -122,13 +122,13 @@ session_start();
 
             <div class="filtre">
                 <label>Date de depart :</label>
-                <input type="date" name="date_depart" value="2025/01/01" required>
+                <input type="date" name="date_depart" value="<?php echo date("Y-m-d")?>" min="<?php echo date("Y-m-d")?>" required>
             </div>
 
             <div class="filtre">
                 <label>Logement :</label>
                 <select class="select" name="logement" required>
-                    <option value="default">Choisir un Logement</option>
+                    <option value="" disabled selected>Choisir un Logement</option>
                     <option value="Hotel">Hotel</option>
                     <option value="Hotel++">Hotel haute gamme</option>
                     <option value="Auberge de Jeunnesse">Auberge de Jeunnesse</option>
@@ -138,9 +138,9 @@ session_start();
 
             <p class="filtre">Option alimentaire :</p>
             <div class="checkbox_options">
-                <label><input type="checkbox" name="pension" value="sans pension"/><p>Sans pension</p></label>
-                <label><input type="checkbox" name="pension" value="demi pension"/><p>Demi-pension</p></label>
-                <label><input type="checkbox" name="pension" value="pension complète"/><p>Pension complète</p></label>
+                <label><input type="radio" name="pension" value="Sans pension"/><p>Sans pension</p></label>
+                <label><input type="radio" name="pension" value="Demi pension"/><p>Demi-pension</p></label>
+                <label><input type="radio" name="pension" value="Pension complète"/><p>Pension complète</p></label>
             </div>
 
             <button type="submit" class="boutton_recherche">Rechercher</button>

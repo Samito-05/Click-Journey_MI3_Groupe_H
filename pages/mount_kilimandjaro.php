@@ -10,71 +10,11 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../style.css"> 
 </head>
 <body>
-<header class="Entete">
+<?php
 
-    <?php if (!isset($_SESSION['email'])): ?>
-        <!-- When logged out -->
-        <div class="logo_petit">
-            <a href="../index.php">
-                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
-            </a>
-        </div>
-        <ul class="Haut_Page">
-            <li class="inactive"><a href="../index.php">Accueil</a></li>
-            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
-        </ul>
-        <div class="profile">
-            <abbr title="Connexion/Inscription">
-                <a href="../pages/Connexion.php">
-                    <img src="../Images/profile.png" alt="Profil">
-                </a>
-            </abbr>
-        </div>
-    <?php elseif ($_SESSION['email'] === "admin@peakexplorer.com"): ?>
-        <!-- When Admin -->
-        <div class="logo_petit">
-            <a href="../index.php">
-                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
-            </a>
-        </div>
-        <ul class="Haut_Page">
-            <li class="inactive"><a href="../index.php">Accueil</a></li>
-            <li class="inactive"><a href="../pages/Sejours.php">Séjours</a></li>
-            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
-        </ul>
-        <div class="profile">
-            <abbr title="Mon Profile">
-                <a href="../pages/profile.php">
-                    <img src="../Images/profile.png" alt="Profil">
-                </a>
-            </abbr>
-            <abbr title="Gestion admin">
-                <a href="../pages/verif_admin.php">
-                    <img src="../Images/admin.png" alt="Admin">
-                </a>
-            </abbr>
-        </div>
-    <?php else: ?>
-        <!-- When Logged in as normal user -->
-        <div class="logo_petit">
-            <a href="../index.php">
-                <img src="../Images/logo.jpg" alt="PeakExplorer logo">
-            </a>
-        </div>
-        <ul class="Haut_Page">
-            <li class="inactive"><a href="../index.php">Accueil</a></li>
-            <li class="inactive"><a href="../pages/Sejours.php">Séjours</a></li>
-            <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
-        </ul>
-        <div class="profile">
-            <abbr title="Mon Profile">
-                <a href="../pages/profile.php">
-                    <img src="../Images/profile.png" alt="Profil">
-                </a>
-            </abbr>
-        </div>
-    <?php endif; ?>
-</header>
+        require('../php/header.php')
+
+    ?>
 <main>
         <h1 class="Titre">Mont Kilimandjaro</h1>
         <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.408037874538!2d37.34532756009439!3d-3.0674031234841292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1839fc5a396ea805%3A0x8e741c478eea6c01!2sKilimandjaro!5e0!3m2!1sfr!2sfr!4v1739349491873!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

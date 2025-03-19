@@ -7,6 +7,7 @@
     $email = trim($_POST['email']);
     $mdp = trim($_POST['mdp_inscription']);
     $mdp_confirm = trim($_POST['mdp_confirm_inscription']);
+    $statut = "client";
     $file = fopen("../comptes.txt", "a+");
 
     if (file_exists("../comptes.txt")){
@@ -30,7 +31,7 @@
         exit();
     } else {
         $mdp_cache = password_hash($mdp, PASSWORD_DEFAULT);
-        fwrite($file, "$nom ; $prenom ; $naissance ; $adresse ; $numero ; $email ; $mdp_cache\n");
+        fwrite($file, "$nom ; $prenom ; $naissance ; $adresse ; $numero ; $email ; $mdp_cache ; $statut \n");
 
         fclose($file);
     }

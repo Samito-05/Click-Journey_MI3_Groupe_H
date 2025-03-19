@@ -49,7 +49,7 @@ session_start();
                 </a>
             </abbr>
             <abbr title="Gestion admin">
-                <a href="../pages/verif_admin.php">
+                <a href="../pages/admin.php">
                     <img src="../Images/admin.png" alt="Admin">
                 </a>
             </abbr>

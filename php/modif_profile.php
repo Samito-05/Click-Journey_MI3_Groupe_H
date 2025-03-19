@@ -21,8 +21,8 @@ if (file_exists($fichier) && is_readable($fichier)) {
     foreach ($lignes as $ligne) {
         $infos = explode(" ; ", $ligne);
         
-        if (count($infos) >= 7) {
-            list($nom, $prenom, $naissance, $adresse, $num, $utilisateur, $mdp_hash) = $infos;
+        if (count($infos) >= 8) {
+            list($nom, $prenom, $naissance, $adresse, $num, $utilisateur, $mdp_hash, $statut) = $infos;
 
             if ($utilisateur === $email) {
                 
@@ -51,7 +51,7 @@ if (file_exists($fichier) && is_readable($fichier)) {
                 $_SESSION['email'] = $utilisateur;
             }
 
-            $nouveau_contenu[] = "$nom ; $prenom ; $naissance ; $adresse ; $num ; $utilisateur ; $mdp_hash";
+            $nouveau_contenu[] = "$nom ; $prenom ; $naissance ; $adresse ; $num ; $utilisateur ; $mdp_hash ; $statut";
         }
     }
 

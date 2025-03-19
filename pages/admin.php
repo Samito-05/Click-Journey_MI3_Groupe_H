@@ -49,7 +49,7 @@ session_start();
             </a>
         </abbr>
         <abbr title="Gestion admin">
-            <a href="../pages/verif_admin.php">
+            <a href="../pages/admin.php">
                 <img src="../Images/admin.png" alt="Admin">
             </a>
         </abbr>
@@ -77,66 +77,56 @@ session_start();
 </header>
 <main>
 
+<?php
+$file = "../comptes.txt";
+if (!file_exists($file) || !is_readable($file)) {
+    die("Error: Unable to read the user accounts file.");
+}
+$users = file($file, FILE_IGNORE_NEW_LINES);
+
+echo '<table class="table_admin">
+        <tr>
+            <th> Nom </th>
+            <th> Prénom </th>
+            <th> Adresse Mail </th>
+            <th> Mot de passe </th>
+            <th> Statut </th>
+        </tr>';
+
+foreach ($users as $line) {
+    $data = explode(" ; ", $line);
+    if (count($data) < 8) {
+        error_log("Skipped invalid line: $line");
+        continue;
+    }
+
+    list($nom, $prenom, $dob, $adresse, $tel, $mail, $mdp, $statut) = $data;
+
+    echo "<tr>
+            <td>" . htmlspecialchars($nom) . "</td>
+            <td>" . htmlspecialchars($prenom) . "</td>
+            <td>" . htmlspecialchars($mail) . "</td>
+            <td>********</td>
+            <td>
+                <form method='post' action='../php/update_status.php'>
+                    <input type='hidden' name='nom' value='" . htmlspecialchars($nom) . "'>
+                    <select name='Statut'>
+                        <option value='client' " . ($statut == "client" ? "selected" : "") . ">Client</option>
+                        <option value='vip' " . ($statut == "vip" ? "selected" : "") . ">VIP</option>
+                        <option value='admin' " . ($statut == "admin" ? "selected" : "") . ">Admin</option>
+                        <option value='BanDef' " . ($statut == "BanDef" ? "selected" : "") . ">BanDef</option>
+                    </select>
+                    <button type='submit'>Modifier</button>
+                </form>
+            </td>
+          </tr>";
+}
+
+echo '</table>';
+?>
 
 
-            <table class="table_admin">
-                <tr>
-                    <th> Nom </th>
-                    <th> Prenom </th>
-                    <th> Adresse Mail </th>
-                    <th> Mot de passe </th>
-                    <th> Statut </th>
-                </tr>
-                <tr>
-                    <td> Dupont </td>
-                    <td> Jean-Patoche </td>
-                    <td> mail@mail.com </td>
-                    <td> MDP1client </td>
-                    <td> 
-                        <form method="post" action="" class="statut_client">
-                            <select name="Statut">
-                                <option value="VIP">VIP</option>
-                                <option value="Normal">Normal</option>
-                                <option value="BanDef">BanDef</option>
-                            </select> 
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td> ... </td>
-                    <td> ... </td>
-                    <td> ... </td>
-                    <td> ... </td>
-                    <td> 
-                        <form method="post" action="" class="statut_client">
-                            <select name="Statut">
-                                <option value="VIP">VIP</option>
-                                <option value="Normal">Normal</option>
-                                <option value="BanDef">BanDef</option>
-                            </select> 
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td> ... </td>
-                    <td> ... </td>
-                    <td> ... </td>
-                    <td> ... </td>
-                    <td> 
-                        <form method="post" action="" class="statut_client">
-                            <select name="Statut">
-                                <option value="VIP">VIP</option>
-                                <option value="Normal">Normal</option>
-                                <option value="BanDef">BanDef</option>
-                            </select> 
-                        </form>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        </main>
-        </main>
+</main>
         
         <?php
 
