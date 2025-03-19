@@ -1,42 +1,256 @@
 [
     {
-        "lieu": "Mont Blanc",
+        "lieu": "Mont Blanc (France)",
 
         "rando": [
-            "",
-            "",
-            "",
-            ""
+            "Lacs des Chéserys",
+            "Mont Buet",
+            "Grand Balcon",
+            "Glacier des Bossons et la Jonction",
+            "Cascade du Dard"
         ],
         "activite": [
-            "",
-            "",
-            ""
+            "Parapente",
+            "Escalade",
+            "Ski de randonnée"
         ],
         "relaxation": [
-            "",
-            "",
-            ""
+            "Les Thermes de Saint-Gervais",
+            "bassin chauffé haulte attitude",
+        
         ]
     },
     {
-        "lieu": "Mont Blanc",
+        "lieu": "Pic du Midi de Bigorre (France)",
 
         "rando": [
-            "",
-            "",
-            "",
-            ""
+            "La randonnée du Pic du Midi de Bigorre",
+            "VTT Traversée du Col du Tourmalet à Hautacam",
+            "Pédestre Tournaboup - Refuge de Bastan",
+            "Pédestre D'Artigues au Refuge de Campana de Cloutou",
+            "Pédestre Refuge de la Glère - Refuge d'Aygues-Cluses"
         ],
         "activite": [
-            "",
-            "",
-            ""
+            "Rafting sur la Noguera Pallaresa",
+            "Montgolfière en Garrotxa",
+            "VTT dans le Val Aran",
+            "Ornitologie",
+            "Escalade et via ferrata au Congost de Mont-Rebei"
         ],
         "relaxation": [
-            "",
-            "",
-            ""
+            "hotel ++",
+            "spa",
+            "piscine"
+        ]
+    }
+    {
+        "lieu": "Puy de Dôme (France)",
+        "rando": [
+            "Le Puy du Pariou",
+            "Vallée des Rouets",
+            "Le Pic du Capucin",
+            "Puy de la Vache",
+            "Grottes Du Cliersou"
+        ],
+        "activite": [
+            "Parc Animalier d'Auvergne",
+            "Station de Ski Sancy",
+            "Auverfun",
+            "Lac de Saint-Alyre",
+            "Golf Club des Volcans"
+        ],
+        "relaxation": [
+            "Bains thermaux",
+            "Thermes Sancy"
+        ]
+    },
+    {
+        "lieu": "Dolomites (Italie)",
+        "rando": [
+            "Lago di Dobbiaco",
+            "Piz Boè",
+            "Labirinto del Latemar",
+            "Seceda",
+            "Lago di Sorapis"
+        ],
+        "activite": [
+            "Ski",
+            "Escalade et via ferrata",
+            "Vélo de montagne",
+            "Randonnée pédestre",
+            "Parapente"
+        ],
+        "relaxation": [
+            "Spas régionaux",
+            "Bains de vapeur"
+        ]
+    },
+    {
+        "lieu": "Monte Rosa (Italie)",
+        "rando": [
+            "Tour du Mont Rose",
+            "Monte Rosa Randò",
+            "Rifugio Gnifetti - Capanna Margherita",
+            "Sentiero del Lyskamm",
+            "Alagna - Punta Indren"
+        ],
+        "activite": [
+            "Ski",
+            "Escalade et via ferrata",
+            "Vélo de montagne",
+            "Randonnée pédestre",
+            "Parapente"
+        ],
+        "relaxation": [
+            "Spas de la vallée",
+            "Bains thermaux"
+        ]
+    },
+    {
+        "lieu": "Mont Etna (Italie)",
+        "rando": [
+            "Sentiero Natura",
+            "Grotta di Pitagora - Schiena dell'Asino",
+            "Piano Provenzana - Cratère du Monte Nero",
+            "Crater Silvestri",
+            "Vallée del Bove"
+        ],
+        "activite": [
+            "Excursions en 4x4",
+            "Randonnées guidées",
+            "Spéléologie",
+            "Balades à cheval",
+            "Ski et snowboard"
+        ],
+        "relaxation": [
+            "Bains thermaux",
+            "Thermes en altitude"
+        ]
+    },
+    {
+        "lieu": "Mont Everest (Népal)",
+        "rando": [
+            "Camp de Base de l'Everest",
+            "Gokyo Lakes",
+            "Kalapatthar",
+            "Renjo La Pass",
+            "Trek de l'Annapurna Circuit"
+        ],
+        "activite": [
+            "Ascension de l'Everest (expédition)",
+            "Vol en hélicoptère autour de l'Everest",
+            "Trekking",
+            "Escalade",
+            "Randonnée autour des villages Sherpas"
+        ],
+        "relaxation": [
+            "Hébergements Sherpa",
+            "Soins à base de plantes"
+        ]
+    },
+    {
+        "lieu": "Mont Fuji (Japon)",
+        "rando": [
+            "Ascension du Mont Fuji (Route Yoshida)",
+            "Randonnée autour du lac Kawaguchi",
+            "Sentier Subashiri",
+            "Sentier Gotemba",
+            "Sentier Fujinomiya"
+        ],
+        "activite": [
+            "Observation de la flore et faune locale",
+            "Escalade d'été sur le Mont Fuji",
+            "Camping près du Mont Fuji",
+            "Visite des Onsens autour du Mont Fuji",
+            "Parapente"
+        ],
+        "relaxation": [
+            "Onsens (bains chauds japonais)",
+            "Spa traditionnels"
+        ]
+    },
+    {
+        "lieu": "Rocky Mountains (USA)",
+        "rando": [
+            "Trail Ridge Road",
+            "Bear Lake Loop",
+            "Longs Peak",
+            "Emerald Lake",
+            "Alberta Falls"
+        ],
+        "activite": [
+            "Ski à Aspen",
+            "Randonnée dans le parc national des Rocky Mountains",
+            "Observation de la faune",
+            "Escalade",
+            "Rafting sur la rivière Arkansas"
+        ],
+        "relaxation": [
+            "Spas de montagne",
+            "Bains thermaux"
+        ]
+    },
+    {
+        "lieu": "Cadillac Mountain (USA)",
+        "rando": [
+            "Cadillac Summit Loop Trail",
+            "South Ridge Trail",
+            "North Ridge Trail",
+            "Perpendicular Trail",
+            "Bowl Trail"
+        ],
+        "activite": [
+            "Observation des levers et couchers de soleil",
+            "Vélo sur Mount Desert Island",
+            "Kayak et canoë dans le parc national",
+            "Randonnée dans Acadia",
+            "Pêche et observation de la faune"
+        ],
+        "relaxation": [
+            "Observation tranquille de la nature",
+            "Bains thermaux à Bar Harbor"
+        ]
+    },
+    {
+        "lieu": "Mont Rushmore (USA)",
+        "rando": [
+            "Presidential Trail",
+            "Mount Rushmore Trail",
+            "Black Elk Peak",
+            "Little Devils Tower",
+            "Cathedral Spires Trail"
+        ],
+        "activite": [
+            "Visite du monument",
+            "Randonnée dans le parc de Custer",
+            "Observation de la faune",
+            "Visite du parc national des Badlands",
+            "Photographie du Mont Rushmore"
+        ],
+        "relaxation": [
+            "Hébergements à proximité",
+            "Observation des paysages"
+        ]
+    },
+    {
+        "lieu": "Mont Kilimanjaro (Tanzanie)",
+        "rando": [
+            "Ascension par la route Marangu",
+            "Ascension par la route Machame",
+            "Ascension par la route Lemosho",
+            "Ascension par la route Rongai",
+            "Ascension par la route Shira"
+        ],
+        "activite": [
+            "Safari dans le parc national du Kilimanjaro",
+            "Visite du parc national de Serengeti",
+            "Randonnée dans les plantations de café",
+            "Observation des oiseaux",
+            "Trekking autour du Mont Meru"
+        ],
+        "relaxation": [
+            "Hébergements dans les campements de luxe",
+            "Bains et massages à la fin du trek"
         ]
     }
 ]
