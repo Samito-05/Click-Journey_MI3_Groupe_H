@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'], $_SESSION['voyage'], $_SESSION['montant'])) {
 // Récupération des infos du voyage
 $montant = $_SESSION['montant'];
 $transaction_id = uniqid(); // Générer un ID de transaction unique
-$vendeur = "MI-1_A"; // Remplace par ton identifiant de groupe
+$vendeur = "MI-3_H"; 
 $retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
 
 // Récupérer la clé API
