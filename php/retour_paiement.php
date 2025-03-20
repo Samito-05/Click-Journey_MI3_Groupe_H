@@ -23,7 +23,7 @@ if ($control !== $control_check) {
 
 if ($status === "accepted") {
     // Enregistrer la transaction
-    $fichier_transactions = "../data/transactions.json";
+    $fichier_transactions = "../transactions.json";
     $transactions = file_exists($fichier_transactions) ? json_decode(file_get_contents($fichier_transactions), true) : [];
 
     $transactions[] = [
