@@ -482,7 +482,8 @@ select.select {
 .boutton_verif,
 .boutton_recherche,
 .boutton_admin,
-.boutton_sejours {
+.boutton_sejours,
+.boutton_paiement {
     width: 38vmin;
     margin-top: 4vmin;
     text-align: center;
