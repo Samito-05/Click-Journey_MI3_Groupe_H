@@ -45,15 +45,19 @@ session_start();
                     <div class="div_paiement">
                         <input type="text" id="date_expiration" name="date_expiration" placeholder="MM/AAAA" class="champ_paiement" maxlength="7" required oninput="formatDate(this)">
                     </div>
-                    <script>
-                        function formatDate(input) {
-                            let value = input.value.replace(/\D/g, '');
-                            if (value.length > 2) {
-                                value = value.slice(0, 2) + '/' + value.slice(2, 6);
+                    <?php
+                        function formatDate($date) {
+                            $date = preg_replace('/\D/', '', $date);
+                            if (strlen($date) > 2) {
+                                $date = substr($date, 0, 2) . '/' . substr($date, 2, 4);
                             }
-                            input.value = value;
+                            return $date;
                         }
-                    </script>
+
+                        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                            $_POST['date_expiration'] = formatDate($_POST['date_expiration']);
+                        }
+                    ?>
 
                     <div class="div_paiement">
                         <label for="cvv">CVV:</label>
