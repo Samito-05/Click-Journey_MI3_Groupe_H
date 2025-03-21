@@ -40,8 +40,9 @@ $_SESSION['vendeur'] = $vendeur;
         <input type="hidden" name="retour" value="<?php echo $retour_url; ?>">
         <input type="hidden" name="control" value="<?php echo $control; ?>">
     </form>
-    <script>
-        document.getElementById('cybankForm').submit();
-    </script>
+    <?php
+    echo '<p>Veuillez cliquer sur le bouton ci-dessous pour continuer.</p>';
+    echo '<button type="submit" form="cybankForm">Continuer</button>';
+    ?>
 </body>
 </html>
