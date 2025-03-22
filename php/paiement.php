@@ -41,8 +41,8 @@ $_SESSION['vendeur'] = $vendeur;
         <input type="hidden" name="control" value="<?php echo $control; ?>">
     </form>
     <?php
-    echo '<p>Veuillez cliquer sur le bouton ci-dessous pour continuer.</p>';
-    echo '<button type="submit" form="cybankForm">Continuer</button>';
+        echo '<p>Veuillez cliquer sur le bouton ci-dessous pour continuer.</p>';
+        echo '<button type="submit" form="cybankForm">Continuer</button>';
     ?>
 </body>
 </html>
