@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('getapikey.php'); // Inclure la fonction pour récupérer la clé API
+require('getapikey.php'); 
 
 // Vérification de l'utilisateur et du voyage
 if (!isset($_SESSION['user_id'], $_SESSION['voyage'], $_SESSION['montant'])) {
