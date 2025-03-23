@@ -107,6 +107,11 @@ session_start();
                     <optgroup label="Tanzanie">
                         <option value="Mont Kilimanjaro">Mont Kilimanjaro</option>
                     </optgroup>
+                    <optgroup label="Autres">
+                        <option value="Voyage 13">Voyage 13</option>
+                        <option value="Voyage 14">Voyage 14</option>
+                        <option value="Voyage 15">Voyage 15</option>
+                    </optgroup>
                 </select>
             </div>
 

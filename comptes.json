@@ -17,7 +17,7 @@
         "num": "0102030405",
         "email": "jules@gmail.com",
         "mdp_hash": "$2y$10$5KcAh1mHxwvAmHmO1fE9LukaytvSu8uuM0AP7PUOX8b53lFSeGkQa",
-        "statut": "vip"
+        "statut": "admin"
     },
     {
         "nom": "PROCOPPE",
@@ -27,6 +27,26 @@
         "num": "0123456789",
         "email": "sam@gmail.com",
         "mdp_hash": "$2y$10$XFey.puA2tUV6ihLRce4uuIVGSaG7gH3UoNPM1Qz7IfgckI0E5sIm",
+        "statut": "client"
+    },
+    {
+        "nom": "TRAN PHAT",
+        "prenom": "Hugo",
+        "naissance": "2005-05-20",
+        "adresse": "Monsoult",
+        "num": "0123456789",
+        "email": "hugo@gmail.com",
+        "mdp_hash": "$2y$10$bD.cFslBTHK692qD61Voqe4qpoa2Prgo1ukSlnrbGutZ3LOEL9Cvu",
+        "statut": "client"
+    },
+    {
+        "nom": "MORILLE",
+        "prenom": "Paul",
+        "naissance": "2005-05-20",
+        "adresse": "Paris",
+        "num": "0123456789",
+        "email": "paul@gmail.com",
+        "mdp_hash": "$2y$10$MTM5jvs6QMtHD9mZdO2OfeSOoTsAliipyOyn5jf.HwNZbJodMurf.",
         "statut": "client"
     }
 ]
