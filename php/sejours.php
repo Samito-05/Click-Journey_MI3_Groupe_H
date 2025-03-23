@@ -10,7 +10,7 @@
     session_start();
 
     $utilisateur = $_SESSION['email'];
-    $ville = $_POST['city'];
+    $ville = $_POST['ville'];
     $nbr_personnes = $_POST['nbr_personnes'];
     $nbr_jours = $_POST['duree_sejour'];
     $date_depart = $_POST['date_depart'];
@@ -100,7 +100,7 @@
         <!-- Formulaire unique pour transmettre les données vers paiement.php -->
         <form action="../php/paiement.php" method="post">
             <!-- Champs cachés pour transmettre les données du voyage -->
-            <input type="hidden" name="city" value="<?php echo $ville; ?>">
+            <input type="hidden" name="ville" value="<?php echo $ville; ?>">
             <input type="hidden" name="nbr_personnes" value="<?php echo $nbr_personnes; ?>">
             <input type="hidden" name="duree_sejour" value="<?php echo $nbr_jours; ?>">
             <input type="hidden" name="date_depart" value="<?php echo $date_depart; ?>">
