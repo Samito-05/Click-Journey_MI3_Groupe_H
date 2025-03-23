@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
         foreach ($destinations as $destination) {
             if (strcasecmp($destination['lieu'], $recherche) === 0) {
                 // Redirection vers Sejours.php avec la destination trouvée
-                header("Location: pages/Sejours.php?ville=" . urlencode($destination['lieu']));
+                header("Location: pages/voyages.php");
                 exit;
             }
         }
