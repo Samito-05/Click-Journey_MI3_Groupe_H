@@ -2,31 +2,29 @@
 session_start();
 require('getapikey.php'); 
 
-// Vérifier que l'utilisateur est connecté et que les infos du voyage existent
-if (!isset($_SESSION['user_id'], $_SESSION['voyage'])) {
+// Vérifier si l'utilisateur et le voyage sont bien en session
+if (!isset($_SESSION['email'], $_SESSION['voyage'])) {
     die("Erreur : Informations du voyage ou utilisateur manquantes.");
 }
 
-// Si le montant n'est pas déjà défini, on le calcule (exemple : 100 € par participant)
-if (!isset($_SESSION['montant'])) {
-    $montant = 100 * $_SESSION['voyage']['nbr_personnes'];
-    $_SESSION['montant'] = $montant;
-} else {
-    $montant = $_SESSION['montant'];
-}
-
-$transaction_id = uniqid(); // Générer un ID de transaction unique
 $vendeur = "MI-3_H"; 
-$retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
-
-// Récupérer la clé API
 $api_key = getAPIKey($vendeur);
 
-// Générer la valeur de contrôle
+// Calcul du montant (nombre abritraire)
+$montant = number_format(100 * $_SESSION['voyage']['nbr_personnes'], 2, '.', '');
+
+// Génération de l'ID de transaction
+$transaction_id = uniqid(); 
+
+// URL de retour
+$retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
+
+// Génération de la valeur de contrôle
 $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $retour_url . "#");
 
-// Stocker les infos de paiement dans la session
+// Stocker les infos en session
 $_SESSION['transaction_id'] = $transaction_id;
+$_SESSION['montant'] = $montant;
 $_SESSION['vendeur'] = $vendeur;
 ?>
 
