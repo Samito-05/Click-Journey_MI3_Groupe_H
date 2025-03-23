@@ -10,7 +10,7 @@ $logement = $_POST['logement'];
 $pension = $_POST['pension'];
 $options = $_POST['option'] ?? [];
 $cout = $_POST['cout'];
-$montant = $cout; // Initialize $montant with the value of $cout
+$montant = $cout; 
 
 $nouveauSejour = [
     "utilisateur" => $_SESSION['email'], // Utilisateur connecté
@@ -38,16 +38,18 @@ file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT));
 $vendeur = "MI-3_H"; 
 $api_key = getAPIKey($vendeur);
 
-// Génération de l'ID de transaction
+
 $transaction_id = uniqid(); 
 
-// URL de retour
-$retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
 
-// Génération de la valeur de contrôle
+//$retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
+
+$retour_url = "http://localhost/index.php";
+
+
 $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $retour_url . "#");
 
-// Stocker les infos en session
+
 $_SESSION['transaction_id'] = $transaction_id;
 $_SESSION['cout'] = $cout;
 $_SESSION['vendeur'] = $vendeur;

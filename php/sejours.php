@@ -71,6 +71,8 @@
             <h3 class="filtre"><?php echo $pension ?></h3>
         </div>
 
+        <?php require('../php/calcul_cout.php'); ?>
+
         <div class="filtre">
             <h2 class="filtre">Choisissez une activité par jour</h2>
 
@@ -105,7 +107,10 @@
             </form>
         </div>
 
-        <?php require('../php/calcul_cout.php'); ?>
+        <div class="filtre">
+            <h2 class="filtre">Cout total</h2>
+            <h3 class="filtre"><?php echo $cout; ?> €</h3>
+        </div>
 
     </fieldset>
 

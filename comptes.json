@@ -17,7 +17,7 @@
         "num": "0102030405",
         "email": "jules@gmail.com",
         "mdp_hash": "$2y$10$5KcAh1mHxwvAmHmO1fE9LukaytvSu8uuM0AP7PUOX8b53lFSeGkQa",
-        "statut": "admin"
+        "statut": "vip"
     },
     {
         "nom": "PROCOPPE",
@@ -27,7 +27,7 @@
         "num": "0123456789",
         "email": "sam@gmail.com",
         "mdp_hash": "$2y$10$XFey.puA2tUV6ihLRce4uuIVGSaG7gH3UoNPM1Qz7IfgckI0E5sIm",
-        "statut": "client"
+        "statut": "admin"
     },
     {
         "nom": "TRAN PHAT",
@@ -37,7 +37,7 @@
         "num": "0123456789",
         "email": "hugo@gmail.com",
         "mdp_hash": "$2y$10$bD.cFslBTHK692qD61Voqe4qpoa2Prgo1ukSlnrbGutZ3LOEL9Cvu",
-        "statut": "client"
+        "statut": "vip"
     },
     {
         "nom": "MORILLE",

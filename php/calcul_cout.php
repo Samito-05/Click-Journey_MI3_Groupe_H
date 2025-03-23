@@ -33,8 +33,3 @@
     }
     
 ?>
-
-<div class="filtre">
-    <h2 class="filtre">Cout total</h2>
-    <h3 class="filtre"><?php echo $cout; ?> €</h3>
-</div>

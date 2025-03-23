@@ -34,7 +34,7 @@ if (file_exists($sejoursFile) && is_readable($sejoursFile)) {
         <legend class="legend_profile">Détails du Voyage</legend>
         <?php if ($detailsVoyage): ?>
             <h2><?php echo ($detailsVoyage['ville']); ?></h2>
-            <p><strong>Prix :</strong> <?php echo ($detailsVoyage['cout']); ?> €</p>
+            <p><strong>Prix :</strong> <?php echo (int)$detailsVoyage['cout']; ?> €</p>
             <p><strong>Date de départ :</strong> <?php echo ($detailsVoyage['date_debut']); ?></p>
             <p><strong>Durée :</strong> <?php echo ($detailsVoyage['nbr_jours']); ?> jours</p>
             <p><strong>Participants :</strong> <?php echo ($detailsVoyage['nbr_personnes']); ?></p>

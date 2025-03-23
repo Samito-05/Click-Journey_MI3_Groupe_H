@@ -121,7 +121,7 @@
         </form>   
     </fieldset>
 
-    <fieldset class="field_profile">
+    <fieldset class="field_reserve">
         <legend class="legend_profile">Mes Voyages Payés</legend>
         <?php if (!empty($voyagesPayes)): ?>
             <table class="table_sejours">
@@ -140,7 +140,7 @@
                             <td>
                                 <form method="get" action="details_voyage.php">
                                     <input type="hidden" name="ville" value="<?php echo ($voyage['ville']); ?>">
-                                    <button type="submit" class="boutton_sejours">Voir les détails</button>
+                                    <button type="submit" class="boutton_reserve">Voir les détails</button>
                                 </form>
                             </td>
                         </tr>

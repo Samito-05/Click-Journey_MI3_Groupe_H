@@ -1,32 +1,54 @@
 [
     {
-        "utilisateur": "admin@peakexplorer.com",
-        "ville": "Mont Blanc",
-        "nbr_personnes": "1",
-        "nbr_jours": "3",
-        "date_debut": "2025-03-23",
-        "logement": "Hotel",
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Rushmore",
+        "nbr_personnes": "3",
+        "nbr_jours": "7",
+        "date_debut": "2025-03-28",
+        "logement": "Auberge",
         "pension": "Demi pension",
         "etapes": {
-            "1": "Mont Buet",
-            "2": "Escalade",
-            "3": "Les Thermes de Saint-Gervais"
+            "1": "Mount Rushmore Trail",
+            "2": "Little Devils Tower",
+            "3": "Visite du monument",
+            "4": "Visite du parc national des Badlands",
+            "5": "Presidential Trail",
+            "6": "Photographie du Mont Rushmore",
+            "7": "Bains thermaux"
         },
-        "cout": "0"
+        "cout": "3000"
+    },
+    {
+        "utilisateur": "paul@gmail.com",
+        "ville": "Mont Fuji",
+        "nbr_personnes": "1",
+        "nbr_jours": "6",
+        "date_debut": "2025-07-02",
+        "logement": "Hotel++",
+        "pension": "Pension compl\u00e8te",
+        "etapes": {
+            "1": "Ascension du Mont Fuji (Route Yoshida)",
+            "2": "Sentier Subashiri",
+            "3": "Sentier Gotemba",
+            "4": "Camping pr\u00e8s du Mont Fuji",
+            "5": "Spa traditionnels",
+            "6": "Observation de la flore et faune locale"
+        },
+        "cout": "1000"
     },
     {
         "utilisateur": "sam@gmail.com",
-        "ville": "Monte Rosa",
-        "nbr_personnes": "2",
+        "ville": "Pic du Midi de Bigorre",
+        "nbr_personnes": "3",
         "nbr_jours": "3",
-        "date_debut": "2025-03-28",
-        "logement": "Hotel++",
-        "pension": "Demi pension",
+        "date_debut": "2025-03-26",
+        "logement": "Airbnb",
+        "pension": "Sans pension",
         "etapes": {
-            "1": "Rifugio Gnifetti - Capanna Margherita",
-            "2": "Monte Rosa Rand\u00f2",
-            "3": "Monte Rosa Rand\u00f2"
+            "1": "VTT Travers\u00e9e du Col du Tourmalet \u00e0 Hautacam",
+            "2": "Escalade et via ferrata au Congost de Mont-Rebei",
+            "3": "Spa"
         },
-        "cout": "0"
+        "cout": "450"
     }
 ]

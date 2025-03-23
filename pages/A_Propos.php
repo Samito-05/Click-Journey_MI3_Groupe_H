@@ -104,7 +104,7 @@ session_start();
             <img src="../Images/hugo.jpg" alt="Hugo, Co-Fondateur de PeakExplorer">
         </div>
 
-        <p class="co-fondateur">Sam, Jules et <a href="Paiement.php">Hugo</a>, co-fondateurs de PeakExplorer</p>
+        <p class="co-fondateur">Sam, Jules et Hugo, co-fondateurs de PeakExplorer</p>
 
         </div>
 

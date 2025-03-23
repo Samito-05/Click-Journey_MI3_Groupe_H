@@ -373,22 +373,19 @@ h2.sous_titre {
     text-align: left;
 }
 
+.table_sejours td {
+    width: 15vmin;
+    text-align: center;
+}
+
 .table_sejours th {
     background-color: var(--main-color);
     color: white;
 }
 
 .table_sejours tr:nth-child(even) {
-    background-color: var(--field-color);
-}
 
-.boutton_sejours {
-    background-color: var(--main-color);
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: var(--field-color);
 }
 
 /* Fin details_voyage.php */
@@ -554,13 +551,18 @@ select.select {
 .field_connexion,
 .field_verification,
 .field_sejours, 
-.field_paiement {
+.field_paiement,
+.field_reserve {
     backdrop-filter: blur(5px);
     width: 25%;
     margin: 8vmin auto;
     border: 2px solid var(--third-color);
     border-radius: 2vmin;
     padding: 4vmin 10vmin;
+}
+
+.field_reserve {
+    width: 50%;
 }
 
 .div_ins,
@@ -580,7 +582,8 @@ select.select {
 .boutton_recherche,
 .boutton_admin,
 .boutton_sejours,
-.boutton_paiement {
+.boutton_paiement,
+.boutton_reserve {
     width: 38vmin;
     margin-top: 4vmin;
     text-align: center;
@@ -592,6 +595,11 @@ select.select {
     color: white;
     cursor: pointer;
     border-radius: 1vmin;
+}
+
+.boutton_reserve{
+    margin-top: 0;
+    width: 15vmin;
 }
 
 .form_connexion,
