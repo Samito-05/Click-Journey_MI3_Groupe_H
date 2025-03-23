@@ -2,13 +2,19 @@
 session_start();
 require('getapikey.php'); 
 
-// Vérification de l'utilisateur et du voyage
-if (!isset($_SESSION['user_id'], $_SESSION['voyage'], $_SESSION['montant'])) {
+// Vérifier que l'utilisateur est connecté et que les infos du voyage existent
+if (!isset($_SESSION['user_id'], $_SESSION['voyage'])) {
     die("Erreur : Informations du voyage ou utilisateur manquantes.");
 }
 
-// Récupération des infos du voyage
-$montant = $_SESSION['montant'];
+// Si le montant n'est pas déjà défini, on le calcule (exemple : 100 € par participant)
+if (!isset($_SESSION['montant'])) {
+    $montant = 100 * $_SESSION['voyage']['nbr_personnes'];
+    $_SESSION['montant'] = $montant;
+} else {
+    $montant = $_SESSION['montant'];
+}
+
 $transaction_id = uniqid(); // Générer un ID de transaction unique
 $vendeur = "MI-3_H"; 
 $retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
@@ -22,9 +28,8 @@ $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeu
 // Stocker les infos de paiement dans la session
 $_SESSION['transaction_id'] = $transaction_id;
 $_SESSION['vendeur'] = $vendeur;
-
-// Redirection automatique vers CY Bank
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,9 +45,7 @@ $_SESSION['vendeur'] = $vendeur;
         <input type="hidden" name="retour" value="<?php echo $retour_url; ?>">
         <input type="hidden" name="control" value="<?php echo $control; ?>">
     </form>
-    <?php
-        echo '<p>Veuillez cliquer sur le bouton ci-dessous pour continuer.</p>';
-        echo '<button type="submit" form="cybankForm">Continuer</button>';
-    ?>
+    <p>Veuillez cliquer sur le bouton ci-dessous pour continuer.</p>
+    <button type="submit" form="cybankForm">Continuer</button>
 </body>
 </html>
