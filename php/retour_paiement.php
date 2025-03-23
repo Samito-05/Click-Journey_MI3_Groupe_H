@@ -2,46 +2,66 @@
 session_start();
 require('getapikey.php');
 
-if (!isset($_GET['transaction'], $_GET['montant'], $_GET['vendeur'], $_GET['status'], $_GET['control'])) {
-    die("Erreur : Paramètres manquants.");
+if (!isset($_GET['transaction'], $_GET['montant'], $_GET['vendeur'], $_GET['statut'], $_GET['control'])) {
+    die("Erreur : Informations manquantes dans le retour du paiement.");
 }
 
-// Récupérer les données du retour
 $transaction_id = $_GET['transaction'];
 $montant = $_GET['montant'];
 $vendeur = $_GET['vendeur'];
-$status = $_GET['status'];
+$statut = $_GET['statut'];
 $control = $_GET['control'];
 
-// Vérifier l'intégrité des données
+// Vérification de l'intégrité des données
 $api_key = getAPIKey($vendeur);
-$control_check = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $status . "#");
+$expected_control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $statut . "#");
 
-if ($control !== $control_check) {
-    die("Erreur : Données de paiement invalides.");
+if ($control !== $expected_control) {
+    die("Erreur : Données de paiement corrompues.");
 }
 
-if ($status === "accepted") {
-    // Enregistrer la transaction
-    $fichier_transactions = "../transactions.json";
-    $transactions = file_exists($fichier_transactions) ? json_decode(file_get_contents($fichier_transactions), true) : [];
-
-    $transactions[] = [
-        'user_id'        => $_SESSION['user_id'],
-        'montant'        => $montant,
-        'transaction_id' => $transaction_id,
-        'voyage'         => isset($_SESSION['voyage']) ? $_SESSION['voyage'] : null,
-        'date_paiement'  => date("Y-m-d H:i:s")
-    ];
-
-    file_put_contents($fichier_transactions, json_encode($transactions, JSON_PRETTY_PRINT));
-
-    echo "<h2>Paiement réussi !</h2>";
-    echo "<p>Votre paiement de " . htmlspecialchars($montant) . " € a été accepté.</p>";
-    echo "<a href='profil.php'>Voir mes voyages</a>";
+// Récupérer les coordonnées bancaires (celles envoyées depuis le formulaire de paiement)
+if (isset($_SESSION['coordonnees_bancaires'])) {
+    $coordonnees_bancaires = $_SESSION['coordonnees_bancaires'];
 } else {
-    echo "<h2>Paiement refusé</h2>";
-    echo "<p>Votre paiement a été refusé. Veuillez essayer une autre carte ou vérifier votre solde.</p>";
-    echo "<a href='paiement.php'>Réessayer</a> | <a href='recapitulatif.php'>Modifier le voyage</a>";
+    die("Erreur : Informations bancaires manquantes.");
 }
-?>
+
+// Enregistrement des données dans le fichier JSON
+$transaction_data = [
+    'transaction_id' => $transaction_id,
+    'montant' => $montant,
+    'vendeur' => $vendeur,
+    'statut' => $statut,
+    'coordonnees_bancaires' => [
+        'nom' => $coordonnees_bancaires['nom'],
+        'carte' => $coordonnees_bancaires['carte'],
+        'expiration' => $coordonnees_bancaires['expiration'],
+        'cvv' => $coordonnees_bancaires['cvv']
+    ],
+    'voyage' => [
+        'ville' => $voyage['ville'],
+        'nbr_personnes' => $voyage['nbr_personnes'],
+        'duree_sejour' => $voyage['duree_sejour'],
+        'date_depart' => $voyage['date_depart'],
+        'logement' => $voyage['logement'],
+        'option' => $voyage['option']
+    ]
+];
+
+// Sauvegarder la transaction dans un fichier JSON
+$transactions_file = 'transactions.json';
+$current_transactions = file_exists($transactions_file) ? json_decode(file_get_contents($transactions_file), true) : [];
+$current_transactions[] = $transaction_data;
+file_put_contents($transactions_file, json_encode($current_transactions, JSON_PRETTY_PRINT) . PHP_EOL);
+
+// Vérifier si le paiement est accepté
+if ($statut === "accepted") {
+    $_SESSION['paiement_statut'] = "success";
+    header("Location: confirmation_paiement.php");
+    exit();
+} else {
+    $_SESSION['paiement_statut'] = "failed";
+    header("Location: echec_paiement.php");
+    exit();
+}
