@@ -1,5 +1,18 @@
 <?php
 session_start();
+
+// Vérifier si des données de voyage ont été envoyées depuis `Sejours.php`
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $_SESSION['voyage'] = [
+        'ville' => $_POST['ville'],
+        'nbr_personnes' => $_POST['nbr_personnes'],
+        'duree_sejour' => $_POST['duree_sejour'],
+        'date_depart' => $_POST['date_depart'],
+        'logement' => $_POST['logement'],
+        'pension' => $_POST['pension'],
+        'options' => $_POST['option']
+    ];
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +30,15 @@ session_start();
         <main>
             <fieldset class="field_paiement">
                 <legend class="legend_paiement">Paiement</legend>
+                
+                <!-- Affichage du résumé du voyage -->
+                <p><strong>Destination :</strong> <?php echo $_SESSION['voyage']['ville']; ?></p>
+                <p><strong>Participants :</strong> <?php echo $_SESSION['voyage']['nbr_personnes']; ?></p>
+                <p><strong>Durée :</strong> <?php echo $_SESSION['voyage']['duree_sejour']; ?> jours</p>
+                <p><strong>Date de départ :</strong> <?php echo $_SESSION['voyage']['date_depart']; ?></p>
+                <p><strong>Logement :</strong> <?php echo $_SESSION['voyage']['logement']; ?></p>
+                <p><strong>Pension :</strong> <?php echo $_SESSION['voyage']['pension']; ?></p>
+
                 <form class="form_paiement" action="../php/paiement.php" method="post">
                     <div class="div_paiement">
                         <label for="prenom">Prénom:</label>
@@ -36,34 +58,31 @@ session_start();
                         <label for="numero_carte">Numéro de carte:</label>
                     </div>
                     <div>
-                        <input type="number" id="numero_carte" name="numero_carte" class="champ_paiement" required>
+                        <input type="text" id="numero_carte" name="numero_carte" class="champ_paiement" maxlength="16" pattern="\d{16}" required>
                     </div>
                     
                     <div class="div_paiement">
-                        <label for="date_expiration">Date d'expiration (max. 2100):</label>
+                        <label for="date_expiration">Date d'expiration :</label>
                     </div>
                     <div class="div_paiement">
                         <input type="text" id="date_expiration" name="date_expiration" placeholder="MM/AAAA" class="champ_paiement" maxlength="7" required oninput="formatDate(this)">
                     </div>
-                    <?php
-                        function formatDate($date) {
-                            $date = preg_replace('/\D/', '', $date);
-                            if (strlen($date) > 2) {
-                                $date = substr($date, 0, 2) . '/' . substr($date, 2, 4);
+                    <!-- JavaScript pour formater la date d'expiration -->
+                    <script>
+                        function formatDate(input) {
+                            let value = input.value.replace(/\D/g, '');
+                            if (value.length > 2) {
+                                value = value.substring(0, 2) + '/' + value.substring(2, 6);
                             }
-                            return $date;
+                            input.value = value;
                         }
-
-                        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                            $_POST['date_expiration'] = formatDate($_POST['date_expiration']);
-                        }
-                    ?>
+                    </script>
 
                     <div class="div_paiement">
                         <label for="cvv">CVV:</label>
                     </div>
                     <div>
-                        <input type="text" id="cvv" name="cvv" class="champ_paiement" maxlength="3" placeholder="ex: 123" required>
+                        <input type="text" id="cvv" name="cvv" class="champ_paiement" maxlength="3" pattern="\d{3}" placeholder="ex: 123" required>
                     </div>
                     <button type="submit" class="boutton_paiement">Payer</button>
                 </form>
