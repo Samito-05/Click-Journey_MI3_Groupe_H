@@ -2,16 +2,8 @@
 session_start();
 
 // Vérifier si des données de voyage ont été envoyées depuis `Sejours.php`
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $_SESSION['voyage'] = [
-        'city' => $_POST['city'],
-        'nbr_personnes' => $_POST['nbr_personnes'],
-        'duree_sejour' => $_POST['duree_sejour'],
-        'date_depart' => $_POST['date_depart'],
-        'logement' => $_POST['logement'],
-        'pension' => $_POST['pension'],
-        'options' => $_POST['option']
-    ];
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['city'])) {
+    $_SESSION['voyage'] = $_POST;
 }
 ?>
 
