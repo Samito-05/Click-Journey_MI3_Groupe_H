@@ -27,10 +27,11 @@ if ($status === "accepted") {
     $transactions = file_exists($fichier_transactions) ? json_decode(file_get_contents($fichier_transactions), true) : [];
 
     $transactions[] = [
-        'user_id' => $_SESSION['user_id'],
-        'montant' => $montant,
+        'user_id'        => $_SESSION['user_id'],
+        'montant'        => $montant,
         'transaction_id' => $transaction_id,
-        'date_paiement' => date("Y-m-d H:i:s")
+        'voyage'         => isset($_SESSION['voyage']) ? $_SESSION['voyage'] : null,
+        'date_paiement'  => date("Y-m-d H:i:s")
     ];
 
     file_put_contents($fichier_transactions, json_encode($transactions, JSON_PRETTY_PRINT));
