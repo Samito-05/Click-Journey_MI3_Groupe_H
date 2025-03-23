@@ -81,7 +81,7 @@ session_start();
 
             <div class="filtre">
                 <label>Lieu du voyage :</label>
-                <select class="select" name="city" id="city" required>
+                <select class="select" name="ville" id="ville" required>
                 <option value="" disabled selected>Choisir un lieu</option>
                     <optgroup label="France">
                         <option value="Mont Blanc">Mont Blanc</option>
