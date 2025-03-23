@@ -21,6 +21,22 @@
             }
         }
     }
+
+    // Charger les voyages depuis le fichier JSON
+    $sejoursFile = "../sejours.json";
+    $voyagesPayes = [];
+
+    if (file_exists($sejoursFile) && is_readable($sejoursFile)) {
+        $contenu = file_get_contents($sejoursFile);
+        $voyages = json_decode($contenu, true);
+
+        // Filtrer les voyages pour l'utilisateur connecté
+        foreach ($voyages as $voyage) {
+            if ($voyage['utilisateur'] === $email) {
+                $voyagesPayes[] = $voyage;
+            }
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -103,6 +119,37 @@
         <form class="form_profile" action="../php/supprimer.php" method="post">
             <button type="submit" class="boutton_modif" id="effacer">Effacer Compte</button>
         </form>   
+    </fieldset>
+
+    <fieldset class="field_profile">
+        <legend class="legend_profile">Mes Voyages Payés</legend>
+        <?php if (!empty($voyagesPayes)): ?>
+            <table class="table_sejours">
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Prix</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($voyagesPayes as $voyage): ?>
+                        <tr>
+                            <td><?php echo ($voyage['ville']); ?></td>
+                            <td><?php echo ($voyage['cout']); ?> €</td>
+                            <td>
+                                <form method="get" action="details_voyage.php">
+                                    <input type="hidden" name="ville" value="<?php echo ($voyage['ville']); ?>">
+                                    <button type="submit" class="boutton_sejours">Voir les détails</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        <?php else: ?>
+            <p>Vous n'avez pas encore de voyages payés.</p>
+        <?php endif; ?>
     </fieldset>
 </main>
 <?php

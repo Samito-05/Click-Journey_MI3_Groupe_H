@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Charger les destinations depuis le fichier JSON
+
 $destinations = json_decode(file_get_contents('../destination.json'), true);
 ?>
 
@@ -24,15 +24,15 @@ $destinations = json_decode(file_get_contents('../destination.json'), true);
         <h1 class="Titre">Découvrez nos voyages</h1>
         <?php foreach ($destinations as $destination): ?>
             <?php 
-                // Générer un prix de base aléatoire entre 500 et 3000 €
+                
                 $prix = rand(100, 5000); 
             ?>
             <div class="voyage-item">
-                <h2><?php echo htmlspecialchars($destination['lieu']); ?></h2>
-                <p>Explorez les merveilles de <?php echo htmlspecialchars($destination['lieu']); ?> avec nos randonnées et activités uniques.</p>
+                <h2><?php echo ($destination['lieu']); ?></h2>
+                <p>Explorez les merveilles de <?php echo ($destination['lieu']); ?> avec nos randonnées et activités uniques.</p>
                 <p class="price">Prix de base : <?php echo $prix; ?> €</p>
                 <form method="get" action="Sejours.php">
-                    <input type="hidden" name="ville" value="<?php echo htmlspecialchars($destination['lieu']); ?>">
+                    <input type="hidden" name="ville" value="<?php echo ($destination['lieu']); ?>">
                     <button type="submit">Voir les détails</button>
                 </form>
             </div>

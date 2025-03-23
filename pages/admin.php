@@ -101,13 +101,13 @@ echo '<table class="table_admin">
 
 foreach ($users as $user) {
     echo "<tr>
-            <td>" . htmlspecialchars($user['nom']) . "</td>
-            <td>" . htmlspecialchars($user['prenom']) . "</td>
-            <td>" . htmlspecialchars($user['email']) . "</td>
+            <td>" . ($user['nom']) . "</td>
+            <td>" . ($user['prenom']) . "</td>
+            <td>" . ($user['email']) . "</td>
             <td>********</td>
             <td>
                 <form method='post' action='../php/update_status.php'>
-                    <input type='hidden' name='nom' value='" . htmlspecialchars($user['nom']) . "'>
+                    <input type='hidden' name='nom' value='" . ($user['nom']) . "'>
                     <select name='Statut'>
                         <option value='client' " . ($user['statut'] == "client" ? "selected" : "") . ">Client</option>
                         <option value='vip' " . ($user['statut'] == "vip" ? "selected" : "") . ">VIP</option>

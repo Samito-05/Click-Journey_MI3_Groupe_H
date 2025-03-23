@@ -13,5 +13,20 @@
             "3": "Les Thermes de Saint-Gervais"
         },
         "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Monte Rosa",
+        "nbr_personnes": "2",
+        "nbr_jours": "3",
+        "date_debut": "2025-03-28",
+        "logement": "Hotel++",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Rifugio Gnifetti - Capanna Margherita",
+            "2": "Monte Rosa Rand\u00f2",
+            "3": "Monte Rosa Rand\u00f2"
+        },
+        "cout": "0"
     }
 ]

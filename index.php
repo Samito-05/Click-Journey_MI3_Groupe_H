@@ -1,25 +1,25 @@
 <?php
 session_start();
 
-// Vérification de la recherche
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
     if (!isset($_SESSION['statut'])) {
-        // Si l'utilisateur n'est pas connecté, afficher un message d'erreur
+        
         $message = "Vous devez être connecté pour effectuer une recherche.";
     } else {
         $recherche = trim($_POST['recherche']);
         $destinations = json_decode(file_get_contents('destination.json'), true);
 
-        // Parcourir les destinations pour trouver une correspondance
+        
         foreach ($destinations as $destination) {
             if (strcasecmp($destination['lieu'], $recherche) === 0) {
-                // Redirection vers Sejours.php avec la destination trouvée
+                
                 header("Location: pages/voyages.php");
                 exit;
             }
         }
 
-        // Si aucune correspondance n'est trouvée, afficher un message
+        
         $message = "Aucune destination trouvée pour votre recherche.";
     }
 }

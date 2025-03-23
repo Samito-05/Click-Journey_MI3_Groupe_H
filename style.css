@@ -358,6 +358,41 @@ h2.sous_titre {
 
 /* Fin A_propos.php */
 
+/* details-voyage.php */
+
+/* Voyages payés */
+.table_sejours {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table_sejours th, .table_sejours td {
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.table_sejours th {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.table_sejours tr:nth-child(even) {
+    background-color: var(--field-color);
+}
+
+.boutton_sejours {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Fin details_voyage.php */
+
 /* Sejours.php */
 
 .filtre {
