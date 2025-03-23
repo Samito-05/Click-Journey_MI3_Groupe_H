@@ -30,33 +30,161 @@
     },
     {
         "utilisateur": "sam@gmail.com",
-        "ville": "Cadillac Mountain",
-        "nbr_personnes": "4",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
         "nbr_jours": "4",
-        "date_debut": "2025-04-19",
-        "logement": "Hotel++",
-        "pension": "Pension compl\u00e8te",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
         "etapes": {
-            "1": "Cadillac Summit Loop Trail",
-            "2": "Cadillac Summit Loop Trail",
-            "3": "Cadillac Summit Loop Trail",
-            "4": "Cadillac Summit Loop Trail"
+            "1": "Ascension par la route Marangu",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Ascension par la route Marangu"
         },
         "cout": "0"
     },
     {
         "utilisateur": "sam@gmail.com",
-        "ville": "Cadillac Mountain",
-        "nbr_personnes": "4",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
         "nbr_jours": "4",
-        "date_debut": "2025-04-19",
-        "logement": "Hotel++",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
         "pension": "Demi pension",
         "etapes": {
-            "1": "North Ridge Trail",
-            "2": "North Ridge Trail",
-            "3": "South Ridge Trail",
-            "4": "South Ridge Trail"
+            "1": "Ascension par la route Rongai",
+            "2": "Safari dans le parc national du Kilimanjaro",
+            "3": "Spa dans les campements de luxe",
+            "4": "Bains et massages"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
+        "nbr_jours": "4",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Balade dans les plantations de caf\u00e9",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Balade dans les plantations de caf\u00e9"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
+        "nbr_jours": "4",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Ascension par la route Marangu",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Ascension par la route Marangu"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
+        "nbr_jours": "4",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Ascension par la route Marangu",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Ascension par la route Marangu"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
+        "nbr_jours": "4",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Ascension par la route Marangu",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Ascension par la route Marangu"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
+        "nbr_jours": "4",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Ascension par la route Marangu",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Ascension par la route Marangu"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
+        "nbr_jours": "4",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Ascension par la route Marangu",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Ascension par la route Marangu"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
+        "nbr_jours": "4",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Ascension par la route Marangu",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Ascension par la route Marangu"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Kilimanjaro",
+        "nbr_personnes": "3",
+        "nbr_jours": "4",
+        "date_debut": "2025-03-29",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Ascension par la route Marangu",
+            "2": "Ascension par la route Marangu",
+            "3": "Ascension par la route Marangu",
+            "4": "Ascension par la route Marangu"
         },
         "cout": "0"
     }

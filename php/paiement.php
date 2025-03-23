@@ -10,7 +10,7 @@ $logement = $_POST['logement'];
 $pension = $_POST['pension'];
 $options = $_POST['option'] ?? [];
 $cout = $_POST['cout'];
-
+$montant = $cout; // Initialize $montant with the value of $cout
 
 $nouveauSejour = [
     "utilisateur" => $_SESSION['email'], // Utilisateur connecté
@@ -24,7 +24,6 @@ $nouveauSejour = [
     "cout" => $cout
 ];
 
-
 $sejoursFile = "../sejours.json";
 $sejoursData = [];
 
@@ -32,12 +31,9 @@ if (file_exists($sejoursFile)) {
     $sejoursData = json_decode(file_get_contents($sejoursFile), true);
 }
 
-
 $sejoursData[] = $nouveauSejour;
 
-
 file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT));
-
 
 $vendeur = "MI-3_H"; 
 $api_key = getAPIKey($vendeur);
@@ -53,7 +49,7 @@ $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeu
 
 // Stocker les infos en session
 $_SESSION['transaction_id'] = $transaction_id;
-$_SESSION['montant'] = $montant;
+$_SESSION['cout'] = $cout;
 $_SESSION['vendeur'] = $vendeur;
 ?>
 
@@ -67,7 +63,7 @@ $_SESSION['vendeur'] = $vendeur;
     <h2>Redirection vers CY Bank...</h2>
     <form id="cybankForm" action="https://www.plateforme-smc.fr/cybank/index.php" method="POST">
         <input type="hidden" name="transaction" value="<?php echo $transaction_id; ?>">
-        <input type="hidden" name="montant" value="<?php echo $montant; ?>">
+        <input type="hidden" name="montant" value="<?php echo $cout; ?>">
         <input type="hidden" name="vendeur" value="<?php echo $vendeur; ?>">
         <input type="hidden" name="retour" value="<?php echo $retour_url; ?>">
         <input type="hidden" name="control" value="<?php echo $control; ?>">

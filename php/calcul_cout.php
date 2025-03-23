@@ -4,14 +4,6 @@
         die("Erreur : certaines variables nécessaires ne sont pas définies.");
     }
 
-    if ($ville == "Mont Blanc" || $ville == "Pic du Midi de Bigorre" || $ville == "Puy de Dôme") {
-        $cout = 150;
-    } elseif ($ville == "Dolomites" || $ville == "Monte Rosa" || $ville == "Mont Etna") {
-        $cout = 250;
-    } else {
-        $cout = 1000;
-    }
-
     if ($logement == "Hotel" || $logement == "Hotel++") {
         $cout += 75;
     } elseif ($logement == "Auberge") {
@@ -26,10 +18,22 @@
         $cout += 30;
     }
 
-    $cout *= $nbr_personnes * $nbr_jours;
+    $cout *= $nbr_jours;
+
+    if ($ville == "Mont Blanc" || $ville == "Pic du Midi de Bigorre" || $ville == "Puy de Dôme") {
+        $cout = 150;
+    } elseif ($ville == "Dolomites" || $ville == "Monte Rosa" || $ville == "Mont Etna") {
+        $cout = 250;
+    } else {
+        $cout = 1000;
+    }
+
+    if ($nbr_personnes > 1) {
+        $cout *= $nbr_personnes;
+    }
+    
 ?>
 
-<!-- Affichage du coût total -->
 <div class="filtre">
     <h2 class="filtre">Cout total</h2>
     <h3 class="filtre"><?php echo $cout; ?> €</h3>
