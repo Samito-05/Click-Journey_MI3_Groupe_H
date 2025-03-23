@@ -131,7 +131,7 @@ session_start();
                     <option value="" disabled selected>Choisir un Logement</option>
                     <option value="Hotel">Hotel</option>
                     <option value="Hotel++">Hotel haute gamme</option>
-                    <option value="Auberge de Jeunnesse">Auberge de Jeunnesse</option>
+                    <option value="Auberge">Auberge</option>
                     <option value="Airbnb">Airbnb</option>
                 </select>
             </div>

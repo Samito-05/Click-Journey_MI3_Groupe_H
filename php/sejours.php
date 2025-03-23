@@ -17,6 +17,7 @@
     $logement = $_POST['logement'];
     $pension = $_POST['pension'];
     $file = fopen("../sejours.txt", "a+");
+    $cout = 0;
 
     $destinations = json_decode(file_get_contents("../destination.json"), true);
 
@@ -73,43 +74,39 @@
         <div class="filtre">
             <h2 class="filtre">Choisissez une activité par jour</h2>
 
-            <table class="table_sejours">
-                <tr>
-                    <th>Jour</th>
-                    <th>Option</th>
-                </tr>
-    
-                <?php for ($i = 1; $i <= $nbr_jours; $i++) : ?>
+            <form action="../php/paiement.php" method="post">
+                <input type="hidden" name="ville" value="<?php echo $ville; ?>">
+                <input type="hidden" name="nbr_personnes" value="<?php echo $nbr_personnes; ?>">
+                <input type="hidden" name="duree_sejour" value="<?php echo $nbr_jours; ?>">
+                <input type="hidden" name="date_depart" value="<?php echo $date_depart; ?>">
+                <input type="hidden" name="logement" value="<?php echo $logement; ?>">
+                <input type="hidden" name="pension" value="<?php echo $pension; ?>">
+                <input type="hidden" name="cout" value="<?php echo $cout; ?>">
+                <table class="table_sejours">
                     <tr>
-                        <td>Jour <?php echo $i; ?></td>
-                        <td>
-                            <select name="option[<?php echo $i; ?>]">
-                                <?php foreach ($options as $option) : ?>
-                                    <option value="<?php echo $option; ?>"><?php echo $option; ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                        </td> 
+                        <th>Jour</th>
+                        <th>Option</th>
                     </tr>
-                <?php endfor; ?>
-
-            </table>
+        
+                    <?php for ($i = 1; $i <= $nbr_jours; $i++) : ?>
+                        <tr>
+                            <td>Jour <?php echo $i; ?></td>
+                            <td>
+                                <select name="option[<?php echo $i; ?>]">
+                                    <?php foreach ($options as $option) : ?>
+                                        <option value="<?php echo $option; ?>"><?php echo $option; ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </td> 
+                        </tr>
+                    <?php endfor; ?>
+                </table>
+                <button class="boutton_sejours" type="submit">Aller au paiement</button>
+            </form>
         </div>
 
-        <!-- Formulaire unique pour transmettre les données vers paiement.php -->
-        <form action="../php/paiement.php" method="post">
-            <!-- Champs cachés pour transmettre les données du voyage -->
-            <input type="hidden" name="ville" value="<?php echo $ville; ?>">
-            <input type="hidden" name="nbr_personnes" value="<?php echo $nbr_personnes; ?>">
-            <input type="hidden" name="duree_sejour" value="<?php echo $nbr_jours; ?>">
-            <input type="hidden" name="date_depart" value="<?php echo $date_depart; ?>">
-            <input type="hidden" name="logement" value="<?php echo $logement; ?>">
-            <input type="hidden" name="pension" value="<?php echo $pension; ?>">
-            <?php for ($i = 1; $i <= $nbr_jours; $i++) : ?>
-                <input type="hidden" name="option[<?php echo $i; ?>]" value="<?php echo $option; ?>">
-            <?php endfor; ?>
+        <?php require('../php/calcul_cout.php'); ?>
 
-            <button class="boutton_sejours" type="submit">Aller au paiement</button>
-        </form>
     </fieldset>
 
 </main>

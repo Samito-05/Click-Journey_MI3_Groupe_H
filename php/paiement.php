@@ -1,12 +1,53 @@
 <?php
 session_start();
-require('getapikey.php'); 
+require('getapikey.php');
 
+<<<<<<< Updated upstream
 // Vérifier si l'utilisateur et le voyage sont bien en session
 if (!isset($_SESSION['email'], $_SESSION['voyage'])) {
     die("Erreur : Informations du voyage ou utilisateur manquantes.");
 }
 
+=======
+$ville = $_POST['ville'];
+$nbr_personnes = $_POST['nbr_personnes'];
+$duree_sejour = $_POST['duree_sejour'];
+$date_depart = $_POST['date_depart'];
+$logement = $_POST['logement'];
+$pension = $_POST['pension'];
+$options = $_POST['option'] ?? [];
+$cout = $_POST['cout']; 
+
+$nouveauSejour = [
+    "utilisateur" => $_SESSION['email'],
+    "ville" => $ville,
+    "nbr_personnes" => $nbr_personnes,
+    "nbr_jours" => $duree_sejour,
+    "date_debut" => $date_depart,
+    "logement" => $logement,
+    "pension" => $pension,
+    "etapes" => $options,
+    "cout" => $cout
+];
+
+
+$sejoursFile = "../sejours.json";
+$sejoursData = [];
+
+if (file_exists($sejoursFile)) {
+    $sejoursData = json_decode(file_get_contents($sejoursFile), true);
+}
+
+
+$sejoursData[] = $nouveauSejour;
+
+
+file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT)); 
+
+
+
+$transaction_id = uniqid(); // Générer un ID de transaction unique
+>>>>>>> Stashed changes
 $vendeur = "MI-3_H"; 
 $api_key = getAPIKey($vendeur);
 

@@ -1,25 +1,31 @@
 [
     {
         "utilisateur": "sam@gmail.com",
-
         "ville": "Mont Blanc",
-
         "nbr_personnes": 3,
-
         "nbr_jours": 5,
-
         "date_debut": "202-07-01",
-
         "logement": "airbnb",
-
         "pension": "demi pension",
-
         "etapes": [
-            "Lacs des Chéserys",
+            "Lacs des Ch\u00e9serys",
             "Mont Buet"
         ],
-
         "cout": 1000
-        
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Everest",
+        "nbr_personnes": "2",
+        "nbr_jours": "3",
+        "date_debut": "2025-04-05",
+        "logement": "Hotel++",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Camp de Base de l'Everest",
+            "2": "Camp de Base de l'Everest",
+            "3": "Camp de Base de l'Everest"
+        },
+        "cout": "0"
     }
 ]
