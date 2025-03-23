@@ -1,0 +1,25 @@
+[
+    {
+        "utilisateur": "sam@gmail.com",
+
+        "ville": "Mont Blanc",
+
+        "nbr_personnes": 3,
+
+        "nbr_jours": 5,
+
+        "date_debut": "202-07-01",
+
+        "logement": "airbnb",
+
+        "pension": "demi pension",
+
+        "etapes": [
+            "Lacs des Chéserys",
+            "Mont Buet"
+        ],
+
+        "cout": 1000
+        
+    }
+]

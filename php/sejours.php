@@ -27,8 +27,6 @@
     $destination = reset($destination);
     $randos = $destination['rando'] ?? [];
     $activites = $destination['activite'] ?? [];
-
-    // Fusionner les randonnées et les activités dans une seule liste
     $options = array_merge($randos, $activites);
 
 ?>
