@@ -85,13 +85,13 @@ session_start();
                 <option value="" disabled selected>Choisir un lieu</option>
                     <optgroup label="France">
                         <option value="Mont Blanc">Mont Blanc</option>
-                        <option value="Pyrénées">Pyrénées</option>
-                        <option value="Massif Central">Massif Central</option>
+                        <option value="Pic du Midi de Bigorre">Pic du Midi de Bigorre</option>
+                        <option value="Puy de Dôme">Puy de Dôme</option>
                     </optgroup>
                     <optgroup label="Italie">
                         <option value="Dolomites">Dolomites</option>
                         <option value="Monte Rosa">Monte Rosa</option>
-                        <option value="Etna">Sommet de l’Etna</option>
+                        <option value="Mont Etna">Sommet de l’Etna</option>
                     </optgroup>
                     <optgroup label="Népal">
                         <option value="Mont Everest">Mont Everest</option>
