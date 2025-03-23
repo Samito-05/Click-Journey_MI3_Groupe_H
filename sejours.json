@@ -27,5 +27,37 @@
             "3": "Camp de Base de l'Everest"
         },
         "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Cadillac Mountain",
+        "nbr_personnes": "4",
+        "nbr_jours": "4",
+        "date_debut": "2025-04-19",
+        "logement": "Hotel++",
+        "pension": "Pension compl\u00e8te",
+        "etapes": {
+            "1": "Cadillac Summit Loop Trail",
+            "2": "Cadillac Summit Loop Trail",
+            "3": "Cadillac Summit Loop Trail",
+            "4": "Cadillac Summit Loop Trail"
+        },
+        "cout": "0"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Cadillac Mountain",
+        "nbr_personnes": "4",
+        "nbr_jours": "4",
+        "date_debut": "2025-04-19",
+        "logement": "Hotel++",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "North Ridge Trail",
+            "2": "North Ridge Trail",
+            "3": "South Ridge Trail",
+            "4": "South Ridge Trail"
+        },
+        "cout": "0"
     }
 ]
