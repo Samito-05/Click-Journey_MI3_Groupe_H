@@ -16,7 +16,6 @@
     $date_depart = $_POST['date_depart'];
     $logement = $_POST['logement'];
     $pension = $_POST['pension'];
-    $file = fopen("../sejours.txt", "a+");
     $cout = 0;
 
     $destinations = json_decode(file_get_contents("../json/destination.json"), true);

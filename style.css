@@ -269,6 +269,30 @@ li.inactive a:hover {
 
 /* Fin Index.php */
 
+/* Profile.php */
+
+table.table_reserve{
+    width: 38vmin;
+    margin-bottom: 2vmin;
+    padding: 1vmin 1.5vmin;
+    border-radius: .5vmin;
+    background-color: var(--field-color);
+}
+
+.table_reserve td, th {
+    padding: 1vmin;
+    text-align: center;
+    color: var(--third-color);
+
+}
+
+.boutton_reserve{
+    margin-top: 0;
+    width: 15vmin;
+}
+
+/* Fin Profile.php */
+
 /* Voyages.php */
 
 .voyages-container {
@@ -361,7 +385,7 @@ h2.sous_titre {
 /* details-voyage.php */
 
 .table_sejours {
-    width: 100%;
+    width: 38vmin;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -443,8 +467,7 @@ select.select {
     margin: auto;
     margin-top: 2vmin;
     border: var(--main-color) solid 1px;
-    border-radius: 2vmin;
-    border-radius: 2vmin;
+    border-radius: 1vmin;
 
 }
 
@@ -479,13 +502,18 @@ div.details_voyage p, div.details_voyage ul {
     color: var(--third-color);
 }
 
+.details_voyage ul {
+    list-style: none;
+    padding: 1vmin;
+}
+
 /* Fin details_voyage.php */
 
 /* confirmation_paiement.php */
 
 h2.confirm_voyage {
     text-align: center;
-    font-size: 2vmin;
+    font-size: 3vmin;
     margin-top: 0;
     color: var(--third-color);
     padding: .5vmin;
@@ -495,19 +523,16 @@ h2.confirm_voyage {
 .confirm_voyage p{
     font-size: 2vmin;
     text-align: center;
-    padding: 2vmin;
-}
-
-div.confirm_voyage {
-    display: flex;
-    justify-content: center;
-    margin: 0 2vmin;
-    padding: 0.5vmin 2vmin;
-}
-
-ul.confirm_voyage {
+    padding: 1vmin;
     color: var(--third-color);
-    margin-bottom: 2vmin;
+}
+
+.confirm_voyage ul {
+    font-size: 1.5vmin;
+    text-align: center;
+    padding: 1vmin;
+    color: var(--third-color);
+    list-style: none;
 }
 
 /* Connexion.php */
@@ -584,12 +609,13 @@ ul.confirm_voyage {
 
 /* Regles appliquables plusieurs fois */
 
-.legend_inscription,
+.legend_sejours,
+.legend_reserve,
 .legend_profile,
+.legend_paiement,
 .legend_connexion,
 .legend_verif_admin,
-.legend_sejours,
-.legend_paiement{
+.legend_inscription {
     text-align: center;
     font-weight: bold;
     font-size: 3vmin;
@@ -598,14 +624,15 @@ ul.confirm_voyage {
     padding: 2vmin;
 }
 
-.field_inscription,
+
 .field_profile,
-.field_connexion,
-.field_verification,
 .field_sejours, 
-.field_paiement,
 .field_reserve,
-.field_confirm {
+.field_confirm,
+.field_paiement,
+.field_connexion,
+.field_inscription,
+.field_verification {
     backdrop-filter: blur(5px);
     width: 25%;
     margin: 8vmin auto;
@@ -614,16 +641,11 @@ ul.confirm_voyage {
     padding: 4vmin 10vmin;
 }
 
-.field_reserve,
-.field_confirm {
-    width: 50%;
-}
-
 .div_ins,
 .div_profile,
+.div_paiement,
 .div_connexion,
-.div_verification, 
-.div_paiement {
+.div_verification {
     text-align: left;
     color: var(--third-color);
     font-size: 1.5vmin;
@@ -640,7 +662,7 @@ ul.confirm_voyage {
 .boutton_reserve,
 .boutton_retour {
     width: 38vmin;
-    margin-top: 4vmin;
+    margin: 4vmin auto 0;
     text-align: center;
     background-color: var(--main-color);
     padding: 1.2vmin;
@@ -650,11 +672,7 @@ ul.confirm_voyage {
     color: white;
     cursor: pointer;
     border-radius: 1vmin;
-}
-
-.boutton_reserve{
-    margin-top: 0;
-    width: 15vmin;
+    display: block;
 }
 
 .form_connexion,

@@ -147,5 +147,39 @@
         "cout": "12700",
         "statut": "Payé",
         "transaction_id": "L8RQF7kYsq9e"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Blanc",
+        "nbr_personnes": "1",
+        "nbr_jours": "3",
+        "date_debut": "2025-03-30",
+        "logement": "Hotel++",
+        "pension": "Pension complète",
+        "etapes": {
+            "1": "Lacs des Chéserys",
+            "2": "Lacs des Chéserys",
+            "3": "Lacs des Chéserys"
+        },
+        "cout": "465",
+        "statut": "Payé",
+        "transaction_id": "kXn1wrgbU1ZJ"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Blanc",
+        "nbr_personnes": "1",
+        "nbr_jours": "3",
+        "date_debut": "2025-03-24",
+        "logement": "Auberge",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Grand Balcon",
+            "2": "Ski de randonnée",
+            "3": "Bassin chauffé haulte attitude"
+        },
+        "cout": "300",
+        "statut": "Payé",
+        "transaction_id": "Dylz4uipZ0Jv"
     }
 ]

@@ -122,9 +122,9 @@
     </fieldset>
 
     <fieldset class="field_reserve">
-        <legend class="legend_profile">Mes Voyages Payés</legend>
+        <legend class="legend_reserve">Mes Voyages Payés</legend>
         <?php if (!empty($voyagesPayes)): ?>
-            <table class="table_sejours">
+            <table class="table_reserve">
                 <thead>
                     <tr>
                         <th>Titre</th>
@@ -137,7 +137,7 @@
                     <?php foreach ($voyagesPayes as $voyage): ?>
                         <tr>
                             <td><?php echo ($voyage['ville']); ?></td>
-                            <td><?php echo ($voyage['cout']); ?> €</td>
+                            <td><?php echo ($voyage['cout']); ?>€</td>
                             <td><?php echo ($voyage['statut']); ?></td>
                             <td>
                                 <form method="get" action="details_voyage.php">
