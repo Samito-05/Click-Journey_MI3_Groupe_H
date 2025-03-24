@@ -457,6 +457,28 @@ select.select {
 
 /* Fin Sejours.php */
 
+/* details_voyage.php */
+
+h2.details_voyage {
+    text-align: center;
+    font-size: 3vmin;
+    margin-top: 0;
+    color: var(--third-color);
+    padding: 2vmin;
+    padding-top: 0;
+}
+
+div.details_voyage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2vmin;
+    padding: 0.5vmin 2vmin;
+}
+
+div.details_voyage p, div.details_voyage ul {
+    color: var(--third-color);
+}
 
 /* Connexion.php */
 

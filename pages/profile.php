@@ -22,7 +22,7 @@
         }
     }
 
-    // Charger les voyages depuis le fichier JSON
+    
     $sejoursFile = "../sejours.json";
     $voyagesPayes = [];
 
@@ -30,7 +30,7 @@
         $contenu = file_get_contents($sejoursFile);
         $voyages = json_decode($contenu, true);
 
-        // Filtrer les voyages pour l'utilisateur connecté
+        
         foreach ($voyages as $voyage) {
             if ($voyage['utilisateur'] === $email) {
                 $voyagesPayes[] = $voyage;
@@ -129,6 +129,7 @@
                     <tr>
                         <th>Titre</th>
                         <th>Prix</th>
+                        <th>Statut</th>
                         <th> </th>
                     </tr>
                 </thead>
@@ -137,6 +138,7 @@
                         <tr>
                             <td><?php echo ($voyage['ville']); ?></td>
                             <td><?php echo ($voyage['cout']); ?> €</td>
+                            <td><?php echo ($voyage['statut']); ?></td>
                             <td>
                                 <form method="get" action="details_voyage.php">
                                     <input type="hidden" name="ville" value="<?php echo ($voyage['ville']); ?>">

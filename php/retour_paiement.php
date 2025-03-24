@@ -12,7 +12,7 @@ $vendeur = $_GET['vendeur'];
 $statut = $_GET['statut'];
 $control = $_GET['control'];
 
-// Vérification de l'intégrité des données
+
 $api_key = getAPIKey($vendeur);
 $expected_control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $statut . "#");
 
@@ -20,14 +20,14 @@ if ($control !== $expected_control) {
     die("Erreur : Données de paiement corrompues.");
 }
 
-// Récupérer les coordonnées bancaires (celles envoyées depuis le formulaire de paiement)
+
 if (isset($_SESSION['coordonnees_bancaires'])) {
     $coordonnees_bancaires = $_SESSION['coordonnees_bancaires'];
 } else {
     die("Erreur : Informations bancaires manquantes.");
 }
 
-// Enregistrement des données dans le fichier JSON
+
 $transaction_data = [
     'transaction_id' => $transaction_id,
     'montant' => $montant,
@@ -49,13 +49,13 @@ $transaction_data = [
     ]
 ];
 
-// Sauvegarder la transaction dans un fichier JSON
+
 $transactions_file = 'transactions.json';
 $current_transactions = file_exists($transactions_file) ? json_decode(file_get_contents($transactions_file), true) : [];
 $current_transactions[] = $transaction_data;
 file_put_contents($transactions_file, json_encode($current_transactions, JSON_PRETTY_PRINT) . PHP_EOL);
 
-// Vérifier si le paiement est accepté
+
 if ($statut === "accepted") {
     $_SESSION['paiement_statut'] = "success";
     header("Location: confirmation_paiement.php");

@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 session_start();
 require('getapikey.php');
 
@@ -13,7 +14,7 @@ $cout = $_POST['cout'];
 $montant = $cout; 
 
 $nouveauSejour = [
-    "utilisateur" => $_SESSION['email'], // Utilisateur connecté
+    "utilisateur" => $_SESSION['email'],
     "ville" => $ville,
     "nbr_personnes" => $nbr_personnes,
     "nbr_jours" => $duree_sejour,
@@ -21,7 +22,8 @@ $nouveauSejour = [
     "logement" => $logement,
     "pension" => $pension,
     "etapes" => $options,
-    "cout" => $cout
+    "cout" => $cout,
+    "statut" => ""
 ];
 
 $sejoursFile = "../sejours.json";
@@ -33,22 +35,33 @@ if (file_exists($sejoursFile)) {
 
 $sejoursData[] = $nouveauSejour;
 
-file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT));
+file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+
+
 
 $vendeur = "MI-3_H"; 
 $api_key = getAPIKey($vendeur);
 
+function generateTransactionID($length = 12) {
+    
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $transactionID = '';
+    
+    for ($i = 0; $i < $length; $i++) {
+        $transactionID .= $characters[random_int(0, strlen($characters) - 1)];
+    }
+    
+    return $transactionID;
+}
 
-$transaction_id = uniqid(); 
+$transaction_id = generateTransactionID();
 
 
-//$retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
+$retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
 
-$retour_url = "http://localhost/index.php";
-
+//$retour_url = "http://localhost/index.php";
 
 $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $retour_url . "#");
-
 
 $_SESSION['transaction_id'] = $transaction_id;
 $_SESSION['cout'] = $cout;

@@ -1,4 +1,6 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
+
 $nom = trim($_POST['nom']);
 $prenom = trim($_POST['prenom']);
 $naissance = $_POST['naissance'];
@@ -36,7 +38,7 @@ if (file_exists($fichier)) {
         ];
 
         $utilisateurs[] = $nouvel_utilisateur;
-        file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT));
+        file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     }
 }
 

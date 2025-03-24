@@ -4,7 +4,7 @@ session_start();
 if (isset($_SESSION['paiement_statut']) && $_SESSION['paiement_statut'] == 'success') {
     echo "<h1>Le paiement a été effectué avec succès !</h1>";
 
-    // Afficher les détails de la transaction et du voyage
+
     if (isset($_SESSION['voyage'])) {
         echo "<h3>Détails de votre voyage :</h3>";
         echo "<p>Ville : " . $_SESSION['voyage']['ville'] . "</p>";

@@ -1,5 +1,5 @@
 <?php
-    // Vérification des variables
+
     if (!isset($ville, $logement, $pension, $nbr_personnes, $nbr_jours)) {
         die("Erreur : certaines variables nécessaires ne sont pas définies.");
     }
@@ -21,11 +21,11 @@
     $cout *= $nbr_jours;
 
     if ($ville == "Mont Blanc" || $ville == "Pic du Midi de Bigorre" || $ville == "Puy de Dôme") {
-        $cout = 150;
+        $cout += 150;
     } elseif ($ville == "Dolomites" || $ville == "Monte Rosa" || $ville == "Mont Etna") {
-        $cout = 250;
+        $cout += 250;
     } else {
-        $cout = 1000;
+        $cout += 1000;
     }
 
     if ($nbr_personnes > 1) {
