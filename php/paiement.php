@@ -24,7 +24,7 @@ $nouveauSejour = [
     "cout" => $cout
 ];
 
-$sejoursFile = "../sejours.json";
+$sejoursFile = "../../json/sejours.json";
 $sejoursData = [];
 
 if (file_exists($sejoursFile)) {

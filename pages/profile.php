@@ -1,7 +1,7 @@
 <?php
     session_start();
     $email = $_SESSION['email'];
-    $fichier = "../comptes.json";
+    $fichier = "../../json/comptes.json";
 
     if (file_exists($fichier) && is_readable($fichier)) {
         $contenu = file_get_contents($fichier);
@@ -23,7 +23,7 @@
     }
 
     // Charger les voyages depuis le fichier JSON
-    $sejoursFile = "../sejours.json";
+    $sejoursFile = "../../json/sejours.json";
     $voyagesPayes = [];
 
     if (file_exists($sejoursFile) && is_readable($sejoursFile)) {

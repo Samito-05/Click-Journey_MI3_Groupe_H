@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$fichier = "../comptes.json";
+$fichier = "../../json/comptes.json";
 $email = $_SESSION['email'];
 
 $nv_nom = trim($_POST['nom']);

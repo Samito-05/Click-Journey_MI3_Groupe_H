@@ -2,7 +2,7 @@
 session_start();
 
 
-$destinations = json_decode(file_get_contents('../destination.json'), true);
+$destinations = json_decode(file_get_contents('../../json/destination.json'), true);
 ?>
 
 <!DOCTYPE html>
