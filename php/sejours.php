@@ -19,7 +19,7 @@
     $file = fopen("../sejours.txt", "a+");
     $cout = 0;
 
-    $destinations = json_decode(file_get_contents("../../json/destination.json"), true);
+    $destinations = json_decode(file_get_contents("../destination.json"), true);
 
     $destination = array_filter($destinations, function($d) use ($ville) {
         return $d['lieu'] === $ville;

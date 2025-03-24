@@ -78,7 +78,7 @@ session_start();
 <main>
 
 <?php
-$file = "../../json/comptes.json";
+$file = "../comptes.json";
 if (!file_exists($file) || !is_readable($file)) {
     die("Error: Unable to read the user accounts file.");
 }

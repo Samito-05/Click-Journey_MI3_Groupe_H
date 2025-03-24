@@ -2,7 +2,7 @@
 
 session_start();
 
-$fichier = "../../json/comptes.json";
+$fichier = "../comptes.json";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = filter_input(INPUT_POST, 'nom');

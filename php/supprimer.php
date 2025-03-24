@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$fichier = "../../json/comptes.json";
+$fichier = "../comptes.json";
 $email = $_SESSION['email'];
 
 if (file_exists($fichier) && is_readable($fichier)) {

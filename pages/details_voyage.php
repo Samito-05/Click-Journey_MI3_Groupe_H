@@ -3,7 +3,7 @@ session_start();
 
 $ville = $_GET['ville'] ?? '';
 $email = $_SESSION['email'];
-$sejoursFile = "../../json/sejours.json";
+$sejoursFile = "../sejours.json";
 $detailsVoyage = null;
 
 if (file_exists($sejoursFile) && is_readable($sejoursFile)) {

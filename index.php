@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
         $message = "Vous devez être connecté pour effectuer une recherche.";
     } else {
         $recherche = trim($_POST['recherche']);
-        $destinations = json_decode(file_get_contents('json/../json/destination.json'), true);
+        $destinations = json_decode(file_get_contents('destination.json'), true);
 
         
         foreach ($destinations as $destination) {
