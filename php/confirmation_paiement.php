@@ -24,7 +24,7 @@ if ($control !== $control_verification) {
 }
 
 // Chemin vers le fichier JSON
-$sejoursFile = "../sejours.json";
+$sejoursFile = "../json/sejours.json";
 
 // Vérifiez si le fichier existe
 if (!file_exists($sejoursFile)) {

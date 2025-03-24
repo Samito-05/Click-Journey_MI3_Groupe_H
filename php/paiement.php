@@ -41,7 +41,7 @@ $nouveauSejour = [
     "transaction_id" => "$transaction_id",
 ];
 
-$sejoursFile = "../sejours.json";
+$sejoursFile = "../json/sejours.json";
 $sejoursData = [];
 
 if (file_exists($sejoursFile)) {
@@ -58,8 +58,6 @@ $vendeur = "MI-3_H";
 $api_key = getAPIKey($vendeur);
 
 $retour_url = "http://localhost/Click-Journey_MI3_Groupe_H/php/confirmation_paiement.php?session=" . session_id();
-
-//$retour_url = "http://localhost/index.php";
 
 $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $retour_url . "#");
 

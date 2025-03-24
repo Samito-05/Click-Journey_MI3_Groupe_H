@@ -3,7 +3,7 @@ session_start();
 
 $email = trim($_POST['email']);
 $mdp = trim($_POST['mdp_connexion']);
-$fichier = "../comptes.json";
+$fichier = "../json/comptes.json";
 
 if (file_exists($fichier) && is_readable($fichier)) {
     $utilisateurs = json_decode(file_get_contents($fichier), true);

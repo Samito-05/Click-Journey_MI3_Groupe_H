@@ -10,7 +10,7 @@ $email = trim($_POST['email']);
 $mdp = trim($_POST['mdp_inscription']);
 $mdp_confirm = trim($_POST['mdp_confirm_inscription']);
 $statut = "client";
-$fichier = "../comptes.json";
+$fichier = "../json/comptes.json";
 
 if (file_exists($fichier)) {
     $utilisateurs = json_decode(file_get_contents($fichier), true);

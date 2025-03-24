@@ -130,5 +130,22 @@
         "cout": "800",
         "statut": "Payé",
         "transaction_id": "pyq5lKOnJVIe"
+    },
+    {
+        "utilisateur": "jules@gmail.com",
+        "ville": "Mont Rushmore",
+        "nbr_personnes": "10",
+        "nbr_jours": "3",
+        "date_debut": "2025-03-29",
+        "logement": "Hotel",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Bains thermaux",
+            "2": "Photographie du Mont Rushmore",
+            "3": "Black Elk Peak"
+        },
+        "cout": "12700",
+        "statut": "Payé",
+        "transaction_id": "L8RQF7kYsq9e"
     }
 ]
