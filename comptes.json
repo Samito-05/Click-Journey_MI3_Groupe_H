@@ -48,5 +48,15 @@
         "email": "paul@gmail.com",
         "mdp_hash": "$2y$10$MTM5jvs6QMtHD9mZdO2OfeSOoTsAliipyOyn5jf.HwNZbJodMurf.",
         "statut": "client"
+    },
+    {
+        "nom": "WINGERING",
+        "prenom": "Cyprien",
+        "naissance": "2005-05-20",
+        "adresse": "Paris",
+        "num": "0123456789",
+        "email": "cyprien@gmail.com",
+        "mdp_hash": "$2y$10$mQP5iGdDRbVDY4WsGMtGKeE6THwJcTHpYJzq7Hk7YXdJcDmquzFHW",
+        "statut": "client"
     }
 ]

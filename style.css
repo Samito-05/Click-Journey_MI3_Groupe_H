@@ -360,7 +360,6 @@ h2.sous_titre {
 
 /* details-voyage.php */
 
-/* Voyages payés */
 .table_sejours {
     width: 100%;
     border-collapse: collapse;
@@ -461,7 +460,7 @@ select.select {
 
 h2.details_voyage {
     text-align: center;
-    font-size: 3vmin;
+    font-size: 5vmin;
     margin-top: 0;
     color: var(--third-color);
     padding: 2vmin;
@@ -478,6 +477,37 @@ div.details_voyage {
 
 div.details_voyage p, div.details_voyage ul {
     color: var(--third-color);
+}
+
+/* Fin details_voyage.php */
+
+/* confirmation_paiement.php */
+
+h2.confirm_voyage {
+    text-align: center;
+    font-size: 2vmin;
+    margin-top: 0;
+    color: var(--third-color);
+    padding: .5vmin;
+    padding-top: 0;
+}
+
+.confirm_voyage p{
+    font-size: 2vmin;
+    text-align: center;
+    padding: 2vmin;
+}
+
+div.confirm_voyage {
+    display: flex;
+    justify-content: center;
+    margin: 0 2vmin;
+    padding: 0.5vmin 2vmin;
+}
+
+ul.confirm_voyage {
+    color: var(--third-color);
+    margin-bottom: 2vmin;
 }
 
 /* Connexion.php */
@@ -574,7 +604,8 @@ div.details_voyage p, div.details_voyage ul {
 .field_verification,
 .field_sejours, 
 .field_paiement,
-.field_reserve {
+.field_reserve,
+.field_confirm {
     backdrop-filter: blur(5px);
     width: 25%;
     margin: 8vmin auto;
@@ -583,7 +614,8 @@ div.details_voyage p, div.details_voyage ul {
     padding: 4vmin 10vmin;
 }
 
-.field_reserve {
+.field_reserve,
+.field_confirm {
     width: 50%;
 }
 
@@ -605,7 +637,8 @@ div.details_voyage p, div.details_voyage ul {
 .boutton_admin,
 .boutton_sejours,
 .boutton_paiement,
-.boutton_reserve {
+.boutton_reserve,
+.boutton_retour {
     width: 38vmin;
     margin-top: 4vmin;
     text-align: center;

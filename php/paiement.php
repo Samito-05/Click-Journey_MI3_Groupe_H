@@ -13,6 +13,20 @@ $options = $_POST['option'] ?? [];
 $cout = $_POST['cout'];
 $montant = $cout; 
 
+function generateTransactionID($length = 12) {
+    
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $transactionID = '';
+    
+    for ($i = 0; $i < $length; $i++) {
+        $transactionID .= $characters[random_int(0, strlen($characters) - 1)];
+    }
+    
+    return $transactionID;
+}
+
+$transaction_id = generateTransactionID();
+
 $nouveauSejour = [
     "utilisateur" => $_SESSION['email'],
     "ville" => $ville,
@@ -23,7 +37,8 @@ $nouveauSejour = [
     "pension" => $pension,
     "etapes" => $options,
     "cout" => $cout,
-    "statut" => ""
+    "statut" => "",
+    "transaction_id" => "$transaction_id",
 ];
 
 $sejoursFile = "../sejours.json";
@@ -42,30 +57,12 @@ file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT | JS
 $vendeur = "MI-3_H"; 
 $api_key = getAPIKey($vendeur);
 
-function generateTransactionID($length = 12) {
-    
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $transactionID = '';
-    
-    for ($i = 0; $i < $length; $i++) {
-        $transactionID .= $characters[random_int(0, strlen($characters) - 1)];
-    }
-    
-    return $transactionID;
-}
-
-$transaction_id = generateTransactionID();
-
-
-$retour_url = "http://localhost/retour_paiement.php?session=" . session_id();
+$retour_url = "http://localhost/Click-Journey_MI3_Groupe_H/php/confirmation_paiement.php?session=" . session_id();
 
 //$retour_url = "http://localhost/index.php";
 
 $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $retour_url . "#");
 
-$_SESSION['transaction_id'] = $transaction_id;
-$_SESSION['cout'] = $cout;
-$_SESSION['vendeur'] = $vendeur;
 ?>
 
 <!DOCTYPE html>
@@ -76,14 +73,13 @@ $_SESSION['vendeur'] = $vendeur;
 </head>
 <body>
     <h2>Redirection vers CY Bank...</h2>
-    <form id="cybankForm" action="https://www.plateforme-smc.fr/cybank/index.php" method="POST">
-        <input type="hidden" name="transaction" value="<?php echo $transaction_id; ?>">
-        <input type="hidden" name="montant" value="<?php echo $cout; ?>">
-        <input type="hidden" name="vendeur" value="<?php echo $vendeur; ?>">
-        <input type="hidden" name="retour" value="<?php echo $retour_url; ?>">
-        <input type="hidden" name="control" value="<?php echo $control; ?>">
-    </form>
-    <p>Veuillez cliquer sur le bouton ci-dessous pour continuer.</p>
-    <button type="submit" form="cybankForm">Continuer</button>
+    <form action='https://www.plateforme-smc.fr/cybank/index.php' method='POST'>
+                    <input type='hidden' name='transaction' value="<?php echo $transaction_id ?>">
+                    <input type='hidden' name='montant' value="<?php echo $cout ?>">
+                    <input type='hidden' name='vendeur' value="<?php echo $vendeur ?>">
+                    <input type='hidden' name='retour' value="<?php echo $retour_url ?>">
+                    <input type='hidden' name='control' value="<?php echo $control ?>">
+                    <input class="button-paiement" type='submit' value="Valider et payer">
+                </form>
 </body>
 </html>
