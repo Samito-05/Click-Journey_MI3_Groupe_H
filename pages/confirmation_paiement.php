@@ -57,6 +57,7 @@ file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT | JS
     <meta charset="utf-8">
     <title>Confirmation de Paiement</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="icon" type="image/png" href="../Images/peak_explorer_logo.png">
 </head>
 <body>
 <?php require('../php/header.php'); ?>

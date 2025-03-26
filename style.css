@@ -445,7 +445,7 @@ table.table_reserve{
     cursor: pointer;
 }
 .voyage-item button:hover {
-    background-color: #0056b3;
+    background-color: var(--third-color);
 }
 
 /* Fin Voyages.php */
