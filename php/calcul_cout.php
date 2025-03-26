@@ -4,16 +4,20 @@
         die("Erreur : certaines variables nécessaires ne sont pas définies.");
     }
 
-    if ($logement == "Hotel" || $logement == "Hotel++") {
+    if ($logement == "Hotel") { 
         $cout += 75;
-    } elseif ($logement == "Auberge") {
+    }elseif ($logement == "Hotel++") { 
+        $cout += 100;
+    }elseif ($logement == "Auberge") {
         $cout += 35;
     } else {
         $cout += 30;
     }
 
-    if ($pension == "Sans pension" || $pension == "Demi pension") {
+    if ($pension == "Sans pension" ){
         $cout += 15;
+    } elseif ($pension == "Demi pension"){
+        $cout += 0;
     } else {
         $cout += 30;
     }

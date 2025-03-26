@@ -1,8 +1,13 @@
 <?php
 session_start();
 
-
-$destinations = json_decode(file_get_contents('../json/destination.json'), true);
+// Vérifiez si des résultats de recherche sont passés via GET
+if (isset($_GET['resultats'])) {
+    $destinations = json_decode(urldecode($_GET['resultats']), true);
+} else {
+    // Sinon, chargez toutes les destinations
+    $destinations = json_decode(file_get_contents('../json/destination.json'), true);
+}
 ?>
 
 <!DOCTYPE html>
@@ -13,38 +18,28 @@ $destinations = json_decode(file_get_contents('../json/destination.json'), true)
     <link rel="stylesheet" type="text/css" href="../style.css"> 
 </head>
 <body>
-    
-    <?php
-
-        require('../php/header.php')
-
-    ?>
+    <?php require('../php/header.php'); ?>
 <main>
     <div class="voyages-container">
         <h1 class="Titre">Découvrez nos voyages</h1>
-        <?php foreach ($destinations as $destination): ?>
-            <?php 
-                
-                $prix = rand(100, 5000); 
-            ?>
-            <div class="voyage-item">
-                <h2><?php echo ($destination['lieu']); ?></h2>
-                <p>Explorez les merveilles de <?php echo ($destination['lieu']); ?> avec nos randonnées et activités uniques.</p>
-                <p class="price">Prix de base : <?php echo $prix; ?> €</p>
-                <form method="get" action="Sejours.php">
-                    <input type="hidden" name="ville" value="<?php echo ($destination['lieu']); ?>">
-                    <button type="submit">Voir les détails</button>
-                </form>
-            </div>
-        <?php endforeach; ?>
+        <?php if (!empty($destinations)): ?>
+            <?php foreach ($destinations as $destination): ?>
+                <?php $prix = $destination['prix_base']; ?>
+                <div class="voyage-item">
+                    <h2><?php echo htmlspecialchars($destination['lieu']); ?></h2>
+                    <p>Explorez les merveilles de <?php echo htmlspecialchars($destination['lieu']); ?> avec nos randonnées et activités uniques.</p>
+                    <p class="price">Prix de base : <?php echo $prix; ?> €</p>
+                    <form method="get" action="Sejours.php">
+                        <input type="hidden" name="ville" value="<?php echo htmlspecialchars($destination['lieu']); ?>">
+                        <button type="submit">Voir les détails</button>
+                    </form>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <p>Aucune destination trouvée.</p>
+        <?php endif; ?>
     </div>
-
 </main>
-    <?php
-
-        require('../php/footer.php')
-
-    ?>
-    
-    </body>
+    <?php require('../php/footer.php'); ?>
+</body>
 </html>

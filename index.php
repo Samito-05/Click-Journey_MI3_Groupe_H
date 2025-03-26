@@ -1,26 +1,34 @@
 <?php
 session_start();
 
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
     if (!isset($_SESSION['statut'])) {
-        
         $message = "Vous devez être connecté pour effectuer une recherche.";
     } else {
         $recherche = trim($_POST['recherche']);
-        $destinations = json_decode(file_get_contents('destination.json'), true);
+        $file_path = 'json/destination.json';
+        if (file_exists($file_path)) {
+            $destinations = json_decode(file_get_contents($file_path), true);
+        } else {
+            $destinations = [];
+            $message = "Le fichier des destinations est introuvable.";
+        }
 
-        
+        $resultats = [];
         foreach ($destinations as $destination) {
-            if (strcasecmp($destination['lieu'], $recherche) === 0) {
-                
-                header("Location: pages/voyages.php");
-                exit;
+            if (strcasecmp($destination['lieu'], $recherche) === 0 || 
+                (isset($destination['mots_cles']) && in_array(strtolower($recherche), array_map('strtolower', $destination['mots_cles'])))) {
+                $resultats[] = $destination;
             }
         }
 
-        
-        $message = "Aucune destination trouvée pour votre recherche.";
+        if (!empty($resultats)) {
+            $resultats_json = urlencode(json_encode($resultats));
+            header("Location: pages/voyages.php?resultats=$resultats_json");
+            exit;
+        } else {
+            $message = "Aucune destination trouvée pour votre recherche.";
+        }
     }
 }
 ?>

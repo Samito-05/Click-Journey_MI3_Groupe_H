@@ -651,16 +651,17 @@ h2.confirm_voyage {
     font-size: 1.5vmin;
 }
 
-.boutton_inscription,
-.boutton_connexion,
+
 .boutton_modif,
 .boutton_verif,
-.boutton_recherche,
 .boutton_admin,
+.boutton_retour,
+.boutton_reserve,
 .boutton_sejours,
 .boutton_paiement,
-.boutton_reserve,
-.boutton_retour {
+.boutton_connexion,
+.boutton_recherche,
+.boutton_inscription {
     width: 38vmin;
     margin: 4vmin auto 0;
     text-align: center;
@@ -675,20 +676,20 @@ h2.confirm_voyage {
     display: block;
 }
 
+.form_profile,
+.form_paiement,
 .form_connexion,
-.form_verification,
-.form_inscription,
-.form_profile, 
-.form_paiement{
+.form_inscription, 
+.form_verification{
     text-align: center;
     margin: 2vmin auto;
     font-family: Arial, sans-serif;
 }
 
-.champ_inscription,
+.champ_paiement,
 .champ_connexion,
-.champ_verification, 
-.champ_paiement {
+.champ_inscription,
+.champ_verification {
     width: 38vmin;
     height: 4vmin;
     margin-bottom: 2vmin;
@@ -697,10 +698,10 @@ h2.confirm_voyage {
     background-color: var(--field-color);
 }
 
-.champ_inscription:focus,
+.champ_paiement:focus,
 .champ_connexion:focus,
-.champ_verification:focus, 
-.champ_paiement:focus {
+.champ_inscription:focus,
+.champ_verification:focus {
     border: 2px solid var(--second-color);
     outline: none;
 }

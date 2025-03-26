@@ -2,6 +2,14 @@
     {
         "lieu": "Mont Blanc",
 
+        "mots_cles": [
+            "France",
+            "escalade",
+            "ski"
+        ],
+
+        "prix_base": 240,
+
         "rando": [
             "Lacs des Chéserys",
             "Mont Buet",
@@ -9,6 +17,7 @@
             "Glacier des Bossons et la Jonction",
             "Cascade du Dard"
         ],
+
         "activite": [
             "Parapente",
             "Escalade",
@@ -21,6 +30,14 @@
     {
         "lieu": "Pic du Midi de Bigorre",
 
+        "mots_cles": [
+            "France",
+            "escalade",
+            "ski"
+        ],
+
+        "prix_base": 240,
+
         "rando": [
             "La randonnée du Pic du Midi de Bigorre",
             "VTT Traversée du Col du Tourmalet à Hautacam",
@@ -28,6 +45,7 @@
             "Pédestre D'Artigues au Refuge de Campana de Cloutou",
             "Pédestre Refuge de la Glère - Refuge d'Aygues-Cluses"
         ],
+
         "activite": [
             "Rafting sur la Noguera Pallaresa",
             "Montgolfière en Garrotxa",
@@ -38,6 +56,15 @@
     },
     {
         "lieu": "Puy de Dôme",
+
+        "mots_cles": [
+            "France",
+            "escalade",
+            "Golf"
+        ],
+
+        "prix_base": 240,
+
         "rando": [
             "Le Puy du Pariou",
             "Vallée des Rouets",
@@ -45,6 +72,7 @@
             "Puy de la Vache",
             "Grottes Du Cliersou"
         ],
+
         "activite": [
             "Parc Animalier d'Auvergne",
             "Auverfun",
@@ -55,6 +83,15 @@
     },
     {
         "lieu": "Dolomites",
+
+        "mots_cles": [
+            "Italie",
+            "escalade",
+            "ski"
+        ],
+
+        "prix_base": 340,
+
         "rando": [
             "Lago di Dobbiaco",
             "Piz Boè",
@@ -62,6 +99,7 @@
             "Seceda",
             "Lago di Sorapis"
         ],
+
         "activite": [
             "Ski",
             "Escalade et via ferrata",
@@ -72,6 +110,14 @@
     },
     {
         "lieu": "Monte Rosa",
+
+        "mots_cles": [
+            "Italie",
+            "escalade"
+        ],
+
+        "prix_base": 340,
+
         "rando": [
             "Tour du Mont Rose",
             "Monte Rosa Randò",
@@ -79,6 +125,7 @@
             "Sentiero del Lyskamm",
             "Alagna - Punta Indren"
         ],
+
         "activite": [
             "Escalade et via ferrata",
             "Randonnée pédestre",
@@ -89,6 +136,13 @@
     },
     {
         "lieu": "Mont Etna",
+
+        "mots_cles": [
+            "Italie"
+        ],
+
+        "prix_base": 340,
+
         "rando": [
             "Sentiero Natura",
             "Grotta di Pitagora - Schiena dell'Asino",
@@ -96,6 +150,7 @@
             "Crater Silvestri",
             "Vallée del Bove"
         ],
+
         "activite": [
             "Excursions en 4x4",
             "Spéléologie",
@@ -106,6 +161,15 @@
     },
     {
         "lieu": "Mont Everest",
+
+        "mots_cles": [
+            "Népal",
+            "escalade",
+            "hélicoptère"
+        ],
+
+        "prix_base": 1090,
+
         "rando": [
             "Camp de Base de l'Everest",
             "Gokyo Lakes",
@@ -113,6 +177,7 @@
             "Renjo La Pass",
             "Trek de l'Annapurna Circuit"
         ],
+
         "activite": [
             "Vol en hélicoptère autour de l'Everest",
             "Trekking",
@@ -123,6 +188,14 @@
     },
     {
         "lieu": "Mont Fuji",
+
+        "mots_cles": [
+            "Japon",
+            "camping"
+        ],
+
+        "prix_base": 1090,
+
         "rando": [
             "Ascension du Mont Fuji (Route Yoshida)",
             "Randonnée autour du lac Kawaguchi",
@@ -140,6 +213,16 @@
     },
     {
         "lieu": "Rocky Mountains",
+
+        "mots_cles": [
+            "Etats-Unis",
+            "ski",
+            "escalade",
+            "rafting"
+        ],
+
+        "prix_base": 1090,
+
         "rando": [
             "Trail Ridge Road",
             "Bear Lake Loop",
@@ -147,6 +230,7 @@
             "Emerald Lake",
             "Alberta Falls"
         ],
+
         "activite": [
             "Ski à Aspen",
             "Randonnée dans le parc national des Rocky Mountains",
@@ -157,6 +241,15 @@
     },
     {
         "lieu": "Cadillac Mountain",
+
+        "mots_cles": [
+            "Etats-Unis",
+            "vélo",
+            "kayak"
+        ],
+
+        "prix_base": 1090,
+
         "rando": [
             "Cadillac Summit Loop Trail",
             "South Ridge Trail",
@@ -164,6 +257,7 @@
             "Perpendicular Trail",
             "Bowl Trail"
         ],
+
         "activite": [
             "Vélo sur Mount Desert Island",
             "Kayak et canoë dans le parc national",
@@ -174,6 +268,13 @@
     },
     {
         "lieu": "Mont Rushmore",
+
+        "mots_cles": [
+            "Etats-Unis"
+        ],
+
+        "prix_base": 1090,
+
         "rando": [
             "Presidential Trail",
             "Mount Rushmore Trail",
@@ -181,6 +282,7 @@
             "Little Devils Tower",
             "Cathedral Spires Trail"
         ],
+
         "activite": [
             "Visite du monument",
             "Observation de la faune",
@@ -191,6 +293,13 @@
     },
     {
         "lieu": "Mont Kilimanjaro",
+
+        "mots_cles": [
+            "Tanzanie"
+        ],
+
+        "prix_base": 1090,
+
         "rando": [
             "Ascension par la route Marangu",
             "Ascension par la route Machame",
@@ -208,6 +317,7 @@
     },
     {
         "lieu": "Voyage 13",
+        
         "rando": [
             "1",
             "2",
@@ -215,6 +325,7 @@
             "4",
             "5"
         ],
+
         "activite": [
             "1",
             "2",
@@ -225,6 +336,7 @@
     },
     {
         "lieu": "Voyage 14",
+
         "rando": [
             "1",
             "2",
@@ -232,6 +344,7 @@
             "4",
             "5"
         ],
+
         "activite": [
             "1",
             "2",
@@ -242,6 +355,7 @@
     },
     {
         "lieu": "Voyage 15",
+
         "rando": [
             "1",
             "2",
@@ -249,6 +363,7 @@
             "4",
             "5"
         ],
+
         "activite": [
             "1",
             "2",
