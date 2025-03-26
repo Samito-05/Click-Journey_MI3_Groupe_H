@@ -170,8 +170,13 @@ li.inactive a:hover {
     margin: auto 1vmin;
 }
 
-.champ_recherche {
+.champ_recherche,
+.champ_recherche_invalid {
     height: 5vmin
+}
+
+.champ_recherche_invalid {
+    border: 1px solid red !important;
 }
 
 .boutton_recherche_acceuil {
@@ -559,7 +564,7 @@ h2.confirm_voyage {
     margin-left: .5vmin;
     text-decoration: none;
     font-size: 1.5vmin;
-    color: var(--third-color);
+    color: var (--third-color);
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
