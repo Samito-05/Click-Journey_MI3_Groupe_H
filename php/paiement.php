@@ -57,7 +57,7 @@ file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT | JS
 $vendeur = "MI-3_H"; 
 $api_key = getAPIKey($vendeur);
 
-$retour_url = "http://localhost/Click-Journey_MI3_Groupe_H/php/confirmation_paiement.php?session=" . session_id();
+$retour_url = "http://localhost/Click-Journey_MI3_Groupe_H/pages/confirmation_paiement.php?session=" . session_id();
 
 $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeur . "#" . $retour_url . "#");
 

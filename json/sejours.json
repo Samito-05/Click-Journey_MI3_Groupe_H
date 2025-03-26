@@ -181,5 +181,39 @@
         "cout": "300",
         "statut": "Payé",
         "transaction_id": "Dylz4uipZ0Jv"
+    },
+    {
+        "utilisateur": "paul@gmail.com",
+        "ville": "Pic du Midi de Bigorre",
+        "nbr_personnes": "3",
+        "nbr_jours": "3",
+        "date_debut": "2025-03-28",
+        "logement": "Hotel++",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Pédestre Refuge de la Glère - Refuge d'Aygues-Cluses",
+            "2": "VTT dans le Val Aran",
+            "3": "Escalade et via ferrata au Congost de Mont-Rebei"
+        },
+        "cout": "1350",
+        "statut": "Payé",
+        "transaction_id": "dFY7lVE9dX73"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Dolomites",
+        "nbr_personnes": "3",
+        "nbr_jours": "3",
+        "date_debut": "2025-03-27",
+        "logement": "Hotel++",
+        "pension": "Pension complète",
+        "etapes": {
+            "1": "Lago di Sorapis",
+            "2": "Bains de vapeur",
+            "3": "Parapente"
+        },
+        "cout": "1920",
+        "statut": "Échec",
+        "transaction_id": "MU5yBMrUiKcd"
     }
 ]

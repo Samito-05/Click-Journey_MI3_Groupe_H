@@ -164,6 +164,7 @@
 
         "mots_cles": [
             "Népal",
+            "Nepal",
             "escalade",
             "hélicoptère"
         ],
@@ -215,7 +216,8 @@
         "lieu": "Rocky Mountains",
 
         "mots_cles": [
-            "Etats-Unis",
+            "Etats Unis",
+            "USA",
             "ski",
             "escalade",
             "rafting"
@@ -243,7 +245,8 @@
         "lieu": "Cadillac Mountain",
 
         "mots_cles": [
-            "Etats-Unis",
+            "Etats Unis",
+            "USA",
             "vélo",
             "kayak"
         ],
@@ -270,7 +273,8 @@
         "lieu": "Mont Rushmore",
 
         "mots_cles": [
-            "Etats-Unis"
+            "Etats Unis",
+            "USA"
         ],
 
         "prix_base": 1090,

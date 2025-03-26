@@ -170,13 +170,17 @@ li.inactive a:hover {
     margin: auto 1vmin;
 }
 
-.champ_recherche,
-.champ_recherche_invalid {
+.champ_recherche {
     height: 5vmin
 }
 
-.champ_recherche_invalid {
-    border: 1px solid red !important;
+input.mauvaise_recherche {
+    color: red;
+    border: 1px solid red;
+}
+
+input.mauvaise_recherche::placeholder {
+    color: red;
 }
 
 .boutton_recherche_acceuil {

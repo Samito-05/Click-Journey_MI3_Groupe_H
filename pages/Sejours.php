@@ -82,7 +82,14 @@ session_start();
             <div class="filtre">
                 <label>Lieu du voyage :</label>
                 <select class="select" name="ville" id="ville" required>
-                <option value="" disabled selected>Choisir un lieu</option>
+                    <?php 
+                    $ville = isset($_GET['ville']) ? trim($_GET['ville']) : '';
+                    ?>
+                    <?php if (!empty($ville)): ?>
+                        <option value="<?php echo htmlspecialchars($ville); ?>" selected><?php echo htmlspecialchars($ville); ?></option>
+                    <?php else: ?>
+                        <option value="" disabled selected>Choisir un lieu</option>
+                    <?php endif; ?>
                     <optgroup label="France">
                         <option value="Mont Blanc">Mont Blanc</option>
                         <option value="Pic du Midi de Bigorre">Pic du Midi de Bigorre</option>
