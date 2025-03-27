@@ -5,7 +5,9 @@
         "mots_cles": [
             "France",
             "escalade",
-            "ski"
+            "ski",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 240,
@@ -33,7 +35,9 @@
         "mots_cles": [
             "France",
             "escalade",
-            "ski"
+            "ski",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 240,
@@ -60,7 +64,9 @@
         "mots_cles": [
             "France",
             "escalade",
-            "Golf"
+            "Golf",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 240,
@@ -87,7 +93,9 @@
         "mots_cles": [
             "Italie",
             "escalade",
-            "ski"
+            "ski",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 340,
@@ -113,7 +121,9 @@
 
         "mots_cles": [
             "Italie",
-            "escalade"
+            "escalade",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 340,
@@ -138,7 +148,9 @@
         "lieu": "Mont Etna",
 
         "mots_cles": [
-            "Italie"
+            "Italie",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 340,
@@ -166,7 +178,9 @@
             "Népal",
             "Nepal",
             "escalade",
-            "hélicoptère"
+            "hélicoptère",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 1090,
@@ -192,7 +206,10 @@
 
         "mots_cles": [
             "Japon",
-            "camping"
+            "camping",
+            "randonnée",
+            "rando"
+
         ],
 
         "prix_base": 1090,
@@ -220,7 +237,9 @@
             "USA",
             "ski",
             "escalade",
-            "rafting"
+            "rafting",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 1090,
@@ -248,7 +267,9 @@
             "Etats Unis",
             "USA",
             "vélo",
-            "kayak"
+            "kayak",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 1090,
@@ -274,7 +295,9 @@
 
         "mots_cles": [
             "Etats Unis",
-            "USA"
+            "USA",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 1090,
@@ -299,7 +322,9 @@
         "lieu": "Mont Kilimanjaro",
 
         "mots_cles": [
-            "Tanzanie"
+            "Tanzanie",
+            "randonnée",
+            "rando"
         ],
 
         "prix_base": 1090,

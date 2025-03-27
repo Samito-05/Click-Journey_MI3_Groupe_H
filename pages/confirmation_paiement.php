@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('getapikey.php');
+require('../php/getapikey.php');
 
 $status = $_GET["status"] ?? null;
 $montant = $_GET["montant"] ?? null;
