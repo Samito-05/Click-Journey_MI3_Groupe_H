@@ -57,6 +57,6 @@
         "num": "0123456789",
         "email": "cyprien@gmail.com",
         "mdp_hash": "$2y$10$mQP5iGdDRbVDY4WsGMtGKeE6THwJcTHpYJzq7Hk7YXdJcDmquzFHW",
-        "statut": "client"
+        "statut": "BanDef"
     }
 ]

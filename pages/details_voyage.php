@@ -24,7 +24,7 @@ if (file_exists($sejoursFile) && is_readable($sejoursFile)) {
 <head>
     <meta charset="utf-8">
     <title>Détails du Voyage - <?php echo ($ville); ?></title>
-    <link rel="icon" type="image/png" href="../Images/peak_explorer_logo.png">
+    <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>

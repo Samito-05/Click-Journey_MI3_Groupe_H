@@ -68,7 +68,7 @@ $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeu
 <head>
     <meta charset="utf-8">
     <title>Redirection vers CY Bank</title>
-    <link rel="icon" type="image/png" href="../Images/peak_explorer_logo.png">
+    <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
 </head>
 <body>
     <h2>Redirection vers CY Bank...</h2>

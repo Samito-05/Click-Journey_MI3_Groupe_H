@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
     <meta charset="utf-8">
     <title>PeakExplorer - Randonnées en hautes montages</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="../Images/peak_explorer_logo.png"> 
+    <link rel="icon" type="image/jpg" href="Images/logo.jpg"> 
 </head>
 <body>
 <header class="Entete">

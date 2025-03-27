@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>PeakExplorer - Randonnées en hautes montages</title>
-    <link rel="icon" type="image/png" href="../Images/peak_explorer_logo.png">
+    <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
     <link rel="stylesheet" type="text/css" href="../style.css"> 
 </head>
 <body>
