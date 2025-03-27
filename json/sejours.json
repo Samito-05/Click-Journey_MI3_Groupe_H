@@ -215,5 +215,22 @@
         "cout": "1920",
         "statut": "Échec",
         "transaction_id": "MU5yBMrUiKcd"
+    },
+    {
+        "utilisateur": "sam@gmail.com",
+        "ville": "Mont Etna",
+        "nbr_personnes": "3",
+        "nbr_jours": "3",
+        "date_debut": "2025-03-27",
+        "logement": "Hotel++",
+        "pension": "Pension complète",
+        "etapes": {
+            "1": "Balades à cheval",
+            "2": "Grotta di Pitagora - Schiena dell'Asino",
+            "3": "Thermes en altitude"
+        },
+        "cout": "1920",
+        "statut": "Payé",
+        "transaction_id": "9ic5xDjxXX6T"
     }
 ]

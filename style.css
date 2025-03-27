@@ -72,6 +72,107 @@ body{
 
 /* Fin Regles "Universelles" */
 
+/* Regles appliquables plusieurs fois */
+
+.legend_sejours,
+.legend_reserve,
+.legend_profile,
+.legend_paiement,
+.legend_connexion,
+.legend_verif_admin,
+.legend_inscription {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vmin;
+    text-decoration: underline;
+    color: var(--main-color);
+    padding: 2vmin;
+}
+
+
+.field_profile,
+.field_sejours, 
+.field_reserve,
+.field_confirm,
+.field_paiement,
+.field_connexion,
+.field_inscription,
+.field_verification {
+    backdrop-filter: blur(5px);
+    width: 25%;
+    margin: 8vmin auto;
+    border: 2px solid var(--third-color);
+    border-radius: 2vmin;
+    padding: 4vmin 10vmin;
+}
+
+.div_ins,
+.div_profile,
+.div_paiement,
+.div_connexion,
+.div_verification {
+    text-align: left;
+    color: var(--third-color);
+    font-size: 1.5vmin;
+}
+
+
+.boutton_modif,
+.boutton_verif,
+.boutton_admin,
+.boutton_retour,
+.boutton_reserve,
+.boutton_sejours,
+.boutton_paiement,
+.boutton_connexion,
+.boutton_recherche,
+.boutton_inscription {
+    width: 38vmin;
+    margin: 4vmin auto 0;
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 1.2vmin;
+    border: none;
+    font-size: 1.6vmin;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 1vmin;
+    display: block;
+}
+
+.form_profile,
+.form_paiement,
+.form_connexion,
+.form_inscription, 
+.form_verification{
+    text-align: center;
+    margin: 2vmin auto;
+    font-family: Arial, sans-serif;
+}
+
+.champ_paiement,
+.champ_connexion,
+.champ_inscription,
+.champ_verification {
+    width: 38vmin;
+    height: 4vmin;
+    margin-bottom: 2vmin;
+    padding: 1vmin 1.5vmin;
+    border-radius: .5vmin;
+    background-color: var(--field-color);
+}
+
+.champ_paiement:focus,
+.champ_connexion:focus,
+.champ_inscription:focus,
+.champ_verification:focus {
+    border: 2px solid var(--second-color);
+    outline: none;
+}
+
+/* Fin Regles appliquables plusieurs fois */
+
 /* Regles Header */
 
 .Haut_Page {
@@ -293,6 +394,10 @@ table.table_reserve{
     text-align: center;
     color: var(--third-color);
 
+}
+
+.boutton_modif{
+    margin: 3vmin 0;
 }
 
 .boutton_reserve{
@@ -555,6 +660,14 @@ h2.confirm_voyage {
     background-color: var(--third-color);
 }
 
+.connexion_error{
+    border : 1px solid red;
+}
+
+.connexion_error::placeholder {
+    color: red;
+}
+
 .s_inscrire {
     font-family: Arial, sans-serif;
     font-size: 1.5vmin;
@@ -614,108 +727,6 @@ h2.confirm_voyage {
 }
 
 /* Fin Inscription.php */
-
-
-/* Regles appliquables plusieurs fois */
-
-.legend_sejours,
-.legend_reserve,
-.legend_profile,
-.legend_paiement,
-.legend_connexion,
-.legend_verif_admin,
-.legend_inscription {
-    text-align: center;
-    font-weight: bold;
-    font-size: 3vmin;
-    text-decoration: underline;
-    color: var(--main-color);
-    padding: 2vmin;
-}
-
-
-.field_profile,
-.field_sejours, 
-.field_reserve,
-.field_confirm,
-.field_paiement,
-.field_connexion,
-.field_inscription,
-.field_verification {
-    backdrop-filter: blur(5px);
-    width: 25%;
-    margin: 8vmin auto;
-    border: 2px solid var(--third-color);
-    border-radius: 2vmin;
-    padding: 4vmin 10vmin;
-}
-
-.div_ins,
-.div_profile,
-.div_paiement,
-.div_connexion,
-.div_verification {
-    text-align: left;
-    color: var(--third-color);
-    font-size: 1.5vmin;
-}
-
-
-.boutton_modif,
-.boutton_verif,
-.boutton_admin,
-.boutton_retour,
-.boutton_reserve,
-.boutton_sejours,
-.boutton_paiement,
-.boutton_connexion,
-.boutton_recherche,
-.boutton_inscription {
-    width: 38vmin;
-    margin: 4vmin auto 0;
-    text-align: center;
-    background-color: var(--main-color);
-    padding: 1.2vmin;
-    border: none;
-    font-size: 1.6vmin;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    border-radius: 1vmin;
-    display: block;
-}
-
-.form_profile,
-.form_paiement,
-.form_connexion,
-.form_inscription, 
-.form_verification{
-    text-align: center;
-    margin: 2vmin auto;
-    font-family: Arial, sans-serif;
-}
-
-.champ_paiement,
-.champ_connexion,
-.champ_inscription,
-.champ_verification {
-    width: 38vmin;
-    height: 4vmin;
-    margin-bottom: 2vmin;
-    padding: 1vmin 1.5vmin;
-    border-radius: .5vmin;
-    background-color: var(--field-color);
-}
-
-.champ_paiement:focus,
-.champ_connexion:focus,
-.champ_inscription:focus,
-.champ_verification:focus {
-    border: 2px solid var(--second-color);
-    outline: none;
-}
-
-/* Fin Regles appliquables plusieurs fois */
 
 /* Destinations */
 

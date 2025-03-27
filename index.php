@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
                 <div class="recherche">
                         <div class="recherche_txt">
                             <?php if (!isset($message)): ?>
-                                <input type="text" name="recherche" class="champ_recherche" placeholder="Recherchez votre destination...">
+                                <input type="text" name="recherche" class="champ_recherche" placeholder="Recherchez une destination/activité...">
                             <?php elseif (isset($message)): ?>
                                 <input type="text" name="recherche" class="champ_recherche mauvaise_recherche" placeholder="<?php echo $message?>">
                             <?php endif; ?>
