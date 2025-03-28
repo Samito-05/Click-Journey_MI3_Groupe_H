@@ -17,14 +17,14 @@ if (file_exists($fichier)) {
 
     foreach ($utilisateurs as $utilisateur) {
         if ($utilisateur['email'] === $email) {
-            echo "Email déjà utilisé";
-            exit();
+            $error = 1;
+            header("location: ../pages/Inscription.php?error=$error");
         }
     }
 
     if ($mdp !== $mdp_confirm) {
-        echo "Les mots de passe ne correspondent pas";
-        exit();
+        $error = 2;
+        header("location: ../pages/Inscription.php?error=$error");
     } else {
         $nouvel_utilisateur = [
             "nom" => $nom,
@@ -39,9 +39,8 @@ if (file_exists($fichier)) {
 
         $utilisateurs[] = $nouvel_utilisateur;
         file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+        header("location: ../pages/Connexion.php");
     }
 }
-
-header("location: ../pages/Connexion.php");
 exit();
 ?>

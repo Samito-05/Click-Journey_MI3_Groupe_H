@@ -39,13 +39,13 @@ $message = $_GET['error'] ?? null;
                         <label for="email">Mon email * :</label>
                     </div>
                     <div>
-                        <input type="email" id="email" name="email" class="champ_connexion connexion_error" placeholder="<?php echo($message) ?>" required>
+                        <input type="email" id="email" name="email" class="champ_connexion champ_error" placeholder="<?php echo($message) ?>" required>
                     </div>
 
                     <div class="div_connexion">
                         <label for="mdp_connexion">Mot de passe * :</label>
                     </div>
-                        <input type="password" id="mdp_connexion" name="mdp_connexion" class="champ_connexion connexion_error" placeholder="<?php echo($message) ?>" required>
+                        <input type="password" id="mdp_connexion" name="mdp_connexion" class="champ_connexion champ_error" placeholder="<?php echo($message) ?>" required>
                     </div>
                 <?php endif; ?>
 
