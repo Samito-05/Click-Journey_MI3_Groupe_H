@@ -19,12 +19,14 @@ if (file_exists($fichier)) {
         if ($utilisateur['email'] === $email) {
             $error = 1;
             header("location: ../pages/Inscription.php?error=$error");
+            exit();
         }
     }
 
     if ($mdp !== $mdp_confirm) {
         $error = 2;
         header("location: ../pages/Inscription.php?error=$error");
+        exit();
     } else {
         $nouvel_utilisateur = [
             "nom" => $nom,
@@ -40,7 +42,7 @@ if (file_exists($fichier)) {
         $utilisateurs[] = $nouvel_utilisateur;
         file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
         header("location: ../pages/Connexion.php");
+        exit();
     }
 }
-exit();
 ?>

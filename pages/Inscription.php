@@ -59,7 +59,7 @@ $error = $_GET['error'] ?? null;
                         <label for="email">Email * :</label>
                     </div>
                     <div>
-                        <input type="email" id="email" name="email" class="champ_inscription champ_error" placeholder="Email deja utilisé"required>
+                        <input type="email" id="email" name="email" class="champ_inscription champ_error" placeholder="Email déjà utilisé"required>
                     </div>
                 <?php else: ?>
                     <div class="div_ins">
@@ -74,14 +74,14 @@ $error = $_GET['error'] ?? null;
                         <label for="mdp_inscription">Mot de passe * :</label>
                     </div>
                     <div>
-                        <input type="password" id="mdp_inscription" name="mdp_inscription" class="champ_inscription champ_error" placeholder="Les mot de passe ne correspondent pas"required>
+                        <input type="password" id="mdp_inscription" name="mdp_inscription" class="champ_inscription champ_error" placeholder="Les mots de passe ne correspondent pas"required>
                     </div>
                     
                     <div class="div_ins">
                         <label for="mdp_confirm_inscription">Confirmation du mot de passe * :</label>
                     </div>
                     <div>
-                        <input type="password" id="mdp_confirm_inscription" name="mdp_confirm_inscription" class="champ_inscription champ_error" placeholder="Les mot de passe ne correspondent pas"required>
+                        <input type="password" id="mdp_confirm_inscription" name="mdp_confirm_inscription" class="champ_inscription champ_error" placeholder="Les mots de passe ne correspondent pas"required>
                     </div>
                 <?php else: ?>
                     <div class="div_ins">
