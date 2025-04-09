@@ -50,6 +50,8 @@ if (file_exists($sejoursFile) && is_readable($sejoursFile)) {
         <?php else: ?>
             <p>Les détails de ce voyage ne sont pas disponibles.</p>
         <?php endif; ?>
+        <form action="profile.php" method="post">
+            <button type="submit" class="boutton_sejours">Retour</button>
     </fieldset>
 </main>
 <?php require('../php/footer.php'); ?>
