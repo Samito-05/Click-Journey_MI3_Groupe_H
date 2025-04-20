@@ -4,13 +4,13 @@ function changerTheme() {
   
     console.log("Thème actuel :", themeActuel);
   
-    if (themeActuel === "style.css") {
+    if (themeActuel === "clair.css") {
       link.setAttribute("href", "sombre.css");
       document.cookie = "theme=sombre";
         alert("Thème sombre activé !");
       console.log("➡️ Passage en thème sombre");
     } else {
-      link.setAttribute("href", "style.css");
+      link.setAttribute("href", "clair.css");
       document.cookie = "theme=clair";
       alert("Thème clair activé !");
       console.log("➡️ Retour au thème clair");
@@ -38,8 +38,10 @@ function changerTheme() {
       link.setAttribute("href", "sombre.css");
       console.log("✅ Thème sombre appliqué");
     } else {
-      link.setAttribute("href", "style.css");
+      link.setAttribute("href", "clair.css");
       console.log("✅ Thème clair appliqué (défaut)");
     }
   };
+
+  
   
