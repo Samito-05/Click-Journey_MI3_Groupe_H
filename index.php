@@ -39,6 +39,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
     <meta charset="utf-8">
     <title>PeakExplorer - Randonnées en hautes montages</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="theme-link" rel="stylesheet" href="clair.css">
+    
     <link rel="icon" type="image/jpg" href="Images/logo.jpg"> 
 </head>
 <body>
@@ -55,6 +57,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
             <li class="active"><a href="index.php">Accueil</a></li>
             <li class="inactive"><a href="pages/A_Propos.php">À Propos</a></li>
         </ul>
+        <div class="changer_theme">
+            <button onclick="changerTheme()">🌗 Thème</button>
+        </div>
         <div class="profile">
             <abbr title="Connexion/Inscription">
                 <a href="pages/Connexion.php">
@@ -74,6 +79,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
             <li class="inactive"><a href="pages/Sejours.php">Séjours</a></li>
             <li class="inactive"><a href="pages/A_Propos.php">À Propos</a></li>
         </ul>
+        <div class="changer_theme">
+            <button onclick="changerTheme()">🌗 Thème</button>
+        </div>
         <div class="profile">
             <abbr title="Mon Profile">
                 <a href="pages/profile.php">
@@ -98,6 +106,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
             <li class="inactive"><a href="pages/Sejours.php">Séjours</a></li>
             <li class="inactive"><a href="pages/A_Propos.php">À Propos</a></li>
         </ul>
+        <div class="changer_theme">
+            <button onclick="changerTheme()">🌗 Thème</button>
+        </div>
         <div class="profile">
             <abbr title="Mon Profile">
                 <a href="pages/profile.php">
@@ -173,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
             </div>
 
         </footer>
-    
+    <script src="javascript/theme.js"></script>
 </body>
 </html>
 
