@@ -5,6 +5,10 @@
     --field-color: #e0e0e0;
 }
 
-.profile img {
+.profile img{
+    background-color: var(--field-color);
+}
+
+.boutton_recherche_acceuil {
     background-color: var(--field-color);
 }
