@@ -12,3 +12,21 @@
 .boutton_recherche_acceuil {
     background-color: var(--field-color);
 }
+
+.changer_theme button {
+    position: fixed;
+    top: 8vmin;
+    right: 2vmin;
+    width: 9vmin;
+    height: 7vmin;
+    padding: 1vmin;
+    background-color: var(--second-color);
+    border-radius: 2vmin;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 0.3vmin 1vmin rgba(0, 0, 0, 0.2);
+}
+
