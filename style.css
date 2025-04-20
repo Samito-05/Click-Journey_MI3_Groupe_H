@@ -235,15 +235,6 @@ li.inactive a:hover {
     background: lightgray;
 }
 
-.changer_theme button{
-    position: fixed;
-    top: 5vmin;
-    right: 2vmin;
-    padding: 1vmin 2vmin;
-    border: none;
-    border-radius: 1vmin;
-    cursor: pointer;
-}
 /* Fin Regles Header */
 
 /* Index.php */
