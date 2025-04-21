@@ -18,7 +18,6 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     box-shadow: 0 0.3vmin 1vmin rgba(0, 0, 0, 0.2);
 }
 
