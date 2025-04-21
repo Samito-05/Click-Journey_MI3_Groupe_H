@@ -31,6 +31,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--main-color);
+    position: relative;
 }
 
 footer {
@@ -180,6 +181,9 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
+    position: absolute; /*postion par rapport au parent header qui a la position relative*/
+    left: 50%; /*l'élément commence au centre de la largeur par rapport au parent*/
+    transform: translateX(-50%); /*centre l'élément au centre de la largeur du parent*/
 }
 
 .Haut_Page li {
