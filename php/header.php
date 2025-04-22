@@ -71,5 +71,4 @@
             </abbr>
         </div>
     <?php endif; ?>
-    
 </header>
