@@ -22,7 +22,7 @@ function changerTheme() {
 // Fonction pour lire un cookie
 function getCookie(nom) {
   const cookies = document.cookie.split("; "); // Sépare les cookies par un "; "
-
+  
   for (let i = 0; i < cookies.length; i++) { 
     const [cle, valeur] = cookies[i].split("="); // Sépare le nom et la valeur du cookie
     if (cle === nom){
