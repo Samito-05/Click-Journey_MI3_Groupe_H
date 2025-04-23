@@ -8,15 +8,13 @@ session_start();
     <meta charset="utf-8">
     <title>PeakExplorer - Randonnées en hautes montages</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link id="theme-link" rel="stylesheet" href="../clair.css">
+
     <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
 </head>
 <body>
-<?php
-
-        require('../php/header.php')
-
-    ?>
-<main>
+    <?php require('../php/header.php') ?>
+    <main>
         <h1 class="Titre">Mont Blanc</h1>
         <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11119.729466150024!2d6.85487517456719!3d45.83263628815274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4789459fb534be51%3A0xa908728c5dcec4c0!2sMont%20Blanc!5e0!3m2!1sfr!2sfr!4v1739277754758!5m2!1sfr!2sfr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
@@ -27,15 +25,9 @@ session_start();
             <p class="description">Côté culture, le <b>Musée Alpin</b> retrace l’histoire de l’alpinisme et du développement de la vallée, tandis que le <b>parc animalier de Merlet</b> offre une belle promenade au milieu des chamois, bouquetins et marmottes. Enfin, la gastronomie locale est un incontournable, avec des plats savoyards typiques comme <b>la fondue, la raclette</b> ou encore les <b>croûtes savoyardes</b>, à déguster dans un chalet d’altitude ou en centre-ville.</p>
             <p class="description"><b>Que ce soit pour un séjour sportif, détente ou une découverte culturelle, Chamonix offre une multitude d’expériences adaptées à tous les goûts et toutes les saisons ! </b></p>
         </div>
+    </main>
         
-        
-        </main>
-        
-        <?php
-
-        require('../php/footer.php')
-
-        ?>
-    
-    </body>
+    <?php require('../php/footer.php') ?>
+    <script src="../javascript/theme.js"></script>
+</body>
 </html>

@@ -65,20 +65,28 @@ $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeu
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Redirection vers CY Bank</title>
-    <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
-</head>
-<body>
-    <h2>Redirection vers CY Bank...</h2>
-    <form action='https://www.plateforme-smc.fr/cybank/index.php' method='POST'>
-                    <input type='hidden' name='transaction' value="<?php echo $transaction_id ?>">
-                    <input type='hidden' name='montant' value="<?php echo $cout ?>">
-                    <input type='hidden' name='vendeur' value="<?php echo $vendeur ?>">
-                    <input type='hidden' name='retour' value="<?php echo $retour_url ?>">
-                    <input type='hidden' name='control' value="<?php echo $control ?>">
-                    <input class="button-paiement" type='submit' value="Valider et payer">
-                </form>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Redirection vers CY Bank</title>
+        <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link id="theme-link" rel="stylesheet" href="../clair.css">
+    </head>
+    <body>
+        <?php require('../php/header.php'); ?>
+        <main>
+            <h2 class="paiement"> Redirection vers CY Bank...</h2>
+            <form action='https://www.plateforme-smc.fr/cybank/index.php' method='POST'>
+                <input type='hidden' name='transaction' value="<?php echo $transaction_id ?>">
+                <input type='hidden' name='montant' value="<?php echo $cout ?>">
+                <input type='hidden' name='vendeur' value="<?php echo $vendeur ?>">
+                <input type='hidden' name='retour' value="<?php echo $retour_url ?>">
+                <input type='hidden' name='control' value="<?php echo $control ?>">
+                <input class="button-paiement" type='submit' value="Payer">
+            </form>
+        </main>
+        
+        <?php require('../php/footer.php'); ?>
+        <script src="../javascript/theme.js"></script>
+    </body>
 </html>

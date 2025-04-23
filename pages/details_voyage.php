@@ -21,39 +21,42 @@ if (file_exists($sejoursFile) && is_readable($sejoursFile)) {
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Détails du Voyage - <?php echo ($ville); ?></title>
-    <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-</head>
-<body>
-<?php require('../php/header.php'); ?>
-<main>
-    <fieldset class="field_profile">
-        <legend class="legend_profile">Détails du Voyage</legend>
-        <?php if ($detailsVoyage): ?>
-            <h2 class="details_voyage"><?php echo ($detailsVoyage['ville']); ?></h2>
-            <div class="details_voyage"><p><strong>Prix :</strong> <?php echo (int)$detailsVoyage['cout']; ?> €</p></div>
-            <div class="details_voyage"><p><strong>Date de départ :</strong> <?php echo ($detailsVoyage['date_debut']); ?></p></div>
-            <div class="details_voyage"><p><strong>Durée :</strong> <?php echo ($detailsVoyage['nbr_jours']); ?> jours</p></div>
-            <div class="details_voyage"><p><strong>Participants :</strong> <?php echo ($detailsVoyage['nbr_personnes']); ?></p></div>
-            <div class="details_voyage"><p><strong>Logement :</strong> <?php echo ($detailsVoyage['logement']); ?></p></div>
-            <div class="details_voyage"><p><strong>Pension :</strong> <?php echo ($detailsVoyage['pension']); ?></p></div>
-            <div class="details_voyage"><p><strong>Statut :</strong> <?php echo ($detailsVoyage['statut']); ?> </p></div>
-            <div class="details_voyage"><p><strong>Étapes :</strong></p></div>
-            <div class="details_voyage"><ul>
-                <?php foreach ($detailsVoyage['etapes'] as $etape): ?>
-                    <li><?php echo ($etape); ?></li>
-                <?php endforeach; ?>
-            </ul></div>
-        <?php else: ?>
-            <p>Les détails de ce voyage ne sont pas disponibles.</p>
-        <?php endif; ?>
-        <form action="profile.php" method="post">
-            <button type="submit" class="boutton_sejours">Retour</button>
-    </fieldset>
-</main>
-<?php require('../php/footer.php'); ?>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Détails du Voyage - <?php echo ($ville); ?></title>
+        <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link id="theme-link" rel="stylesheet" href="../clair.css">
+
+    </head>
+    <body>
+        <?php require('../php/header.php'); ?>
+        <main>
+            <fieldset class="field_profile">
+                <legend class="legend_profile">Détails du Voyage</legend>
+                <?php if ($detailsVoyage): ?>
+                    <h2 class="details_voyage"><?php echo ($detailsVoyage['ville']); ?></h2>
+                    <div class="details_voyage"><p><strong>Prix :</strong> <?php echo (int)$detailsVoyage['cout']; ?> €</p></div>
+                    <div class="details_voyage"><p><strong>Date de départ :</strong> <?php echo ($detailsVoyage['date_debut']); ?></p></div>
+                    <div class="details_voyage"><p><strong>Durée :</strong> <?php echo ($detailsVoyage['nbr_jours']); ?> jours</p></div>
+                    <div class="details_voyage"><p><strong>Participants :</strong> <?php echo ($detailsVoyage['nbr_personnes']); ?></p></div>
+                    <div class="details_voyage"><p><strong>Logement :</strong> <?php echo ($detailsVoyage['logement']); ?></p></div>
+                    <div class="details_voyage"><p><strong>Pension :</strong> <?php echo ($detailsVoyage['pension']); ?></p></div>
+                    <div class="details_voyage"><p><strong>Statut :</strong> <?php echo ($detailsVoyage['statut']); ?> </p></div>
+                    <div class="details_voyage"><p><strong>Étapes :</strong></p></div>
+                    <div class="details_voyage"><ul>
+                        <?php foreach ($detailsVoyage['etapes'] as $etape): ?>
+                            <li><?php echo ($etape); ?></li>
+                        <?php endforeach; ?>
+                    </ul></div>
+                <?php else: ?>
+                    <p>Les détails de ce voyage ne sont pas disponibles.</p>
+                <?php endif; ?>
+                <form action="profile.php" method="post">
+                    <button type="submit" class="boutton_sejours">Retour</button>
+            </fieldset>
+        </main>
+        <?php require('../php/footer.php'); ?>
+        <script src="../javascript/theme.js"></script>
+    </body>
 </html>

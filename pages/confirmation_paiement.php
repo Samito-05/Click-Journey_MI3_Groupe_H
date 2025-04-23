@@ -53,38 +53,41 @@ file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT | JS
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Confirmation de Paiement</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
-</head>
-<body>
-<?php require('../php/header.php'); ?>
-<main>
-    <fieldset class="field_confirm">
-        <legend class="legend_profile">Confirmation de Paiement</legend>
-        <h2 class="confirm_voyage"><?php echo htmlspecialchars($sejourTrouve['ville']); ?></h2>
-        <div class="confirm_voyage"><p><strong>Statut : </strong><?php echo htmlspecialchars($sejourTrouve['statut']); ?></p></div>
-        <div class="confirm_voyage"><p><strong>Montant : </strong><?php echo htmlspecialchars($montant); ?> €</p></div>
-        <div class="confirm_voyage"><p><strong>Référence : </strong><?php echo htmlspecialchars($transaction); ?></p></div>
-        <div class="confirm_voyage"><p><strong>Date de départ : </strong><?php echo htmlspecialchars($sejourTrouve['date_debut']); ?></p></div>
-        <div class="confirm_voyage"><p><strong>Durée : </strong><?php echo htmlspecialchars($sejourTrouve['nbr_jours']); ?> jours</p></div>
-        <div class="confirm_voyage"><p><strong>Participants : </strong><?php echo htmlspecialchars($sejourTrouve['nbr_personnes']); ?></p></div>
-        <div class="confirm_voyage"><p><strong>Logement : </strong><?php echo htmlspecialchars($sejourTrouve['logement']); ?></p></div>
-        <div class="confirm_voyage"><p><strong>Pension : </strong><?php echo htmlspecialchars($sejourTrouve['pension']); ?></p></div>
-        <div class="confirm_voyage"><p><strong>Étapes : </strong></p></div>
-        <div class="confirm_voyage">
-            <ul class="confirm_voyage">
-                <?php foreach ($sejourTrouve['etapes'] as $etape): ?>
-                    <li><?php echo htmlspecialchars($etape); ?></li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-        <form action="../index.php">
-            <input class="boutton_retour" type="submit" value="Retour à l'accueil">
-    </fieldset>
-</main>
-<?php require('../php/footer.php'); ?>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Confirmation de Paiement</title>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link id="theme-link" rel="stylesheet" href="../clair.css">
+        
+        <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
+    </head>
+    <body>
+        <?php require('../php/header.php'); ?>
+        <main>
+            <fieldset class="field_confirm">
+                <legend class="legend_profile">Confirmation de Paiement</legend>
+                <h2 class="confirm_voyage"><?php echo htmlspecialchars($sejourTrouve['ville']); ?></h2>
+                <div class="confirm_voyage"><p><strong>Statut : </strong><?php echo htmlspecialchars($sejourTrouve['statut']); ?></p></div>
+                <div class="confirm_voyage"><p><strong>Montant : </strong><?php echo htmlspecialchars($montant); ?> €</p></div>
+                <div class="confirm_voyage"><p><strong>Référence : </strong><?php echo htmlspecialchars($transaction); ?></p></div>
+                <div class="confirm_voyage"><p><strong>Date de départ : </strong><?php echo htmlspecialchars($sejourTrouve['date_debut']); ?></p></div>
+                <div class="confirm_voyage"><p><strong>Durée : </strong><?php echo htmlspecialchars($sejourTrouve['nbr_jours']); ?> jours</p></div>
+                <div class="confirm_voyage"><p><strong>Participants : </strong><?php echo htmlspecialchars($sejourTrouve['nbr_personnes']); ?></p></div>
+                <div class="confirm_voyage"><p><strong>Logement : </strong><?php echo htmlspecialchars($sejourTrouve['logement']); ?></p></div>
+                <div class="confirm_voyage"><p><strong>Pension : </strong><?php echo htmlspecialchars($sejourTrouve['pension']); ?></p></div>
+                <div class="confirm_voyage"><p><strong>Étapes : </strong></p></div>
+                <div class="confirm_voyage">
+                    <ul class="confirm_voyage">
+                        <?php foreach ($sejourTrouve['etapes'] as $etape): ?>
+                            <li><?php echo htmlspecialchars($etape); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <form action="../index.php">
+                    <input class="boutton_retour" type="submit" value="Retour à l'accueil">
+            </fieldset>
+        </main>
+        <?php require('../php/footer.php'); ?>
+        <script src="../javascript/theme.js"></script>
+    </body>
 </html>

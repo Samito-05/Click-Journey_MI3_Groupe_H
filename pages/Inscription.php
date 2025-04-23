@@ -9,15 +9,13 @@ $error = $_GET['error'] ?? null;
     <meta charset="utf-8">
     <title>PeakExplorer - Randonnées en hautes montages</title>
     <link rel="stylesheet" type="text/css" href="../style.css"> 
+    <link id="theme-link" rel="stylesheet" href="../clair.css">
+    
     <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
 </head>
 <body>
-<?php
-
-        require('../php/header.php')
-
-    ?>
-<main>
+<?php require('../php/header.php') ?>
+    <main>
         <fieldset class="field_inscription">
             <legend class="legend_inscription">Création de mon compte</legend>
             <form class="form_inscription" method="post" action="../php/cree_compte.php">                
@@ -105,14 +103,8 @@ $error = $_GET['error'] ?? null;
                 <p class="deja_inscrit">Vous avez déjà un compte ?<a href="Connexion.php">Me connecter</a></p>
             </form>
         </fieldset>
-        
-        </main>
-        
-        <?php
-
-        require('../php/footer.php')
-
-        ?>
-    
-    </body>
+    </main>
+    <?php require('../php/footer.php') ?>
+    <script src="../javascript/theme.js"></script>
+</body>
 </html>
