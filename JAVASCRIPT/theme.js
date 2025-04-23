@@ -5,8 +5,8 @@ function changerTheme() {
   // Récupère nom du fichier CSS sans son dossier (clair.css ou sombre.css)
   const fichierTheme = themeActuel.split("/").pop();
 
-  // récupère juste le chemin du dossier, sans le nom du fichier ("" ou ../)
-  const dossier = themeActuel.replace(fichierTheme, "");
+  // Chemin du dossier contenant les thèmes
+  const dossier = "themes/";
 
   if (fichierTheme === "clair.css") {
     link.setAttribute("href", dossier + "sombre.css"); // Change le lien vers le fichier sombre.css
@@ -37,9 +37,8 @@ window.onload = function () {
   const theme = getCookie("theme"); // Récupère le cookie "theme"
   const link = document.getElementById("theme-link"); 
 
-  const themeActuel = link.getAttribute("href"); 
-  const fichierTheme = themeActuel.split("/").pop();
-  const dossier = themeActuel.replace(fichierTheme, "");
+  // Chemin du dossier contenant les thèmes
+  const dossier = "themes/";
 
   if (theme === "sombre") {
     link.setAttribute("href", dossier + "sombre.css");

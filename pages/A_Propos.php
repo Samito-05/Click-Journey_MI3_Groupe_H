@@ -8,7 +8,7 @@ session_start();
         <meta charset="utf-8">
         <title>PeakExplorer - Randonnées en hautes montages</title>
         <link rel="stylesheet" type="text/css" href="../style.css"> 
-        <link id="theme-link" rel="stylesheet" href="../clair.css">
+        <link id="theme-link" rel="stylesheet" href="themes/clair.css">
 
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
     </head>
