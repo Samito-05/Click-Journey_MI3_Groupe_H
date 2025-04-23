@@ -25,6 +25,9 @@ session_start();
                     <li class="inactive"><a href="../index.php">Accueil</a></li>
                     <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
                 </ul>
+                <div class="changer_theme">
+                    <button onclick="changerTheme()">🌗 Thème</button>
+                </div>
                 <div class="profile">
                     <abbr title="Connexion/Inscription">
                         <a href="../pages/Connexion.php">
@@ -44,6 +47,9 @@ session_start();
                     <li class="active"><a href="../pages/Sejours.php">Séjours</a></li>
                     <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
                 </ul>
+                <div class="changer_theme">
+                    <button onclick="changerTheme()">🌗 Thème</button>
+                </div>
                 <div class="profile">
                     <abbr title="Mon Profile">
                         <a href="../pages/profile.php">
@@ -68,6 +74,9 @@ session_start();
                     <li class="active"><a href="../pages/Sejours.php">Séjours</a></li>
                     <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
                 </ul>
+                <div class="changer_theme">
+                    <button onclick="changerTheme()">🌗 Thème</button>
+                </div>
                 <div class="profile">
                     <abbr title="Mon Profile">
                         <a href="../pages/profile.php">
