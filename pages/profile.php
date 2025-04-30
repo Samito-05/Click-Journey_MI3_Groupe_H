@@ -75,7 +75,7 @@
                         <label for="naissance">Date de naissance :</label>
                     </div>
                     <div class="div_modif">
-                        <input type="date" id="naissance" name="naissance" class="champ_inscription" value="<?php echo $naissance; ?>">
+                        <input type="date" id="naissance" name="naissance" class="champ_inscription" disabled value="<?php echo $naissance; ?>">
                         <label for="naissance" onclick="deverouiller_input('naissance')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     <div class="div_profile">

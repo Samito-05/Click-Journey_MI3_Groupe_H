@@ -780,6 +780,13 @@ h2.paiement {
     font-weight: bold;
 }
 
+.champ_inscription:disabled {
+    background-color: var(--field-color);
+    border: 1px dashed #D3D3D3;
+    color: #A0A0A0;
+    cursor: not-allowed;
+}
+
 /* Fin Inscription.php */
 
 /* Destinations */
