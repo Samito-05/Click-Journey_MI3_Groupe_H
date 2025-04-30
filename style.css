@@ -690,6 +690,23 @@ h2.paiement {
     outline: none;
 }
 
+.div_visu_mdp {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3vmin;
+}
+
+.visu_mdp {
+    height: 2vmin;
+    width: 2vmin;
+    margin-left: 1vmin;
+    cursor: pointer;
+}
+
+.visibilite_mdp {
+    margin: auto 0;
+}
+
 .boutton_connexion:hover {
     background-color: var(--third-color);
 }

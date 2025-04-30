@@ -10,8 +10,8 @@ $error = $_GET['error'] ?? null;
         <title>PeakExplorer - Randonnées en hautes montages</title>
         <link rel="stylesheet" type="text/css" href="../style.css"> 
         <link id="theme-link" rel="stylesheet" href="../clair.css">
-        
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
+        <script src="../JAVASCRIPT/mdp.js"></script>
     </head>
     <body>
     <?php require('../php/header.php') ?>
@@ -88,12 +88,20 @@ $error = $_GET['error'] ?? null;
                         <div>
                             <input type="password" id="mdp_inscription" name="mdp_inscription" class="champ_inscription" placeholder="Entrer votre mot de passe"required>
                         </div>
+                        <div class="div_ins div_visu_mdp">
+                            <p class="visibilite_mdp">Afficher le mot de passe :</p>
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp2()">   
+                        </div>
                         
                         <div class="div_ins">
                             <label for="mdp_confirm_inscription">Confirmation du mot de passe * :</label>
                         </div>
                         <div>
                             <input type="password" id="mdp_confirm_inscription" name="mdp_confirm_inscription" class="champ_inscription" placeholder="Confirmer votre mot de passe"required>
+                        </div>
+                        <div class="div_connexion div_visu_mdp">
+                            <p class="visibilite_mdp">Afficher le mot de passe :</p>
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp3()">   
                         </div>
                     <?php endif; ?>
                     <p class="saisie_obligatoire"><i>*Saisie obligatoire</i></p>

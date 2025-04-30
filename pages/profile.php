@@ -46,8 +46,8 @@
         <title>PeakExplorer - Randonnées en hautes montages</title>
         <link rel="stylesheet" type="text/css" href="../style.css"> 
         <link id="theme-link" rel="stylesheet" href="../clair.css">
-
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
+        <script src="../JAVASCRIPT/mdp.js"></script>
     </head>
     <body>
         <?php require('../php/header.php'); ?>
@@ -105,12 +105,20 @@
                         <input type="password" id="mdp2" name="mdp2" class="champ_inscription" placeholder="........">
                         <label for="mdp2"><img class="modif" src="../Images/modif.png"></label>
                     </div>
+                    <div class="div_modif div_visu_mdp">
+                            <p class="visibilite_mdp">Afficher le mot de passe :</p>
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp4()">   
+                    </div>
                     <div class="div_profile">
                         <label for="mdp3">Vérification du nouveau mot de passe :</label>
                     </div>
                     <div class="div_modif">
                         <input type="password" id="mdp3" name="mdp1" class="champ_inscription" placeholder="........">
                         <label for="mdp3"><img class="modif" src="../Images/modif.png"></label>
+                    </div>
+                    <div class="div_modif div_visu_mdp">
+                            <p class="visibilite_mdp">Afficher le mot de passe :</p>
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp5()">   
                     </div>
                     <button type="submit" class="boutton_modif">Valider Changements</button>
                 </form>

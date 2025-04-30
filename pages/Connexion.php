@@ -10,8 +10,8 @@ $message = $_GET['error'] ?? null;
         <title>PeakExplorer - Randonnées en hautes montages</title>
         <link rel="stylesheet" type="text/css" href="../style.css"> 
         <link id="theme-link" rel="stylesheet" href="../clair.css">
-        
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
+        <script src="../JAVASCRIPT/mdp.js"></script>
     </head>
     <body>
         <?php require('../php/header.php') ?>
@@ -30,7 +30,12 @@ $message = $_GET['error'] ?? null;
                         <div class="div_connexion">
                             <label for="mdp_connexion">Mot de passe * :</label>
                         </div>
+                        <div class="div_connexion">
                             <input type="password" id="mdp_connexion" name="mdp_connexion" class="champ_connexion" placeholder="Saisissez votre mot de passe" required>
+                        </div>
+                        <div class="div_connexion div_visu_mdp">
+                            <p class="visibilite_mdp">Afficher le mot de passe :</p>
+                            <input type="checkbox" class="visu_mdp" onclick="visu_mdp()">   
                         </div>
                     <?php else: ?> 
                         <div class="div_connexion">
@@ -43,7 +48,12 @@ $message = $_GET['error'] ?? null;
                         <div class="div_connexion">
                             <label for="mdp_connexion">Mot de passe * :</label>
                         </div>
-                            <input type="password" id="mdp_connexion" name="mdp_connexion" class="champ_connexion champ_error" placeholder="<?php echo($message) ?>" required>
+                        <div class="div_connexion">
+                            <input type="password" id="mdp_connexion" name="mdp_connexion" class="champ_connexion champ_error" placeholder="Saisissez votre mot de passe" required>
+                        </div>
+                        <div class="div_connexion div_visu_mdp">
+                            <p class="visibilite_mdp">Afficher le mot de passe :</p>
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp()">   
                         </div>
                     <?php endif; ?>
 
