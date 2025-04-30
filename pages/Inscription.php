@@ -90,7 +90,7 @@ $error = $_GET['error'] ?? null;
                         </div>
                         <div class="div_ins div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
-                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp2()">   
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp('mdp_inscription)">   
                         </div>
                         
                         <div class="div_ins">
@@ -101,7 +101,7 @@ $error = $_GET['error'] ?? null;
                         </div>
                         <div class="div_connexion div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
-                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp3()">   
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp('mdp_confirm_inscription')">   
                         </div>
                     <?php endif; ?>
                     <p class="saisie_obligatoire"><i>*Saisie obligatoire</i></p>

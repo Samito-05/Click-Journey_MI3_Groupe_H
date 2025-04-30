@@ -108,7 +108,7 @@
                     </div>
                     <div class="div_modif div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
-                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp4()">   
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp('mdp2')">   
                     </div>
                     <div class="div_profile">
                         <label for="mdp3">Vérification du nouveau mot de passe :</label>
@@ -119,7 +119,7 @@
                     </div>
                     <div class="div_modif div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
-                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp5()">   
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp('mdp3')">   
                     </div>
                     <button type="submit" class="boutton_modif">Valider Changements</button>
                 </form>

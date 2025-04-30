@@ -35,7 +35,7 @@ $message = $_GET['error'] ?? null;
                         </div>
                         <div class="div_connexion div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
-                            <input type="checkbox" class="visu_mdp" onclick="visu_mdp()">   
+                            <input type="checkbox" class="visu_mdp" onclick="visu_mdp('mdp_connexion')">   
                         </div>
                     <?php else: ?> 
                         <div class="div_connexion">
@@ -53,7 +53,7 @@ $message = $_GET['error'] ?? null;
                         </div>
                         <div class="div_connexion div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
-                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp()">   
+                            <input type="checkbox" class="visu_mdp"onclick="visu_mdp('mdp_connexion')">   
                         </div>
                     <?php endif; ?>
 
