@@ -705,6 +705,8 @@ h2.paiement {
 
 .visibilite_mdp {
     margin: auto 0;
+    font-size: 1.5vmin;
+    color: var(--third-color);
 }
 
 .boutton_connexion:hover {
