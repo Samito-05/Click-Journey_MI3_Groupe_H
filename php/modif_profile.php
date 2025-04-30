@@ -4,14 +4,14 @@ session_start();
 $fichier = "../json/comptes.json";
 $email = $_SESSION['email'];
 
-$nv_nom = trim($_POST['nom']);
-$nv_prenom = trim($_POST['prenom']);
-$nv_naissance = $_POST['naissance'];
-$nv_adresse = trim($_POST['adresse']);
-$nv_mail = trim($_POST['mail']);
-$nv_num = trim($_POST['num']);
-$nv_mdp = trim($_POST['mdp1']);
-$nv_mdp_confirm = trim($_POST['mdp2']);
+$nv_nom = isset($_POST['nom']) ? trim($_POST['nom']) : "";
+$nv_prenom = isset($_POST['prenom']) ? trim($_POST['prenom']) : "";
+$nv_naissance = isset($_POST['naissance']) ? $_POST['naissance'] : "";
+$nv_adresse = isset($_POST['adresse']) ? trim($_POST['adresse']) : "";
+$nv_mail = isset($_POST['mail']) ? trim($_POST['mail']) : "";
+$nv_num = isset($_POST['num']) ? trim($_POST['num']) : "";
+$nv_mdp = isset($_POST['mdp1']) ? trim($_POST['mdp1']) : "";
+$nv_mdp_confirm = isset($_POST['mdp2']) ? trim($_POST['mdp2']) : "";
 
 if (file_exists($fichier) && is_readable($fichier)) {
     $utilisateurs = json_decode(file_get_contents($fichier), true);

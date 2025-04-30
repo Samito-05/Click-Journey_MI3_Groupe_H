@@ -48,6 +48,7 @@
         <link id="theme-link" rel="stylesheet" href="../clair.css">
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
         <script src="../JAVASCRIPT/mdp.js"></script>
+        <script src="../JAVASCRIPT/profile.js"></script>
     </head>
     <body>
         <?php require('../php/header.php'); ?>
@@ -59,51 +60,51 @@
                         <label for="nom">Nom :</label>
                     </div>
                     <div class="div_modif">
-                        <input type="text" id="nom" name="nom" class="champ_inscription" placeholder="<?php echo $nom; ?>">
-                        <label for="nom"><img class="modif" src="../Images/modif.png"></label>
+                        <input type="text" id="nom" name="nom" class="champ_inscription" disabled value="<?php echo $nom; ?>">
+                        <label for="nom" onclick="deverouiller_input('nom')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     
                     <div class="div_profile">
                         <label for="prenom">Prénom :</label>
                     </div>
                     <div class="div_modif">
-                        <input type="text" id="prenom" name="prenom" class="champ_inscription" placeholder="<?php echo $prenom; ?>">
-                        <label for="prenom"><img class="modif" src="../Images/modif.png"></label>
+                        <input type="text" id="prenom" name="prenom" class="champ_inscription" disabled value="<?php echo $prenom; ?>">
+                        <label for="prenom" onclick="deverouiller_input('prenom')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="naissance">Date de naissance :</label>
                     </div>
                     <div class="div_modif">
                         <input type="date" id="naissance" name="naissance" class="champ_inscription" value="<?php echo $naissance; ?>">
-                        <label for="naissance"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="naissance" onclick="deverouiller_input('naissance')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="adresse">Adresse :</label>
                     </div>
                     <div class="div_modif">
-                        <input type="text" id="adresse" name="adresse" class="champ_inscription" placeholder="<?php echo $adresse; ?>">
-                        <label for="adresse"><img class="modif" src="../Images/modif.png"></label>
+                        <input type="text" id="adresse" name="adresse" class="champ_inscription" disabled value="<?php echo $adresse; ?>">
+                        <label for="adresse" onclick="deverouiller_input('adresse')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="mail">Adresse Mail :</label>
                     </div>
                     <div class="div_modif">
-                        <input type="email" id="mail" name="mail" class="champ_inscription" placeholder="<?php echo $utilisateur; ?>">
-                        <label for="mail"><img class="modif" src="../Images/modif.png"></label>
+                        <input type="email" id="mail" name="mail" class="champ_inscription" disabled value="<?php echo $utilisateur; ?>">
+                        <label for="mail" onclick="deverouiller_input('mail')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="num">Numero :</label>
                     </div>
                     <div class="div_modif">
-                        <input type="tel" id="num" name="num" class="champ_inscription" placeholder="<?php echo $num; ?>">
-                        <label for="num"><img class="modif" src="../Images/modif.png"></label>
+                        <input type="tel" id="num" name="num" class="champ_inscription" disabled value="<?php echo $num; ?>">
+                        <label for="num" onclick="deverouiller_input('num')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="mdp2">Nouveau mot de passe :</label>
                     </div>
                     <div class="div_modif">
-                        <input type="password" id="mdp2" name="mdp2" class="champ_inscription" placeholder="........">
-                        <label for="mdp2"><img class="modif" src="../Images/modif.png"></label>
+                        <input type="password" id="mdp2" name="mdp2" class="champ_inscription" disabled value="........">
+                        <label for="mdp2" onclick="deverouiller_input('mdp2')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     <div class="div_modif div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
@@ -113,8 +114,8 @@
                         <label for="mdp3">Vérification du nouveau mot de passe :</label>
                     </div>
                     <div class="div_modif">
-                        <input type="password" id="mdp3" name="mdp1" class="champ_inscription" placeholder="........">
-                        <label for="mdp3"><img class="modif" src="../Images/modif.png"></label>
+                        <input type="password" id="mdp3" name="mdp1" class="champ_inscription" disabled value="........">
+                        <label for="mdp3" onclick="deverouiller_input('mdp3')"><img class="modif" src="../Images/modif.png"></label>
                     </div>
                     <div class="div_modif div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
