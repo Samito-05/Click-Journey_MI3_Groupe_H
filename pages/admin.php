@@ -9,8 +9,8 @@ session_start();
         <title>PeakExplorer - Randonnées en hautes montages</title>
         <link rel="stylesheet" type="text/css" href="../style.css"> 
         <link id="theme-link" rel="stylesheet" href="../clair.css">
-
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
+        <script src="../javascript/attente.js"></script>
     </head>
     <body>
         <header class="Entete">
@@ -124,7 +124,7 @@ session_start();
                                         <option value='admin' " . ($user['statut'] == "admin" ? "selected" : "") . ">Admin</option>
                                         <option value='BanDef' " . ($user['statut'] == "BanDef" ? "selected" : "") . ">BanDef</option>
                                     </select>
-                                    <button type='submit'>Modifier</button>
+                                    <button type='submit' onclick='attente(this)'>Modifier</button>
                                 </form>
                             </td>
                         </tr>";
