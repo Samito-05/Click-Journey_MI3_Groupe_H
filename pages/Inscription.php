@@ -128,6 +128,6 @@ $error = $_GET['error'] ?? null;
             </fieldset>
         </main>
         <?php require('../php/footer.php') ?>
-        <script src="../javascript/theme.js"></script>
+        <script src="../javascript/theme.js" defer></script>
     </body>
 </html>
