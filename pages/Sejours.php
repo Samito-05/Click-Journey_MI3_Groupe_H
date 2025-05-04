@@ -133,23 +133,23 @@ session_start();
                     </div>
 
                     <div class="filtre">
-                        <label>Nombre de participants :</label>
-                        <input type="number" name="nbr_personnes" min="1" max="10" value="0" step="1" required>
+                        <label>Nombre de participants (max 15) :</label>
+                        <input type="number" id="nbr_personnes" name="nbr_personnes" min="1" max="15" value="1" step="1" required>
                     </div>
 
                     <div class="filtre">
-                        <label>Duree du sejour :</label>
-                        <input type="number" name="duree_sejour" min="2" max="10" value="0" step="1" required>
+                        <label>Duree du sejour (max 15j) :</label>
+                        <input type="number" id="duree_sejour" name="duree_sejour" min="2" max="15" value="1" step="1" required>
                     </div>
 
                     <div class="filtre">
                         <label>Date de depart :</label>
-                        <input type="date" name="date_depart" value="<?php echo date("Y-m-d")?>" min="<?php echo date("Y-m-d")?>" required>
+                        <input type="date" id="date_depart" name="date_depart" value="<?php echo date("Y-m-d")?>" min="<?php echo date("Y-m-d")?>" required>
                     </div>
 
                     <div class="filtre">
                         <label>Logement :</label>
-                        <select class="select" name="logement" required>
+                        <select class="select" id="logement" name="logement" required>
                             <option value="" disabled selected>Choisir un Logement</option>
                             <option value="Hotel">Hotel</option>
                             <option value="Hotel++">Hotel haute gamme</option>
@@ -160,9 +160,14 @@ session_start();
 
                     <p class="filtre">Option alimentaire :</p>
                     <div class="checkbox_options">
-                        <label><input type="radio" name="pension" value="Sans pension"/><p>Sans pension</p></label>
-                        <label><input type="radio" name="pension" value="Demi pension"/><p>Demi-pension</p></label>
-                        <label><input type="radio" name="pension" value="Pension complète"/><p>Pension complète</p></label>
+                        <label><input type="radio" id="pension_sans" name="pension" value="Sans pension"/><p>Sans pension</p></label>
+                        <label><input type="radio" id="pension_demi" name="pension" value="Demi pension"/><p>Demi-pension</p></label>
+                        <label><input type="radio" id="pension_complete" name="pension" value="Pension complète"/><p>Pension complète</p></label>
+                    </div>
+
+                    <div class="filtre">
+                        <label>Prix estimé :</label>
+                        <p id="prix_estime">0 €</p>
                     </div>
 
                     <button type="submit" class="boutton_recherche">Rechercher</button>
@@ -172,5 +177,6 @@ session_start();
   
         <?php require('../php/footer.php') ?>
         <script src="../javascript/theme.js"></script>
+        <script src="../javascript/calcul_prix.js"></script>
     </body>
 </html>
