@@ -74,7 +74,8 @@
                 <div class="filtre">
                     <h2 class="filtre">Choisissez une activité par jour</h2>
 
-                    <form action="../php/paiement.php" method="post">
+                    <!-- Formulaire pour ajouter au panier -->
+                    <form action="../php/ajout_panier.php" method="post">
                         <input type="hidden" name="ville" value="<?php echo $ville; ?>">
                         <input type="hidden" name="nbr_personnes" value="<?php echo $nbr_personnes; ?>">
                         <input type="hidden" name="duree_sejour" value="<?php echo $nbr_jours; ?>">
@@ -82,6 +83,7 @@
                         <input type="hidden" name="logement" value="<?php echo $logement; ?>">
                         <input type="hidden" name="pension" value="<?php echo $pension; ?>">
                         <input type="hidden" name="cout" value="<?php echo $cout; ?>">
+                        
                         <table class="table_sejours">
                             <tr>
                                 <th>Jour</th>
@@ -101,12 +103,31 @@
                                 </tr>
                             <?php endfor; ?>
                         </table>
-                        <button class="boutton_sejours" type="submit">Aller au paiement</button>
+                        <button class="boutton_ajout_panier" type="submit">Ajouter au panier 🛒</button>
+                    </form>
+
+                    </form>
+
+                    <!-- Formulaire pour aller directement au paiement -->
+                    <form action="../php/paiement.php" method="post">
+                        <input type="hidden" name="ville" value="<?php echo $ville; ?>">
+                        <input type="hidden" name="nbr_personnes" value="<?php echo $nbr_personnes; ?>">
+                        <input type="hidden" name="duree_sejour" value="<?php echo $nbr_jours; ?>">
+                        <input type="hidden" name="date_depart" value="<?php echo $date_depart; ?>">
+                        <input type="hidden" name="logement" value="<?php echo $logement; ?>">
+                        <input type="hidden" name="pension" value="<?php echo $pension; ?>">
+                        <input type="hidden" name="cout" value="<?php echo $cout; ?>">
+                        
+                        <?php for ($i = 1; $i <= $nbr_jours; $i++) : ?>
+                            <input type="hidden" name="option[<?php echo $i; ?>]" value="<?php echo $options[0]; ?>">
+                        <?php endfor; ?>
+
+                        <button class="boutton_sejours" type="submit">Payer directement ce voyage</button>
                     </form>
                 </div>
 
                 <div class="filtre">
-                    <h2 class="filtre">Cout total</h2>
+                    <h2 class="filtre">Cout du voyage</h2>
                     <h3 class="filtre"><?php echo $cout; ?> €</h3>
                 </div>
 
