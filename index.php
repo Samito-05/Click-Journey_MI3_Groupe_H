@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
         <?php if (isset($_SESSION['statut'])): ?>
             <div class="panier">
                 <abbr title="Voir mon panier" class="abbr_panier">
-                    <a href="../pages/panier.php">
+                    <a href="pages/panier.php">
                         🛒 Panier
                         <?php if (!empty($_SESSION['panier'])): ?>
                             ~ <?php echo count($_SESSION['panier']); ?>
@@ -124,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
         <?php if (isset($_SESSION['statut'])): ?>
             <div class="panier">
                 <abbr title="Voir mon panier" class="abbr_panier">
-                    <a href="../pages/panier.php">
+                    <a href="pages/panier.php">
                         🛒 Panier
                         <?php if (!empty($_SESSION['panier'])): ?>
                             ~ <?php echo count($_SESSION['panier']); ?>
@@ -141,8 +141,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
             </abbr>
         </div>
     <?php endif; ?>
-</header>
-<main>
+    </header>
+    <main>
 
         <div class="bande">
             <h1 class="Titre_index">PeakExplorer</h1>
