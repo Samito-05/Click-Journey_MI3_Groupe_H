@@ -184,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recherche'])) {
             </div>
 
         </footer>
-    <script src="javascript/theme.js"></script>
+    <script src="javascript/theme.js" defer></script>
 </body>
 </html>
 
