@@ -36,23 +36,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const ville = document.getElementById("ville").value;
 
         let cout = 0;
-
-        // Add logement cost
+        
         cout += logementPrices[logement] || 0;
 
-        // Add pension cost
         cout += pensionPrices[pension] || 0;
 
-        // Multiply by duration
         cout *= dureeSejour;
 
-        // Add ville cost
         cout += villePrices[ville] || villePrices["default"];
 
-        // Multiply by number of participants
         cout *= nbrPersonnes;
 
-        // Update the displayed price
         prixEstimeElement.textContent = `${cout} €`;
     }
 
