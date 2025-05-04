@@ -62,6 +62,7 @@
                     <div class="div_modif">
                         <input type="text" id="nom" name="nom" class="champ_inscription" disabled value="<?php echo $nom; ?>">
                         <label for="nom" onclick="deverouiller_input('nom')"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="nom" onclick="retour_modif('nom')"><img class="modif" src="../Images/retour.png"></label>
                     </div>
                     
                     <div class="div_profile">
@@ -70,6 +71,7 @@
                     <div class="div_modif">
                         <input type="text" id="prenom" name="prenom" class="champ_inscription" disabled value="<?php echo $prenom; ?>">
                         <label for="prenom" onclick="deverouiller_input('prenom')"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="prenom" onclick="retour_modif('prenom')"><img class="modif" src="../Images/retour.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="naissance">Date de naissance :</label>
@@ -77,6 +79,7 @@
                     <div class="div_modif">
                         <input type="date" id="naissance" name="naissance" class="champ_inscription" disabled value="<?php echo $naissance; ?>">
                         <label for="naissance" onclick="deverouiller_input('naissance')"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="naissance" onclick="retour_modif('naissance')"><img class="modif" src="../Images/retour.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="adresse">Adresse :</label>
@@ -84,6 +87,7 @@
                     <div class="div_modif">
                         <input type="text" id="adresse" name="adresse" class="champ_inscription" disabled value="<?php echo $adresse; ?>">
                         <label for="adresse" onclick="deverouiller_input('adresse')"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="adresse" onclick="retour_modif('adresse')"><img class="modif" src="../Images/retour.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="mail">Adresse Mail :</label>
@@ -91,6 +95,7 @@
                     <div class="div_modif">
                         <input type="email" id="mail" name="mail" class="champ_inscription" disabled value="<?php echo $utilisateur; ?>">
                         <label for="mail" onclick="deverouiller_input('mail')"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="mail" onclick="retour_modif('mail')"><img class="modif" src="../Images/retour.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="num">Numero :</label>
@@ -98,6 +103,7 @@
                     <div class="div_modif">
                         <input type="tel" id="num" name="num" class="champ_inscription" disabled value="<?php echo $num; ?>">
                         <label for="num" onclick="deverouiller_input('num')"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="num" onclick="retour_modif('num')"><img class="modif" src="../Images/retour.png"></label>
                     </div>
                     <div class="div_profile">
                         <label for="mdp2">Nouveau mot de passe :</label>
@@ -105,6 +111,7 @@
                     <div class="div_modif">
                         <input type="password" id="mdp2" name="mdp2" class="champ_inscription" disabled value="........">
                         <label for="mdp2" onclick="deverouiller_input('mdp2')"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="mdp2" onclick="retour_modif('mdp2')"><img class="modif" src="../Images/retour.png"></label>
                     </div>
                     <div class="div_modif div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
@@ -116,6 +123,7 @@
                     <div class="div_modif">
                         <input type="password" id="mdp3" name="mdp1" class="champ_inscription" disabled value="........">
                         <label for="mdp3" onclick="deverouiller_input('mdp3')"><img class="modif" src="../Images/modif.png"></label>
+                        <label for="mdp3" onclick="retour_modif('mdp3')"><img class="modif" src="../Images/retour.png"></label>
                     </div>
                     <div class="div_modif div_visu_mdp">
                             <p class="visibilite_mdp">Afficher le mot de passe :</p>
