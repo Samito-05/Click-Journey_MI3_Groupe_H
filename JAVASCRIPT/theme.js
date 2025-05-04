@@ -10,11 +10,11 @@ function changerTheme() {
 
   if (fichierTheme === "clair.css") {
     link.setAttribute("href", dossier + "sombre.css"); // Change le lien vers le fichier sombre.css
-    document.cookie = "theme=sombre"; // Crée un cookie pour le thème sombre
+    document.cookie = "theme=sombre; path=/"; // Crée un cookie pour le thème sombre
     alert("Thème sombre activé !"); // Alerte pour informer l'utilisateur
   } else {
     link.setAttribute("href", dossier + "clair.css");
-    document.cookie = "theme=clair";
+    document.cookie = "theme=clair; path=/"; 
     alert("Thème clair activé !");
   }
 }
