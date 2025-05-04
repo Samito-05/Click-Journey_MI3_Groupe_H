@@ -595,6 +595,22 @@ select.select {
     width: 100%;
 }
 
+.boutton_ajout_panier{
+    background-color: var(--main-color);
+    color: var(--field-color);
+    border: none;
+    border-radius: 5vmin;
+    padding: 2vmin 5vmin;
+    margin: 2vmin auto;
+    font-size: 2vmin;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+    
+.boutton_ajout_panier:hover {
+    background-color: var(--third-color);
+}
 /* Fin Sejours.php */
 
 /* details_voyage.php */
@@ -890,3 +906,5 @@ table.modif_compte {
 }
 
 /* Fin Admin */
+
+/* panier.php */
