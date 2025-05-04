@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Reorder the voyages in the DOM
         voyages.forEach(voyage => voyagesList.appendChild(voyage));
     });
 });
