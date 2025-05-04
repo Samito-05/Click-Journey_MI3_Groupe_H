@@ -239,6 +239,30 @@ li.inactive a:hover {
     background: lightgray;
 }
 
+.panier {
+    font-size: 2.5vmin;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 3vmin;
+    border: 0.1vmin solid var(--field-color);
+    border-radius: 1.5vmin;
+    padding: 0.5vmin;
+}
+
+.panier a {
+    text-decoration: none;
+    color: var(--field-color);
+}
+
+.panier a:hover {
+    color: var(--second-color);
+}
+
+.abbr_panier {
+        text-decoration: none;
+        border-bottom: none;  
+}
+
 /* Fin Regles Header */
 
 /* Index.php */
