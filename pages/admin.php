@@ -23,7 +23,7 @@ session_start();
                 </div>
                 <ul class="Haut_Page">
                     <li class="inactive"><a href="../index.php">Accueil</a></li>
-                    <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
+                    <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
                 </ul>
                 <div class="changer_theme">
                         <button onclick="changerTheme()">🌗 Thème</button>
@@ -45,7 +45,7 @@ session_start();
                 <ul class="Haut_Page">
                     <li class="inactive"><a href="../index.php">Accueil</a></li>
                     <li class="inactive"><a href="../pages/Sejours.php">Séjours</a></li>
-                    <li class="active"><a href="../pages/A_Propos.php">À Propos</a></li>
+                    <li class="inactive"><a href="../pages/A_Propos.php">À Propos</a></li>
                 </ul>
                 <div class="changer_theme">
                         <button onclick="changerTheme()">🌗 Thème</button>
