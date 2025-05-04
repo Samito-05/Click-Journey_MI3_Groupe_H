@@ -36,6 +36,18 @@
         <div class="changer_theme">
             <button onclick="changerTheme()">🌗 Thème</button>
         </div>
+        <?php if (isset($_SESSION['statut'])): ?>
+            <div class="panier">
+                <abbr title="Voir mon panier" class="abbr_panier">
+                    <a href="../pages/panier.php">
+                        🛒 Panier
+                        <?php if (!empty($_SESSION['panier'])): ?>
+                            ~ <?php echo count($_SESSION['panier']); ?>
+                        <?php endif; ?>
+                    </a>
+                </abbr>
+            </div>
+        <?php endif; ?>
         <div class="profile">
             <abbr title="Mon Profile">
                 <a href="../pages/profile.php">
@@ -63,6 +75,18 @@
         <div class="changer_theme">
             <button onclick="changerTheme()">🌗 Thème</button>
         </div>
+        <?php if (isset($_SESSION['statut'])): ?>
+            <div class="panier">
+                <abbr title="Voir mon panier" class="abbr_panier">
+                    <a href="../pages/panier.php">
+                        🛒 Panier
+                        <?php if (!empty($_SESSION['panier'])): ?>
+                            ~ <?php echo count($_SESSION['panier']); ?>
+                        <?php endif; ?>
+                    </a>
+                </abbr>
+            </div>
+        <?php endif; ?>
         <div class="profile">
             <abbr title="Mon Profile">
                 <a href="../pages/profile.php">
