@@ -12,14 +12,14 @@ $message = $_GET['error'] ?? null;
         <link id="theme-link" rel="stylesheet" href="../clair.css">
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
         <script src="../JAVASCRIPT/mdp.js"></script>
+        <script src="../JAVASCRIPT/verif_entrees.js"></script>
     </head>
     <body>
         <?php require('../php/header.php') ?>
         <main>
             <fieldset class="field_connexion">
                 <legend class="legend_connexion">Connexion</legend>
-                <form class="form_connexion" action="../php/connect.php" method="post">
-                    <?php if (!isset($message)): ?>
+                <form class="form_connexion" action="../php/connect.php" method="post" onsubmit="return verif_connexion();">                    <?php if (!isset($message)): ?>
                         <div class="div_connexion">
                             <label for="email">Mon email * :</label>
                         </div>
@@ -57,7 +57,7 @@ $message = $_GET['error'] ?? null;
                         </div>
                     <?php endif; ?>
 
-                        <button type="submit" class="boutton_connexion">Me connecter</button>
+                        <button type="submit" id="btn_connexion" class="boutton_connexion">Me connecter</button>
 
                     <p class="s_inscrire">Vous n'avez pas de compte ?<a href="Inscription.php">S'incrire</a></p>
                 </form>

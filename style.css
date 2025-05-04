@@ -424,7 +424,7 @@ table.table_reserve{
     border-radius: 8px;
     padding: 15px;
     margin: 10px;
-    width: 80%;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -719,6 +719,13 @@ h2.paiement {
 
 .champ_error::placeholder {
     color: red;
+}
+
+#btn_connexion:disabled {
+    background-color: var(--field-color);
+    border: 1px dashed #D3D3D3;
+    color: #A0A0A0;
+    cursor: not-allowed;
 }
 
 .s_inscrire {

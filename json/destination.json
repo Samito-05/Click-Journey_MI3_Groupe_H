@@ -12,6 +12,8 @@
 
         "prix_base": 240,
 
+        "distance": 478,
+
         "rando": [
             "Lacs des Chéserys",
             "Mont Buet",
@@ -42,6 +44,8 @@
 
         "prix_base": 240,
 
+        "distance": 860,
+
         "rando": [
             "La randonnée du Pic du Midi de Bigorre",
             "VTT Traversée du Col du Tourmalet à Hautacam",
@@ -70,6 +74,8 @@
         ],
 
         "prix_base": 240,
+
+        "distance": 418,
 
         "rando": [
             "Le Puy du Pariou",
@@ -100,6 +106,8 @@
 
         "prix_base": 340,
 
+        "distance": 1276,
+
         "rando": [
             "Lago di Dobbiaco",
             "Piz Boè",
@@ -128,6 +136,8 @@
 
         "prix_base": 340,
 
+        "distance": 855,
+
         "rando": [
             "Tour du Mont Rose",
             "Monte Rosa Randò",
@@ -154,6 +164,8 @@
         ],
 
         "prix_base": 340,
+
+        "distance": 1538,
 
         "rando": [
             "Sentiero Natura",
@@ -185,6 +197,8 @@
 
         "prix_base": 1090,
 
+        "distance": 7328,
+
         "rando": [
             "Camp de Base de l'Everest",
             "Gokyo Lakes",
@@ -213,6 +227,8 @@
         ],
 
         "prix_base": 1090,
+
+        "distance": 9715,
 
         "rando": [
             "Ascension du Mont Fuji (Route Yoshida)",
@@ -244,6 +260,8 @@
 
         "prix_base": 1090,
 
+        "distance": 8005,
+
         "rando": [
             "Trail Ridge Road",
             "Bear Lake Loop",
@@ -274,6 +292,8 @@
 
         "prix_base": 1090,
 
+        "distance": 5215,
+
         "rando": [
             "Cadillac Summit Loop Trail",
             "South Ridge Trail",
@@ -302,6 +322,8 @@
 
         "prix_base": 1090,
 
+        "distance": 7431,
+
         "rando": [
             "Presidential Trail",
             "Mount Rushmore Trail",
@@ -329,6 +351,8 @@
 
         "prix_base": 1090,
 
+        "distance": 6790,
+
         "rando": [
             "Ascension par la route Marangu",
             "Ascension par la route Machame",
@@ -346,6 +370,10 @@
     },
     {
         "lieu": "Voyage 13",
+
+        "prix_base": 1200,
+
+        "distance": 9999,
         
         "rando": [
             "1",
@@ -366,6 +394,10 @@
     {
         "lieu": "Voyage 14",
 
+        "prix_base": 1200,
+
+        "distance": 9999,
+
         "rando": [
             "1",
             "2",
@@ -384,6 +416,10 @@
     },
     {
         "lieu": "Voyage 15",
+
+        "prix_base": 1200,
+
+        "distance": 9999,
 
         "rando": [
             "1",
