@@ -930,4 +930,76 @@ table.modif_compte {
 
 /* Fin Admin */
 
-/* panier.php */
+    /* panier.php */
+.panier_page {
+    padding: 6vmin;
+    margin: auto;
+    background-color: #ffffffcc;
+    border-radius: 3vmin;
+    box-shadow: 0 2vmin 3.5vmin rgba(0, 0, 0, 0.1);
+}
+
+.panier_page h1 {
+    text-align: center;
+    margin-bottom: 5.7vmin;
+    font-size: 5.3vmin;
+    color: #333;
+}
+
+    /* Liste des voyages dans le panier */
+.panier_page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.panier_page li {
+    background-color: #f4f4f4;
+    padding: 2.7vmin;
+    margin-bottom: 4vmin;
+    border-radius: 1.7vmin;
+    border-left: 1.1vmin solid #4CAF50;
+}
+
+    /* Bouton supprimer */
+.panier_page form button[type="submit"] {
+    background-color: var(--second-color);
+    color: white;
+    padding: 1.3vmin 2.5vmin;
+    border: none;
+    border-radius: 1.2vmin;
+    cursor: pointer;
+    margin-top: 2vmin;
+    font-weight: bold;
+}
+
+.panier_page form button[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
+    /* Bouton "Payer tout" */
+.panier_page > form button:nth-child(1) {
+    background-color: #e74c3c;
+    color: white;
+    padding: 1.5vmin 3vmin;
+    border: none;
+    border-radius: 1.2vmin;
+    cursor: pointer;
+    margin: 2vmin auto 0;
+    font-size: 2.5vmin;
+    font-weight: bold;
+}
+
+.panier_page > form button:hover:nth-child(1) {
+    background-color: #c0392b;
+}
+
+    /* Message panier vide */
+.panier_page p {
+    text-align: center;
+    font-size: 3.2vmin;
+    color: #555;
+    padding: 1vmin 14.6vmin;
+}
+
+/*fin panier.php */

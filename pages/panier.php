@@ -19,7 +19,7 @@
 </head>
 <body>
 <?php require('../php/header.php'); ?>
-<main>
+<main class="panier_page">
     <h1>Mon panier</h1>
 
     <?php if (empty($panier)): ?>
@@ -28,21 +28,21 @@
         <ul>
             <?php foreach ($panier as $index => $voyage): ?>
                 <li>
-                    <strong><?php echo htmlspecialchars($voyage['ville']); ?></strong><br>
+                    <u><strong><?php echo htmlspecialchars($voyage['ville']); ?></strong><br><br></u>
                     Participants : <?php echo $voyage['nbr_personnes']; ?><br>
                     Durée : <?php echo $voyage['duree_sejour']; ?> jours<br>
                     Départ : <?php echo $voyage['date_depart']; ?><br>
-                    Coût : <?php echo $voyage['cout']; ?> €<br>
+                    Coût : <b><?php echo $voyage['cout']; ?> €</b><br>
                     <form method="post" action="../php/supprimer_panier.php" style="display:inline;">
                         <input type="hidden" name="index" value="<?php echo $index; ?>">
-                        <button type="submit">Supprimer</button>
+                        <button type="submit" class="supprimer_panier">Supprimer</button>
                     </form>
                 </li>
             <?php endforeach; ?>
         </ul>
 
         <form action="../php/paiement.php" method="post">
-            <button type="submit">Procéder au paiement de tous les voyages</button>
+            <button type="submit" class="payer_panier">Procéder au paiement de tous les voyages</button>
         </form>
     <?php endif; ?>
 </main>

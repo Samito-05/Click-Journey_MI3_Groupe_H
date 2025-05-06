@@ -21,4 +21,6 @@
     box-shadow: 0 0.3vmin 1vmin rgba(0, 0, 0, 0.2);
 }
 
-
+.payer_panier form>button:nth-child(2) {
+    background-color: #e74c3c;
+}

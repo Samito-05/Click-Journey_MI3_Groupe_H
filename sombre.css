@@ -28,3 +28,24 @@
     align-items: center;
     box-shadow: 0 0.3vmin 1vmin rgba(0, 0, 0, 0.2);
 }
+
+.panier_page {
+    background-color: var(--second-color); 
+}
+
+.panier_page h1 {
+    color: var(--field-color);
+}
+
+.panier_page li {
+    background-color: var(--main-color); 
+    color: #FFF;
+}
+
+.panier_page > form button:nth-child(1) {
+    background-color: var(--third-color);
+}
+
+.panier_page > form button:hover:nth-child(1) {
+    background-color: var(--main-color);
+}
