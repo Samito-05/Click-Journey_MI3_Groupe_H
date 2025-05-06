@@ -88,6 +88,6 @@ file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT | JS
             </fieldset>
         </main>
         <?php require('../php/footer.php'); ?>
-        <script src="../javascript/theme.js"></script>
+        <script src="../javascript/theme.js" defer></script>
     </body>
 </html>
