@@ -42,6 +42,7 @@ if (file_exists($sejoursFile)) {
 }
 
 foreach ($panier as $voyage) {
+    $etapes = isset($voyage['options']) ? $voyage['options'] : [];
     $sejoursData[] = [
         "utilisateur" => $utilisateur,
         "ville" => $voyage['ville'],
@@ -50,7 +51,7 @@ foreach ($panier as $voyage) {
         "date_debut" => $voyage['date_depart'],
         "logement" => $voyage['logement'] ?? '',
         "pension" => $voyage['pension'] ?? '',
-        "etapes" => $voyage['option'] ?? [],
+        "etapes" => $etapes,
         "cout" => $voyage['cout'],
         "statut" => "",
         "transaction_id" => $transaction_id,
