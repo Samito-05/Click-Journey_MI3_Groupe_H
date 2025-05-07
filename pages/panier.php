@@ -41,7 +41,7 @@
             <?php endforeach; ?>
         </ul>
 
-        <form action="../php/paiement.php" method="post">
+        <form action="../php/paiement_panier.php" method="post">
             <button type="submit" class="payer_panier">Procéder au paiement de tous les voyages</button>
         </form>
     <?php endif; ?>
