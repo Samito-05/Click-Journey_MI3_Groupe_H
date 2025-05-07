@@ -23,7 +23,7 @@
     <h1>Mon panier</h1>
 
     <?php if (empty($panier)): ?>
-        <p>Votre panier est vide.</p>
+        <p>Votre panier PeakExplorer est vide</p>
     <?php else: ?>
         <ul>
             <?php foreach ($panier as $index => $voyage): ?>

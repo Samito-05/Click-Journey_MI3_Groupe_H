@@ -78,7 +78,7 @@ file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT | JS
             <input type="hidden" name="vendeur" value="<?= $vendeur ?>">
             <input type="hidden" name="retour" value="<?= $retour_url ?>">
             <input type="hidden" name="control" value="<?= $control ?>">
-            <input class="button-paiement" type="submit" value="Payer tout le panier">
+            <input class="button-paiement" type="submit" value="Payer">
         </form>
     </main>
     <?php require('footer.php'); ?>
