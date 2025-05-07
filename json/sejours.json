@@ -2176,5 +2176,63 @@
         "cout": "760",
         "statut": "Payé",
         "transaction_id": "pqhQYuHLEMG7"
+    },
+    {
+        "utilisateur": "admin@peakexplorer.com",
+        "ville": "Mont Etna",
+        "nbr_personnes": "2",
+        "nbr_jours": "2",
+        "date_debut": "2025-05-07",
+        "logement": "Auberge",
+        "pension": "Pension complète",
+        "etapes": [],
+        "cout": "760",
+        "statut": "Payé",
+        "transaction_id": "J6HIsUG9mMyB"
+    },
+    {
+        "utilisateur": "admin@peakexplorer.com",
+        "ville": "Mont Etna",
+        "nbr_personnes": "2",
+        "nbr_jours": "2",
+        "date_debut": "2025-05-07",
+        "logement": "Auberge",
+        "pension": "Pension complète",
+        "etapes": [],
+        "cout": "760",
+        "statut": "Payé",
+        "transaction_id": "J6HIsUG9mMyB"
+    },
+    {
+        "utilisateur": "admin@peakexplorer.com",
+        "ville": "Dolomites",
+        "nbr_personnes": "2",
+        "nbr_jours": "2",
+        "date_debut": "2025-05-07",
+        "logement": "Hotel++",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "Lago di Dobbiaco",
+            "2": "Lago di Dobbiaco"
+        },
+        "cout": "960",
+        "statut": "Payé",
+        "transaction_id": "edZu1DVz9jCt"
+    },
+    {
+        "utilisateur": "admin@peakexplorer.com",
+        "ville": "Mont Etna",
+        "nbr_personnes": "2",
+        "nbr_jours": "2",
+        "date_debut": "2025-05-07",
+        "logement": "Hotel++",
+        "pension": "Pension complète",
+        "etapes": {
+            "1": "Sentiero Natura",
+            "2": "Sentiero Natura"
+        },
+        "cout": "1020",
+        "statut": "Payé",
+        "transaction_id": "NToz0aDgf5wr"
     }
 ]
