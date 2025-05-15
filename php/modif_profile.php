@@ -13,6 +13,8 @@ $nv_num = isset($_POST['num']) ? trim($_POST['num']) : "";
 $nv_mdp = isset($_POST['mdp1']) ? trim($_POST['mdp1']) : "";
 $nv_mdp_confirm = isset($_POST['mdp2']) ? trim($_POST['mdp2']) : "";
 
+$response = ['success' => false, 'message' => ''];
+
 if (file_exists($fichier) && is_readable($fichier)) {
     $utilisateurs = json_decode(file_get_contents($fichier), true);
 
@@ -33,9 +35,17 @@ if (file_exists($fichier) && is_readable($fichier)) {
         }
     }
 
-    file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT));
+    if (file_put_contents($fichier, json_encode($utilisateurs, JSON_PRETTY_PRINT))) {
+        $response['success'] = true;
+        $response['message'] = 'Modifications enregistrées.';
+    } else {
+        $response['message'] = 'Erreur lors de l\'enregistrement des modifications.';
+    }
+} else {
+    $response['message'] = 'Fichier utilisateur introuvable.';
 }
 
-header("location: ../pages/profile.php");
+header('Content-Type: application/json');
+echo json_encode($response);
 exit();
 ?>

@@ -1,4 +1,4 @@
-let originalValues = {}; // 🔁 allow reassignment
+let originalValues = {};
 
 window.addEventListener('DOMContentLoaded', (event) => {
     originalValues = {
@@ -13,7 +13,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     };
 });
 
-
 function deverouiller_input(id) {
     const input = document.getElementById(id);
     input.disabled = !input.disabled;
@@ -21,6 +20,34 @@ function deverouiller_input(id) {
 
 function retour_modif(id) {
     const input = document.getElementById(id);
-        input.value = originalValues[id]; 
-        input.disabled = true; 
+    input.value = originalValues[id];
+    input.disabled = true;
+}
+
+async function envoyer_modifications() {
+    const formData = new FormData(document.querySelector('.form_profile'));
+    try {
+        const response = await fetch('../php/modif_profile.php', {
+            method: 'POST',
+            body: formData
+        });
+
+        const result = await response.json();
+        if (result.success) {
+            alert('Modifications enregistrées avec succès.');
+            Object.keys(originalValues).forEach(key => {
+                originalValues[key] = document.getElementById(key).value;
+            });
+        } else {
+            alert('Erreur : ' + result.message);
+            Object.keys(originalValues).forEach(key => {
+                document.getElementById(key).value = originalValues[key];
+            });
+        }
+    } catch (error) {
+        alert('Une erreur est survenue lors de la mise à jour.');
+        Object.keys(originalValues).forEach(key => {
+            document.getElementById(key).value = originalValues[key];
+        });
+    }
 }

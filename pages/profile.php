@@ -55,7 +55,7 @@
         <main>
             <fieldset class="field_profile">
                 <legend class="legend_profile">Modifications du profil</legend>
-                <form class="form_profile" action="../php/modif_profile.php" method="post">
+                <form class="form_profile" onsubmit="event.preventDefault(); envoyer_modifications();" method="post">
                     <div class="div_profile">
                         <label for="nom">Nom :</label>
                     </div>
