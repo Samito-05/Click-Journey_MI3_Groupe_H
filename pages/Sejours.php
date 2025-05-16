@@ -201,6 +201,6 @@ session_start();
   
         <?php require('../php/footer.php') ?>
         <script src="../javascript/theme.js" defer></script>
-        <script src="../javascript/calcul_prix.js"></script>
+        <script src="../javascript/calcul_prix.js" defer></script>
     </body>
 </html>

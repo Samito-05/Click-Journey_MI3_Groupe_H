@@ -89,20 +89,8 @@
                                 <th>Jour</th>
                                 <th>Option</th>
                             </tr>
-
-                            <?php for ($i = 1; $i <= $nbr_jours; $i++) : ?>
-                                <tr>
-                                    <td>Jour <?php echo $i; ?></td>
-                                    <td>
-                                        <select name="option[<?php echo $i; ?>]">
-                                            <?php foreach ($options as $option) : ?>
-                                                <option value="<?php echo $option; ?>"><?php echo $option; ?></option>
-                                            <?php endforeach; ?>
-                                        </select>
-                                    </td> 
-                                </tr>
-                            <?php endfor; ?>
                         </table>
+                        <div id="options-container"></div>
 
                         <button class="boutton_ajout_panier" formaction="../php/ajout_panier.php" type="submit">Ajouter au panier 🛒</button>
                         <button class="boutton_sejours" formaction="../php/paiement.php" type="submit">Payer directement ce voyage</button>
@@ -118,6 +106,7 @@
         </main>
 
         <?php require('../php/footer.php'); ?>
-        <script src="../javascript/theme.js" defer></script>                               
+        <script src="../javascript/theme.js" defer></script>
+        <script src="../javascript/sejours.js" defer></script>                               
     </body>
 </html>
