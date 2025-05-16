@@ -87,6 +87,6 @@ $control = md5($api_key . "#" . $transaction_id . "#" . $montant . "#" . $vendeu
         </main>
         
         <?php require('../php/footer.php'); ?>
-        <script src="../javascript/theme.js"></script>
+        <script src="../javascript/theme.js" defer></script>
     </body>
 </html>

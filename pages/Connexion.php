@@ -11,8 +11,8 @@ $message = $_GET['error'] ?? null;
         <link rel="stylesheet" type="text/css" href="../style.css"> 
         <link id="theme-link" rel="stylesheet" href="../clair.css">
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
-        <script src="../JAVASCRIPT/mdp.js"></script>
-        <script src="../JAVASCRIPT/verif_entrees_connexion.js"></script>
+        <script src="../JAVASCRIPT/mdp.js"defer></script>
+        <script src="../JAVASCRIPT/verif_entrees_connexion.js" defer></script>
     </head>
     <body>
         <?php require('../php/header.php') ?>

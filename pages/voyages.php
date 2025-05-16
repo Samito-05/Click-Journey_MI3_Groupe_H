@@ -18,7 +18,7 @@ if (isset($_GET['resultats'])) {
         <link rel="stylesheet" type="text/css" href="../style.css"> 
         <link id="theme-link" rel="stylesheet" href="../clair.css">
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
-        <script src="../javascript/sort_voyages.js"></script>
+        <script src="../javascript/sort_voyages.js" defer></script>
     </head>
     <body>
         <?php require('../php/header.php'); ?>

@@ -10,7 +10,7 @@ session_start();
         <link rel="stylesheet" type="text/css" href="../style.css"> 
         <link id="theme-link" rel="stylesheet" href="../clair.css">
         <link rel="icon" type="image/jpg" href="../Images/logo.jpg">
-        <script src="../javascript/attente.js"></script>
+        <script src="../javascript/attente.js" defer></script>
     </head>
     <body>
         <header class="Entete">
