@@ -1,60 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const nbrPersonnesInput = document.getElementById("nbr_personnes");
-    const dureeSejourInput = document.getElementById("duree_sejour");
-    const logementSelect = document.getElementById("logement");
-    const pensionInputs = document.getElementsByName("pension");
+    const form = document.querySelector('form[action="../php/paiement.php"]');
     const prixEstimeElement = document.getElementById("prix_estime");
 
-    const logementPrices = {
-        "Hotel": 75,
-        "Hotel++": 100,
-        "Auberge": 35,
-        "Airbnb": 30
-    };
-
-    const pensionPrices = {
-        "Sans pension": 0,
-        "Demi pension": 15,
-        "Pension complète": 30
-    };
-
-    const villePrices = {
-        "Mont Blanc": 150,
-        "Pic du Midi de Bigorre": 150,
-        "Puy de Dôme": 150,
-        "Dolomites": 250,
-        "Monte Rosa": 250,
-        "Mont Etna": 250,
-        "default": 1000
-    };
-
-    function calculatePrice() {
-        const nbrPersonnes = parseInt(nbrPersonnesInput.value) || 1;
-        const dureeSejour = parseInt(dureeSejourInput.value) || 1;
-        const logement = logementSelect.value;
-        const pension = Array.from(pensionInputs).find(input => input.checked)?.value || "Sans pension";
-        const ville = document.getElementById("ville").value;
-
-        let cout = 0;
-        
-        cout += logementPrices[logement] || 0;
-
-        cout += pensionPrices[pension] || 0;
-
-        cout *= dureeSejour;
-
-        cout += villePrices[ville] || villePrices["default"];
-
-        cout *= nbrPersonnes;
-
-        prixEstimeElement.textContent = `${cout} €`;
+    async function calculatePrice() {
+        const formData = new FormData(form);
+        const response = await fetch("../php/calcul_prix_ajax.php", {
+            method: "POST",
+            body: formData
+        });
+        const data = await response.json();
+        prixEstimeElement.textContent = `${data.cout} €`;
+        // Met à jour aussi le champ caché "cout" pour l'envoi du formulaire
+        const coutInput = form.querySelector('input[name="cout"]');
+        if (coutInput) coutInput.value = data.cout;
     }
 
-    nbrPersonnesInput.addEventListener("input", calculatePrice);
-    dureeSejourInput.addEventListener("input", calculatePrice);
-    logementSelect.addEventListener("change", calculatePrice);
-    pensionInputs.forEach(input => input.addEventListener("change", calculatePrice));
-    document.getElementById("ville").addEventListener("change", calculatePrice);
+    // Sur tous les changements d'options du formulaire
+    form.addEventListener("change", calculatePrice);
 
+    // Calcul initial
     calculatePrice();
 });

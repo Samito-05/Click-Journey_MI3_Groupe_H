@@ -69,7 +69,7 @@
                     <h3 class="filtre"><?php echo $pension ?></h3>
                 </div>
 
-                <?php require('../php/calcul_cout.php'); ?>
+                <!-- <?php require('../php/calcul_cout.php'); ?> -->
 
                 <div class="filtre">
                     <h2 class="filtre">Choisissez une activité par jour</h2>
@@ -99,7 +99,7 @@
 
                 <div class="filtre">
                     <h2 class="filtre">Cout du voyage</h2>
-                    <h3 class="filtre"><?php echo $cout; ?> €</h3>
+                    <h3 class="filtre" id="prix_estime"><?php echo $cout; ?> €</h3>
                 </div>
 
             </fieldset>

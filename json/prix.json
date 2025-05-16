@@ -1,0 +1,22 @@
+{
+    "prix_logement": {
+        "Hotel": 75,
+        "Hotel++": 100,
+        "Auberge": 35,
+        "Airbnb": 30
+    },
+    "prix_pension": {
+        "Sans pension": 0,
+        "Demi pension": 15,
+        "Pension complète": 30
+    },
+    "prix_ville": {
+        "Mont Blanc": 150,
+        "Pic du Midi de Bigorre": 150,
+        "Puy de Dôme": 150,
+        "Dolomites": 250,
+        "Monte Rosa": 250,
+        "Mont Etna": 250,
+        "default": 1000
+    }
+}
