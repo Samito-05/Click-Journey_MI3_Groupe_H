@@ -140,7 +140,7 @@ session_start();
                             <td>" . ($user['email']) . "</td>
                             <td>********</td>
                             <td>
-                                <form method='post' action='../php/update_status.php'>
+                                <form class='info_admin' method='post' onsubmit='return modif_info(event, this);'>
                                     <input type='hidden' name='nom' value='" . ($user['nom']) . "'>
                                     <select name='Statut'>
                                         <option value='client' " . ($user['statut'] == "client" ? "selected" : "") . ">Client</option>
@@ -148,7 +148,8 @@ session_start();
                                         <option value='admin' " . ($user['statut'] == "admin" ? "selected" : "") . ">Admin</option>
                                         <option value='BanDef' " . ($user['statut'] == "BanDef" ? "selected" : "") . ">BanDef</option>
                                     </select>
-                                    <button type='submit' onclick='attente(this)'>Modifier</button>
+                                    <button type='submit'>Modifier</button>
+                                    <span class='loader' style='display:none;'>⏳</span>
                                 </form>
                             </td>
                         </tr>";

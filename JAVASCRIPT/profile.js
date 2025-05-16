@@ -34,18 +34,18 @@ async function envoyer_modifications() {
 
         const result = await response.json();
         if (result.success) {
-            alert('Modifications enregistrées avec succès.');
+            //alert('Modifications enregistrées avec succès.');
             Object.keys(originalValues).forEach(key => {
                 originalValues[key] = document.getElementById(key).value;
             });
         } else {
-            alert('Erreur : ' + result.message);
+            //alert('Erreur : ' + result.message);
             Object.keys(originalValues).forEach(key => {
                 document.getElementById(key).value = originalValues[key];
             });
         }
     } catch (error) {
-        alert('Une erreur est survenue lors de la mise à jour.');
+        //alert('Une erreur est survenue lors de la mise à jour.');
         Object.keys(originalValues).forEach(key => {
             document.getElementById(key).value = originalValues[key];
         });
