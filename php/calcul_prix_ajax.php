@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $cout = 0;
     $nbr_personnes = isset($_POST['nbr_personnes']) ? intval($_POST['nbr_personnes']) : 1;
@@ -41,6 +42,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $cout *= $nbr_personnes;
+
+    if ($_SESSION['statut'] === "vip") {
+        $cout *= 0.9; // 10% de réduction pour les VIP
+    }
 
     echo json_encode(['cout' => $cout]);
     exit;
