@@ -2234,5 +2234,21 @@
         "cout": "1020",
         "statut": "Payé",
         "transaction_id": "NToz0aDgf5wr"
+    },
+    {
+        "utilisateur": "hugo@gmail.com",
+        "ville": "Pic du Midi de Bigorre",
+        "nbr_personnes": "2",
+        "nbr_jours": "2",
+        "date_debut": "2025-05-18",
+        "logement": "Hotel",
+        "pension": "Demi pension",
+        "etapes": {
+            "1": "La randonnée du Pic du Midi de Bigorre",
+            "2": "La randonnée du Pic du Midi de Bigorre"
+        },
+        "cout": "660",
+        "statut": "",
+        "transaction_id": "XoGGQvZR9MDk"
     }
 ]
