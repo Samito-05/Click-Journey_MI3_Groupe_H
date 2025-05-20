@@ -184,7 +184,7 @@ session_start();
 
                     <p class="filtre">Option alimentaire :</p>
                     <div class="checkbox_options">
-                        <label><input type="radio" id="pension_sans" name="pension" value="Sans pension"/><p>Sans pension</p></label>
+                        <label><input type="radio" id="pension_sans" name="pension" value="Sans pension" checked/><p>Sans pension</p></label>
                         <label><input type="radio" id="pension_demi" name="pension" value="Demi pension"/><p>Demi-pension</p></label>
                         <label><input type="radio" id="pension_complete" name="pension" value="Pension complète"/><p>Pension complète</p></label>
                     </div>

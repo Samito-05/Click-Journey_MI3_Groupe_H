@@ -41,7 +41,7 @@
     file_put_contents($sejoursFile, json_encode($sejoursData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     
     // Vider le panier après le paiement
-    //unset($_SESSION['panier']);
+    unset($_SESSION['panier']);
 ?>
 
 <!DOCTYPE html>
