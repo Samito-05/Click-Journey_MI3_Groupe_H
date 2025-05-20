@@ -9,8 +9,8 @@ sleep(3);
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nom = filter_input(INPUT_POST, 'nom');
-    $nv_statut = filter_input(INPUT_POST, 'Statut');
+    $email = $_POST['email'] ?? "erreur mail";
+    $nv_statut = $_POST['statut'] ?? "erreur statut";
 
     if (file_exists($fichier) && is_readable($fichier)) {
         $jsonData = file_get_contents($fichier);
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $found = false;
         foreach ($users as &$user) {
-            if ($user['nom'] === $nom) {
+            if ($user['email'] === $email) {
                 $user['statut'] = $nv_statut;
                 $found = true;
                 break;

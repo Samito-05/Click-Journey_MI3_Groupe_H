@@ -21,11 +21,11 @@ function modif_info(event, form) {
     const loader = form.querySelector('.loader');
     const select = form.querySelector('select');
 
+    const formData = new FormData(form);
+
     button.disabled = true;
     select.disabled = true;
     loader.style.display = 'inline';
-
-    const formData = new FormData(form);
 
     fetch('../php/update_status.php', {
         method: 'POST',

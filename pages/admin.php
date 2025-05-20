@@ -141,8 +141,8 @@ session_start();
                             <td>********</td>
                             <td>
                                 <form class='info_admin' method='post' onsubmit='return modif_info(event, this);'>
-                                    <input type='hidden' name='nom' value='" . ($user['nom']) . "'>
-                                    <select name='Statut'>
+                                    <input type='hidden' name='email' value='" . ($user['email']) . "'>
+                                    <select name='statut'>
                                         <option value='client' " . ($user['statut'] == "client" ? "selected" : "") . ">Client</option>
                                         <option value='vip' " . ($user['statut'] == "vip" ? "selected" : "") . ">VIP</option>
                                         <option value='admin' " . ($user['statut'] == "admin" ? "selected" : "") . ">Admin</option>
