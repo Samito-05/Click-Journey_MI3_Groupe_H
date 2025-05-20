@@ -74,6 +74,12 @@
                 <div class="filtre">
                     <h2 class="filtre">Choisissez une activité par jour</h2>
 
+                    <?php
+                    if ($_SESSION['statut'] === "vip") {
+                        $cout *= 0.9; // 10% de réduction pour les VIP
+                    }
+                    ?> // 10% de réduction pour les VIP
+                    
                     <!-- Formulaire unique pour ajouter au panier ou payer directement -->
                     <form action="../php/paiement.php" method="post">
                         <input type="hidden" name="ville" value="<?php echo $ville; ?>">
@@ -109,4 +115,5 @@
         <script src="../javascript/theme.js" defer></script>
         <script src="../javascript/sejours.js" defer></script>                               
     </body>
+</html>     
 </html>
