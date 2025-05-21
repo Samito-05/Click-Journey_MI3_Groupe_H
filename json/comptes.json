@@ -58,5 +58,25 @@
         "email": "cyprien@gmail.com",
         "mdp_hash": "$2y$10$mQP5iGdDRbVDY4WsGMtGKeE6THwJcTHpYJzq7Hk7YXdJcDmquzFHW",
         "statut": "BanDef"
+    },
+    {
+        "nom": "pelissier",
+        "prenom": "jules",
+        "naissance": "2006-10-09",
+        "adresse": "cergy",
+        "num": "0745342563",
+        "email": "julespel8310@gmail.com",
+        "mdp_hash": "$2y$10$vxLMPAOLF5OcPt1Mt2VuAepU1HtQ7y99LXOhARqLOyRykBE5zhjYu",
+        "statut": "client"
+    },
+    {
+        "nom": "samsam",
+        "prenom": "samsam",
+        "naissance": "2005-05-20",
+        "adresse": "Paris",
+        "num": "0123456789",
+        "email": "samsam@gmail.com",
+        "mdp_hash": "$2y$10$H00HRzi4pANf2lUlovrAMuEQhhXpWOEc84C6lsvZv7OpPw4Qr7hvW",
+        "statut": "erreur statut"
     }
 ]

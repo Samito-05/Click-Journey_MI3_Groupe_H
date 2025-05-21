@@ -9,7 +9,11 @@ sleep(3);
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+<<<<<<< Updated upstream
     $email = $_POST['email'] ?? "erreur mail";
+=======
+    $email = $_POST['email'] ?? "erreur email";
+>>>>>>> Stashed changes
     $nv_statut = $_POST['statut'] ?? "erreur statut";
 
     if (file_exists($fichier) && is_readable($fichier)) {
